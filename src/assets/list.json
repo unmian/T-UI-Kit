@@ -1,0 +1,253 @@
+[
+  {
+    "groupName": "基础",
+    "children": [
+      {
+        "compName": "button",
+        "compZhName": "按钮",
+        "compDesc": "这是一个按钮",
+        "compClassName": "button"
+      },
+      {
+        "compName": "divider",
+        "compZhName": "分割线",
+        "compDesc": "这是一个按钮",
+        "compClassName": "divider"
+      },
+      {
+        "compName": "icon",
+        "compZhName": "图标",
+        "compDesc": "这是一个按钮",
+        "compClassName": "icon"
+      }
+    ]
+  },
+  {
+    "groupName": "布局",
+    "children": [
+      {
+        "compName": "layout",
+        "compZhName": "布局",
+        "compDesc": "这是一个按钮",
+        "compClassName": "layout"
+      }
+    ]
+  },
+  {
+    "groupName": "导航",
+    "children": []
+  },
+  {
+    "groupName": "输入",
+    "children": [
+      {
+        "compName": "checkbox",
+        "compZhName": "多选框",
+        "compDesc": "这是一个按钮",
+        "compClassName": "checkbox"
+      },
+      {
+        "compName": "date-picker",
+        "compZhName": "日期选择器",
+        "compDesc": "这是一个按钮",
+        "compClassName": "datePicker"
+      },
+      {
+        "compName": "form",
+        "compZhName": "表单",
+        "compDesc": "这是一个按钮",
+        "compClassName": "form"
+      },
+      {
+        "compName": "input",
+        "compZhName": "输入框",
+        "compDesc": "这是一个按钮",
+        "compClassName": "input"
+      },
+      {
+        "compName": "input-number",
+        "compZhName": "数字输入框",
+        "compDesc": "这是一个按钮",
+        "compClassName": "inputNumber"
+      },
+      {
+        "compName": "radio",
+        "compZhName": "单选框",
+        "compDesc": "这是一个按钮",
+        "compClassName": "radio"
+      },
+      {
+        "compName": "select",
+        "compZhName": "选择器",
+        "compDesc": "这是一个按钮",
+        "compClassName": "select"
+      },
+      {
+        "compName": "slider",
+        "compZhName": "滑块",
+        "compDesc": "这是一个按钮",
+        "compClassName": "slider"
+      },
+      {
+        "compName": "switch",
+        "compZhName": "开关",
+        "compDesc": "这是一个按钮",
+        "compClassName": "switch"
+      },
+      {
+        "compName": "textarea",
+        "compZhName": "多行文本框",
+        "compDesc": "这是一个按钮",
+        "compClassName": "textarea"
+      },
+      {
+        "compName": "transfer",
+        "compZhName": "穿梭框",
+        "compDesc": "这是一个按钮",
+        "compClassName": "transfer"
+      },
+      {
+        "compName": "time-picker",
+        "compZhName": "时间选择器",
+        "compDesc": "这是一个按钮",
+        "compClassName": "time-picker"
+      },
+      {
+        "compName": "tree-select",
+        "compZhName": "树选择器",
+        "compDesc": "这是一个按钮",
+        "compClassName": "tree-select"
+      },
+      {
+        "compName": "upload",
+        "compZhName": "上传",
+        "compDesc": "这是一个按钮",
+        "compClassName": "upload"
+      }
+    ]
+  },
+  {
+    "groupName": "数据展示",
+    "children": [
+      {
+        "compName": "avatar",
+        "compZhName": "头像",
+        "compDesc": "这是一个按钮",
+        "compClassName": "avatar"
+      },
+      {
+        "compName": "badge",
+        "compZhName": "徽标",
+        "compDesc": "这是一个按钮",
+        "compClassName": "badge"
+      },
+      {
+        "compName": "calendar",
+        "compZhName": "日历",
+        "compDesc": "这是一个按钮",
+        "compClassName": "calendar"
+      },
+      {
+        "compName": "comment",
+        "compZhName": "评论",
+        "compDesc": "这是一个按钮",
+        "compClassName": "comment"
+      },
+      {
+        "compName": "list",
+        "compZhName": "列表",
+        "compDesc": "这是一个按钮",
+        "compClassName": "list"
+      },
+      {
+        "compName": "progress",
+        "compZhName": "进度条",
+        "compDesc": "这是一个按钮",
+        "compClassName": "progress"
+      },
+      {
+        "compName": "swiper",
+        "compZhName": "轮播框",
+        "compDesc": "这是一个按钮",
+        "compClassName": "swiper"
+      },
+      {
+        "compName": "table",
+        "compZhName": "表格",
+        "compDesc": "这是一个按钮",
+        "compClassName": "table"
+      },
+      {
+        "compName": "tag",
+        "compZhName": "标签",
+        "compDesc": "这是一个按钮",
+        "compClassName": "tag"
+      },
+      {
+        "compName": "tooltip",
+        "compZhName": "文字提示",
+        "compDesc": "这是一个按钮",
+        "compClassName": "tooltip"
+      },
+      {
+        "compName": "tree",
+        "compZhName": "树",
+        "compDesc": "这是一个按钮",
+        "compClassName": "tree"
+      }
+    ]
+  },
+  {
+    "groupName": "消息提醒",
+    "children": [
+      {
+        "compName": "alert",
+        "compZhName": "警告提醒",
+        "compDesc": "这是一个按钮",
+        "compClassName": "alert"
+      },
+      {
+        "compName": "dialog",
+        "compZhName": "对话框",
+        "compDesc": "这是一个按钮",
+        "compClassName": "dialog"
+      },
+      {
+        "compName": "drawer",
+        "compZhName": "抽屉",
+        "compDesc": "这是一个按钮",
+        "compClassName": "drawer"
+      },
+      {
+        "compName": "loading",
+        "compZhName": "加载",
+        "compDesc": "这是一个按钮",
+        "compClassName": "loading"
+      },
+      {
+        "compName": "message",
+        "compZhName": "全局提示",
+        "compDesc": "这是一个按钮",
+        "compClassName": "message"
+      },
+      {
+        "compName": "notification",
+        "compZhName": "消息通知",
+        "compDesc": "这是一个按钮",
+        "compClassName": "notification"
+      },
+      {
+        "compName": "popconfirm",
+        "compZhName": "气泡确认框",
+        "compDesc": "这是一个按钮",
+        "compClassName": "popconfirm"
+      },
+      {
+        "compName": "popup",
+        "compZhName": "弹出层",
+        "compDesc": "这是一个按钮",
+        "compClassName": "popup"
+      }
+    ]
+  }
+]

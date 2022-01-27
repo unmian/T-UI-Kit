@@ -1,0 +1,18 @@
+# 忽略目录
+.idea
+.vscode
+build/
+docs/
+examples/
+packages/
+public/
+node_modules/
+typings/
+​src/
+yarn.lock
+tsconfig.json
+index.html
+.npmignore
+.gitignore
+
+# 忽略指定文件
