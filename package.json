@@ -5,7 +5,6 @@
     "name": "Quarter",
     "email": "master@shiruihua.com.cn"
   },
-
   "types": "packages/types.d.ts",
   "scripts": {
     "dev": "vite --config ./build/base.config.ts",

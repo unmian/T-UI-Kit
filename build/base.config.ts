@@ -1,10 +1,10 @@
 /*
  * @Author: Quarter
  * @Date: 2021-12-29 07:28:23
- * @LastEditTime: 2021-12-31 05:56:31
+ * @LastEditTime: 2022-02-04 12:50:28
  * @LastEditors: Quarter
  * @Description: 
- * @FilePath: /simple-ui/build/base.config.ts
+ * @FilePath: /t-ui-kit/build/base.config.ts
  */
 import { resolve } from "path";
 import { defineConfig } from "vite";
@@ -27,7 +27,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@": resolve(__dirname, "../src"),
+      documents: resolve(__dirname, "../documents"),
       packages: resolve(__dirname, "../packages"),
     },
   },

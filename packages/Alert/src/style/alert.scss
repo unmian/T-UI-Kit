@@ -1,0 +1,180 @@
+@import "packages/Style/mixin.scss";
+
+div.t-alert {
+  @include t-radius;
+
+  width: 100%;
+  padding: 16px 24px;
+  box-sizing: border-box;
+  display: flex;
+
+  // 图标
+  .t-alert__icon {
+    @include t-text-2;
+
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px var(--t-space-8) 0 0;
+  }
+
+  // 内容
+  .t-alert__content {
+    flex: 1;
+
+    // 警告标题
+    .t-alert__title {
+      display: flex;
+      align-items: center;
+      margin-bottom: var(--t-space-8);
+
+      .t-alert__title-content {
+        @include t-text-bold-4;
+      }
+
+      .t-alert__operation {
+        @include t-text-4;
+
+        margin: 0 0 0 var(--t-space-8);
+      }
+    }
+
+    // 消息内容
+    .t-alert__message {
+      @include t-text-4;
+
+      .t-alert__description {
+        color: var(--t-text-gray-1);
+      }
+
+      .t-alert__operation-list {
+        display: flex;
+        align-items: center;
+        margin-top: var(--t-space-8);
+
+        // 展开/收回按钮
+        .t-alert__collapse {
+          width: fit-content;
+          color: var(--t-brand-normal);
+          cursor: pointer;
+          user-select: none;
+          margin-right: var(--t-space-8);
+
+          &:hover {
+            color: var(--t-brand-hover);
+          }
+
+          &:active {
+            color: var(--t-brand-click);
+          }
+        }
+
+        // 操作内容
+        .t-alert__operation {
+          margin-top: initial;
+        }
+      }
+    }
+
+    // 操作内容
+    .t-alert__operation {
+      width: fit-content;
+      color: var(--t-brand-normal);
+      cursor: pointer;
+      user-select: none;
+      margin-top: var(--t-space-8);
+
+      &:hover {
+        color: var(--t-brand-hover);
+      }
+
+      &:active {
+        color: var(--t-brand-click);
+      }
+    }
+  }
+
+  // 关闭操作
+  .t-alert__close {
+    @include t-text-4;
+
+    max-width: 160px;
+    color: var(--t-text-gray-2);
+    text-align: right;
+    cursor: pointer;
+    user-select: none;
+    margin-left: var(--t-space-8);
+
+    .t-alert__close-btn {
+      @include t-text-3;
+
+      width: 20px;
+      height: 20px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1px;
+    }
+
+    &:hover {
+      color: var(--t-text-gray-1);
+    }
+  }
+
+  // 单行信息
+  &.t-alert--single-line .t-alert__content .t-alert__message {
+    display: flex;
+
+    .t-alert__operation {
+      margin: 0 0 0 var(--t-space-8);
+    }
+  }
+
+  // 单行信息
+  &.t-alert--with-title .t-alert__content .t-alert__message .t-alert__description {
+    color: var(--t-text-gray-2);
+  }
+
+  // 信息主题
+  &.t-alert--info {
+    background-color: var(--t-brand-focus);
+
+    .t-alert__icon {
+      color: var(--t-brand-normal);
+    }
+  }
+
+  // 成功主题
+  &.t-alert--success {
+    background-color: var(--t-success-focus);
+
+    .t-alert__icon {
+      color: var(--t-success-normal);
+    }
+  }
+
+  // 警告主题
+  &.t-alert--warning {
+    background-color: var(--t-warning-focus);
+
+    .t-alert__icon {
+      color: var(--t-warning-normal);
+    }
+  }
+
+  // 危险主题
+  &.t-alert--danger {
+    background-color: var(--t-error-focus);
+
+    .t-alert__icon {
+      color: var(--t-error-normal);
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}

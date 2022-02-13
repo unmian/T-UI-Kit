@@ -12,18 +12,20 @@
     "lib": ["esnext", "dom"],
     "baseUrl": ".", // paths 路径解析起点
     "paths": {
-      "@/*": ["src/*"], // 别名路径设置
+      "documents/*": ["documents/*"], // 别名路径设置
       "packages/*": ["packages/*"] // 别名路径设置
     }
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.d.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
+    "documents/**/*.ts",
+    "documents/**/*.d.ts",
+    "documents/**/*.tsx",
+    "documents/**/*.vue",
+    "documents/**/*.md",
     "packages/**/*.ts",
     "packages/**/*.d.ts",
     "packages/**/*.d.tsx",
     "packages/**/*.vue",
+    "packages/**/*.md",
   ]
 }

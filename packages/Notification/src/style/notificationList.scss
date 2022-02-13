@@ -1,0 +1,55 @@
+@import "packages/Style/mixin.scss";
+
+.t-notification__list {
+  display: flex;
+  position: fixed;
+  z-index: 6000;
+
+  // 左上方通知列表
+  &.t-notification__list--top-left {
+    top: var(--t-space-32);
+    left: var(--t-space-32);
+    flex-direction: column;
+    align-items: flex-start;
+
+    .t-notification {
+      margin: 0 0 var(--t-space-24);
+    }
+  }
+
+  // 右上方通知列表
+  &.t-notification__list--top-right {
+    top: var(--t-space-32);
+    right: var(--t-space-32);
+    flex-direction: column;
+    align-items: flex-end;
+
+    .t-notification {
+      margin: 0 0 var(--t-space-24);
+    }
+  }
+
+  // 左下方通知列表
+  &.t-notification__list--bottom-left {
+    bottom: var(--t-space-32);
+    left: var(--t-space-32);
+    flex-direction: column-reverse;
+    align-items: flex-start;
+
+    .t-notification {
+      margin: var(--t-space-24) 0 0;
+    }
+  }
+
+  // 右下方通知列表
+  &.t-notification__list--bottom-right {
+    bottom: var(--t-space-32);
+    right: var(--t-space-32);
+    flex-direction: column-reverse;
+    align-items: flex-end;
+
+    .t-notification {
+      margin: var(--t-space-24) 0 0;
+    }
+  }
+}

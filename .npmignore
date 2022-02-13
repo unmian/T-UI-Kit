@@ -4,6 +4,7 @@
 build/
 docs/
 examples/
+documents/
 packages/
 public/
 node_modules/

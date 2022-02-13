@@ -1,0 +1,405 @@
+@import "packages/Style/mixin.scss";
+@import "./mixin.scss";
+
+button.t-button {
+  vertical-align: middle;
+  border: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background: none;
+  display: inline-flex;
+  align-items: center;
+
+  // 禁用
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  // 加载动画
+  .t-button__loading {
+    border-radius: 50%;
+    animation: t-rotate 1.2s linear infinite;
+  }
+
+  // 圆形按钮
+  &.t-button--circle {
+    text-align: center;
+  }
+
+  // 块级按钮
+  &.t-button--block {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  // 小尺寸按钮
+  &.t-button--small {
+    @include t-text-5;
+    @include t-radius;
+
+    padding: 1px 7px;
+
+    .t-button__loading {
+      width: 12px;
+      height: 12px;
+      margin-right: var(--t-space-4);
+    }
+
+    .t-button__icon {
+      @include t-text-4;
+
+      margin-right: var(--t-space-4);
+    }
+
+    &.t-button--circle {
+      width: 24px;
+      height: 24px;
+      padding: 1px;
+      border-radius: 50%;
+
+      .t-button__icon {
+        margin: 0 auto;
+      }
+    }
+
+    &:not(.t-button--block):not(:first-child) {
+      margin-left: var(--t-space-4);
+    }
+
+    // 块级按钮
+    &.t-button--block:not(:first-child) {
+      margin-top: var(--t-space-4);
+    }
+  }
+
+  // 中尺寸按钮
+  &.t-button--medium {
+    @include t-text-4;
+    @include t-radius;
+
+    padding: 4px 15px;
+
+    .t-button__loading {
+      width: 14px;
+      height: 14px;
+      margin-right: var(--t-space-8);
+    }
+
+    .t-button__icon {
+      @include t-text-3;
+
+      margin-right: var(--t-space-8);
+    }
+
+    &.t-button--circle {
+      width: 32px;
+      height: 32px;
+      padding: 4px;
+      border-radius: 50%;
+
+      .t-button__icon {
+        margin: 0 auto;
+      }
+    }
+
+    &:not(.t-button--block):not(:first-child) {
+      margin-left: var(--t-space-8);
+    }
+
+    // 块级按钮
+    &.t-button--block:not(:first-child) {
+      margin-top: var(--t-space-8);
+    }
+  }
+
+  // 大尺寸按钮
+  &.t-button--large {
+    @include t-text-3;
+    @include t-radius;
+
+    padding: 7px 23px;
+
+    .t-button__loading {
+      width: 16px;
+      height: 16px;
+      margin-right: var(--t-space-12);
+    }
+
+    .t-button__icon {
+      @include t-text-2;
+
+      margin-right: var(--t-space-12);
+    }
+
+    &.t-button--circle {
+      width: 96px;
+      height: 96px;
+      padding: 7px;
+      border-radius: 50%;
+
+      .t-button__icon {
+        margin: 0 auto;
+      }
+    }
+
+    &:not(.t-button--block):not(:first-child) {
+      margin-left: var(--t-space-12);
+    }
+
+    // 块级按钮
+    &.t-button--block:not(:first-child) {
+      margin-top: var(--t-space-12);
+    }
+  }
+
+  // 基础按钮
+  &.t-button--base {
+
+    // 默认主题
+    &.t-button--default {
+      @include base-button;
+    }
+
+    // 主要主题
+    &.t-button--primary {
+      @include base-button(var(--t-text-white-1),
+        var(--t-brand-normal),
+        var(--t-brand-hover),
+        var(--t-brand-click),
+        var(--t-text-white-1),
+        var(--t-brand-disabled),
+      );
+    }
+
+    // 警告主题
+    &.t-button--warning {
+      @include base-button(var(--t-text-white-1),
+        var(--t-warning-normal),
+        var(--t-warning-hover),
+        var(--t-warning-click),
+        var(--t-text-white-1),
+        var(--t-warning-disabled),
+      );
+    }
+
+    // 危险主题
+    &.t-button--danger {
+      @include base-button(var(--t-text-white-1),
+        var(--t-error-normal),
+        var(--t-error-hover),
+        var(--t-error-click),
+        var(--t-text-white-1),
+        var(--t-error-disabled),
+      );
+    }
+
+    // 成功主题
+    &.t-button--success {
+      @include base-button(var(--t-text-white-1),
+        var(--t-success-normal),
+        var(--t-success-hover),
+        var(--t-success-click),
+        var(--t-text-white-1),
+        var(--t-success-disabled),
+      );
+    }
+
+    // 幽灵按钮
+    &.t-button--ghost {
+
+      // 默认主题
+      &.t-button--default {
+        @include button-text;
+      }
+
+      // 主要主题
+      &.t-button--primary {
+        @include button-text(var(--t-brand-normal),
+          var(--t-brand-hover),
+          var(--t-brand-click),
+          var(--t-brand-disabled),
+        );
+      }
+
+      // 警告主题
+      &.t-button--warning {
+        @include button-text(var(--t-warning-normal),
+          var(--t-warning-hover),
+          var(--t-warning-click),
+          var(--t-warning-disabled),
+        );
+      }
+
+      // 危险主题
+      &.t-button--danger {
+        @include button-text(var(--t-error-normal),
+          var(--t-error-hover),
+          var(--t-error-click),
+          var(--t-error-disabled),
+        );
+      }
+
+      // 成功主题
+      &.t-button--success {
+        @include button-text(var(--t-success-normal),
+          var(--t-success-hover),
+          var(--t-success-click),
+          var(--t-success-disabled),
+        );
+      }
+    }
+  }
+
+  // 描边按钮
+  &.t-button--outline {
+
+    // 默认主题
+    &.t-button--default {
+      @include button-outline;
+    }
+
+    // 主要主题
+    &.t-button--primary {
+      @include button-outline(var(--t-brand-normal),
+        var(--t-brand-normal),
+        var(--t-brand-hover),
+        var(--t-brand-click),
+        var(--t-brand-disabled),
+        var(--t-brand-disabled),
+      );
+    }
+
+    // 警告主题
+    &.t-button--warning {
+      @include button-outline(var(--t-warning-normal),
+        var(--t-warning-normal),
+        var(--t-warning-hover),
+        var(--t-warning-click),
+        var(--t-warning-disabled),
+        var(--t-warning-disabled),
+      );
+    }
+
+    // 危险主题
+    &.t-button--danger {
+      @include button-outline(var(--t-error-normal),
+        var(--t-error-normal),
+        var(--t-error-hover),
+        var(--t-error-click),
+        var(--t-error-disabled),
+        var(--t-error-disabled),
+      );
+    }
+
+    // 成功主题
+    &.t-button--success {
+      @include button-outline(var(--t-success-normal),
+        var(--t-success-normal),
+        var(--t-success-hover),
+        var(--t-success-click),
+        var(--t-success-disabled),
+        var(--t-success-disabled),
+      );
+    }
+  }
+
+  // 虚线描边按钮
+  &.t-button--dashed {
+
+    // 默认主题
+    &.t-button--default {
+      @include button-dashed;
+    }
+
+    // 主要主题
+    &.t-button--primary {
+      @include button-dashed(var(--t-brand-normal),
+        var(--t-brand-normal),
+        var(--t-brand-hover),
+        var(--t-brand-click),
+        var(--t-brand-disabled),
+        var(--t-brand-disabled),
+      );
+    }
+
+    // 警告主题
+    &.t-button--warning {
+      @include button-dashed(var(--t-warning-normal),
+        var(--t-warning-normal),
+        var(--t-warning-hover),
+        var(--t-warning-click),
+        var(--t-warning-disabled),
+        var(--t-warning-disabled),
+      );
+    }
+
+    // 危险主题
+    &.t-button--danger {
+      @include button-dashed(var(--t-error-normal),
+        var(--t-error-normal),
+        var(--t-error-hover),
+        var(--t-error-click),
+        var(--t-error-disabled),
+        var(--t-error-disabled),
+      );
+    }
+
+    // 成功主题
+    &.t-button--success {
+      @include button-dashed(var(--t-success-normal),
+        var(--t-success-normal),
+        var(--t-success-hover),
+        var(--t-success-click),
+        var(--t-success-disabled),
+        var(--t-success-disabled),
+      );
+    }
+  }
+
+  // 文本按钮
+  &.t-button--text {
+
+    // 默认主题
+    &.t-button--default {
+      @include button-text;
+    }
+
+    // 主要主题
+    &.t-button--primary {
+      @include button-text(var(--t-brand-normal),
+        var(--t-brand-hover),
+        var(--t-brand-click),
+        var(--t-brand-disabled),
+      );
+    }
+
+    // 警告主题
+    &.t-button--warning {
+      @include button-text(var(--t-warning-normal),
+        var(--t-warning-hover),
+        var(--t-warning-click),
+        var(--t-warning-disabled),
+      );
+    }
+
+    // 危险主题
+    &.t-button--danger {
+      @include button-text(var(--t-error-normal),
+        var(--t-error-hover),
+        var(--t-error-click),
+        var(--t-error-disabled),
+      );
+    }
+
+    // 成功主题
+    &.t-button--success {
+      @include button-text(var(--t-success-normal),
+        var(--t-success-hover),
+        var(--t-success-click),
+        var(--t-success-disabled),
+      );
+    }
+  }
+}

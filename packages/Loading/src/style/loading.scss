@@ -1,0 +1,83 @@
+@import "packages/Style/mixin.scss";
+
+.t-loading {
+  display: inline-flex;
+  align-items: center;
+
+  // 加载指示器
+  .t-loading__indicator {
+    animation: t-rotate 1.2s linear infinite;
+    border-radius: 50%;
+    mask: radial-gradient(transparent calc(50% - 0.5px), #ffffff 50%);
+    background-image: conic-gradient(from 90deg at 50% 50%, rgba(255, 255, 255, 0) 0deg, var(--t-brand-8) 360deg);
+  }
+
+  // 加载文本
+  .t-loading__text {
+    @include t-text-4;
+
+    color: var(--t-brand-8);
+
+    &:not(:first-of-type) {
+      margin-left: var(--t-space-4);
+    }
+  }
+
+  // 小尺寸
+  &.t-loading--small {
+    .t-loading__indicator {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  // 中尺寸
+  &.t-loading--medium {
+    .t-loading__indicator {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  // 大尺寸
+  &.t-loading--large {
+    .t-loading__indicator {
+      width: 56px;
+      height: 56px;
+    }
+  }
+
+  // 居中
+  &.t-loading--center {
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #ffffff, $alpha: 0.6);
+    display: flex;
+    justify-content: center;
+  }
+
+  // 全屏
+  &.t-loading--fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  // 附着
+  &.t-loading--attach {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+// 包裹层
+.t-loading__wrapper {
+  position: relative;
+
+  .t-loading.t-loading--center {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

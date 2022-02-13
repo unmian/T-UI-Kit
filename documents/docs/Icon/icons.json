@@ -1,0 +1,712 @@
+{
+  "common": [
+    {
+      "name": "home"
+    },
+    {
+      "name": "setting"
+    },
+    {
+      "name": "tools"
+    },
+    {
+      "name": "time"
+    },
+    {
+      "name": "time-filled"
+    },
+    {
+      "name": "calendar"
+    },
+    {
+      "name": "menu-application"
+    },
+    {
+      "name": "app"
+    },
+    {
+      "name": "tips"
+    },
+    {
+      "name": "flag"
+    },
+    {
+      "name": "hourglass"
+    },
+    {
+      "name": "notification"
+    },
+    {
+      "name": "notification-filled"
+    },
+    {
+      "name": "pin"
+    },
+    {
+      "name": "books"
+    },
+    {
+      "name": "layers"
+    },
+    {
+      "name": "jump"
+    },
+    {
+      "name": "backtop"
+    },
+    {
+      "name": "backtop-rectangle"
+    },
+    {
+      "name": "secured"
+    },
+    {
+      "name": "code"
+    }
+  ],
+  "business": [
+    {
+      "name": "control.platform"
+    },
+    {
+      "name": "dashboard"
+    },
+    {
+      "name": "precise.monitor"
+    },
+    {
+      "name": "shop"
+    },
+    {
+      "name": "cart"
+    },
+    {
+      "name": "wallet"
+    },
+    {
+      "name": "creditcard"
+    },
+    {
+      "name": "money-circle"
+    },
+    {
+      "name": "discount"
+    },
+    {
+      "name": "discount-filled"
+    },
+    {
+      "name": "thumb-up"
+    },
+    {
+      "name": "thumb-down"
+    },
+    {
+      "name": "gift"
+    },
+    {
+      "name": "service"
+    },
+    {
+      "name": "chat"
+    }
+  ],
+  "media": [
+    {
+      "name": "play"
+    },
+    {
+      "name": "pause"
+    },
+    {
+      "name": "play-circle-stroke"
+    },
+    {
+      "name": "play-circle"
+    },
+    {
+      "name": "pause-circle"
+    },
+    {
+      "name": "stop-circle"
+    },
+    {
+      "name": "play-circle-filled"
+    },
+    {
+      "name": "pause-circle-filled"
+    },
+    {
+      "name": "stop-circle-filled"
+    }
+  ],
+  "operation": [
+    {
+      "name": "add"
+    },
+    {
+      "name": "remove"
+    },
+    {
+      "name": "add-circle"
+    },
+    {
+      "name": "minus-circle"
+    },
+    {
+      "name": "minus-circle-filled"
+    },
+    {
+      "name": "add-rectangle"
+    },
+    {
+      "name": "minus-rectangle"
+    },
+    {
+      "name": "queue"
+    },
+    {
+      "name": "search"
+    },
+    {
+      "name": "zoom-in"
+    },
+    {
+      "name": "zoom-out"
+    },
+    {
+      "name": "browse-off"
+    },
+    {
+      "name": "browse"
+    },
+    {
+      "name": "filter"
+    },
+    {
+      "name": "filter-clear"
+    },
+    {
+      "name": "edit"
+    },
+    {
+      "name": "edit-1"
+    },
+    {
+      "name": "save"
+    },
+    {
+      "name": "delete"
+    },
+    {
+      "name": "slash"
+    },
+    {
+      "name": "clear"
+    },
+    {
+      "name": "rollback"
+    },
+    {
+      "name": "enter"
+    },
+    {
+      "name": "refresh"
+    },
+    {
+      "name": "history"
+    },
+    {
+      "name": "fullsreen"
+    },
+    {
+      "name": "fullscreen-exit"
+    },
+    {
+      "name": "order-adjustment.column"
+    },
+    {
+      "name": "unfold-more"
+    },
+    {
+      "name": "unfold-less"
+    },
+    {
+      "name": "more"
+    },
+    {
+      "name": "ellipsis"
+    },
+    {
+      "name": "move"
+    },
+    {
+      "name": "login"
+    },
+    {
+      "name": "logout"
+    },
+    {
+      "name": "share"
+    },
+    {
+      "name": "print"
+    }
+  ],
+  "arrow": [
+    {
+      "name": "chevron-up"
+    },
+    {
+      "name": "chevron-down"
+    },
+    {
+      "name": "chevron-left"
+    },
+    {
+      "name": "chevron-right"
+    },
+    {
+      "name": "caret-up"
+    },
+    {
+      "name": "caret-down"
+    },
+    {
+      "name": "caret-left"
+    },
+    {
+      "name": "caret-right"
+    },
+    {
+      "name": "caret-up-small"
+    },
+    {
+      "name": "caret-down-small"
+    },
+    {
+      "name": "caret-left-small"
+    },
+    {
+      "name": "caret-right-small"
+    },
+    {
+      "name": "chevron-up-circle"
+    },
+    {
+      "name": "chevron-down-circle"
+    },
+    {
+      "name": "chevron-left-circle"
+    },
+    {
+      "name": "chevron-right-circle"
+    },
+    {
+      "name": "chevron-up-rectangle"
+    },
+    {
+      "name": "chevron-down-rectangle"
+    },
+    {
+      "name": "chevron-left-rectangle"
+    },
+    {
+      "name": "chevron-right-rectangle"
+    },
+    {
+      "name": "arrow-up"
+    },
+    {
+      "name": "arrow-down"
+    },
+    {
+      "name": "arrow-left"
+    },
+    {
+      "name": "arrow-right"
+    },
+    {
+      "name": "arrow-down-rectangle"
+    },
+    {
+      "name": "page-first"
+    },
+    {
+      "name": "page-last"
+    },
+    {
+      "name": "chevron-left.double"
+    },
+    {
+      "name": "chevron-right.double"
+    },
+    {
+      "name": "previous"
+    },
+    {
+      "name": "next"
+    },
+    {
+      "name": "backward"
+    },
+    {
+      "name": "forward"
+    },
+    {
+      "name": "swap"
+    },
+    {
+      "name": "swap-left"
+    },
+    {
+      "name": "swap-right"
+    }
+  ],
+  "info": [
+    {
+      "name": "close"
+    },
+    {
+      "name": "check"
+    },
+    {
+      "name": "error"
+    },
+    {
+      "name": "help"
+    },
+    {
+      "name": "close-circle"
+    },
+    {
+      "name": "close-circle-filled"
+    },
+    {
+      "name": "check-circle"
+    },
+    {
+      "name": "check-circle-filled"
+    },
+    {
+      "name": "info-circle"
+    },
+    {
+      "name": "info-circle-filled"
+    },
+    {
+      "name": "error-circle"
+    },
+    {
+      "name": "error-circle-filled"
+    },
+    {
+      "name": "help-circle"
+    },
+    {
+      "name": "help-circle-filled"
+    },
+    {
+      "name": "close-rectangle"
+    },
+    {
+      "name": "check-rectangle"
+    },
+    {
+      "name": "check-rectangle-filled"
+    }
+  ],
+  "platform": [
+    {
+      "name": "mobile"
+    },
+    {
+      "name": "mobile-vibrate"
+    },
+    {
+      "name": "desktop"
+    },
+    {
+      "name": "laptop"
+    },
+    {
+      "name": "server"
+    },
+    {
+      "name": "cloud"
+    },
+    {
+      "name": "poweroff"
+    },
+    {
+      "name": "usb"
+    },
+    {
+      "name": "internet"
+    },
+    {
+      "name": "fork"
+    },
+    {
+      "name": "logo-windows"
+    },
+    {
+      "name": "logo-windows-filled"
+    },
+    {
+      "name": "logo-ie"
+    },
+    {
+      "name": "logo-ie-filled"
+    },
+    {
+      "name": "logo-chrome"
+    },
+    {
+      "name": "logo-chrome-filled"
+    },
+    {
+      "name": "logo-github"
+    },
+    {
+      "name": "logo-github-filled"
+    },
+    {
+      "name": "logo-codepen"
+    }
+  ],
+  "mobile": [
+    {
+      "name": "call"
+    },
+    {
+      "name": "mail"
+    },
+    {
+      "name": "sound"
+    },
+    {
+      "name": "wifi"
+    },
+    {
+      "name": "location"
+    },
+    {
+      "name": "link"
+    },
+    {
+      "name": "link-unlink"
+    },
+    {
+      "name": "lock-on"
+    },
+    {
+      "name": "lock-off"
+    },
+    {
+      "name": "photo"
+    },
+    {
+      "name": "scan"
+    },
+    {
+      "name": "logo-android"
+    },
+    {
+      "name": "logo-apple"
+    },
+    {
+      "name": "logo-apple-filled"
+    }
+  ],
+  "user": [
+    {
+      "name": "gender-male"
+    },
+    {
+      "name": "gender-female"
+    },
+    {
+      "name": "user"
+    },
+    {
+      "name": "user-add"
+    },
+    {
+      "name": "user-clear"
+    },
+    {
+      "name": "usergroup"
+    },
+    {
+      "name": "usergroup-add"
+    },
+    {
+      "name": "usergroup-clear"
+    },
+    {
+      "name": "user-avatar"
+    },
+    {
+      "name": "user-circle"
+    },
+    {
+      "name": "user-talk"
+    }
+  ],
+  "file": [
+    {
+      "name": "attach"
+    },
+    {
+      "name": "upload"
+    },
+    {
+      "name": "download"
+    },
+    {
+      "name": "cloud-download"
+    },
+    {
+      "name": "cloud-upload"
+    },
+    {
+      "name": "image"
+    },
+    {
+      "name": "video"
+    },
+    {
+      "name": "root-list"
+    },
+    {
+      "name": "file"
+    },
+    {
+      "name": "file-add"
+    },
+    {
+      "name": "file-copy"
+    },
+    {
+      "name": "file-paste"
+    },
+    {
+      "name": "folder"
+    },
+    {
+      "name": "folder-open"
+    },
+    {
+      "name": "folder-add"
+    },
+    {
+      "name": "file-image"
+    },
+    {
+      "name": "file-word"
+    },
+    {
+      "name": "file-excel"
+    },
+    {
+      "name": "file-powerpoint"
+    },
+    {
+      "name": "file-pdf"
+    },
+    {
+      "name": "file-unknown"
+    }
+  ],
+  "layout": [
+    {
+      "name": "view-module"
+    },
+    {
+      "name": "view-list"
+    },
+    {
+      "name": "view-column"
+    },
+    {
+      "name": "format-vertical-align-left"
+    },
+    {
+      "name": "format-vertical-align-center"
+    },
+    {
+      "name": "format-vertical-align-right"
+    },
+    {
+      "name": "format-horizontal-align-top"
+    },
+    {
+      "name": "format-horizontal-align-top"
+    },
+    {
+      "name": "format-horizontal-align-center"
+    },
+    {
+      "name": "format-horizontal-align-bottom"
+    },
+    {
+      "name": "order-descending"
+    },
+    {
+      "name": "order-ascending"
+    },
+    {
+      "name": "menu-fold"
+    },
+    {
+      "name": "menu-unfold"
+    },
+    {
+      "name": "bulletpoint"
+    }
+  ],
+  "chart": [
+    {
+      "name": "chart"
+    },
+    {
+      "name": "chart-bubble"
+    },
+    {
+      "name": "chart-pie"
+    },
+    {
+      "name": "chart-bar"
+    },
+    {
+      "name": "barcode"
+    },
+    {
+      "name": "qrcode"
+    }
+  ],
+  "shape": [
+    {
+      "name": "round"
+    },
+    {
+      "name": "circle"
+    },
+    {
+      "name": "rectangle"
+    },
+    {
+      "name": "heart"
+    },
+    {
+      "name": "heart-filled"
+    },
+    {
+      "name": "star"
+    },
+    {
+      "name": "star-filled"
+    }
+  ]
+}

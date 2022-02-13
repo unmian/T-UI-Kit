@@ -1,0 +1,384 @@
+@import "packages/Style/mixin.scss";
+
+div.t-progress {
+  display: flex;
+  align-items: center;
+
+  // 线形进度条
+  &.t-progress--line {
+
+    // 进度条
+    .t-progress__bar {
+      width: calc(100% - 3.5em);
+      background-color: var(--t-neutral-1-gray-3);
+
+      .t-progress__inner {
+        width: 0;
+        background-color: var(--t-brand-normal);
+      }
+    }
+
+    // 进度条信息
+    .t-progress__info {
+      width: 3.5em;
+      color: var(--t-text-gray-1);
+      text-align: center;
+    }
+
+    // 成功状态
+    &.t-progress--success {
+
+      // 进度条
+      .t-progress__inner {
+        background-color: var(--t-success-normal);
+      }
+
+      // 进度条信息
+      .t-progress__info {
+        color: var(--t-success-normal);
+      }
+    }
+
+    // 警告状态
+    &.t-progress--warning {
+
+      // 进度条
+      .t-progress__inner {
+        background-color: var(--t-warning-normal);
+      }
+
+      // 进度条信息
+      .t-progress__info {
+        color: var(--t-warning-normal);
+      }
+    }
+
+    // 危险状态
+    &.t-progress--danger {
+
+      // 进度条
+      .t-progress__inner {
+        background-color: var(--t-error-normal);
+      }
+
+      // 进度条信息
+      .t-progress__info {
+        color: var(--t-error-normal);
+      }
+    }
+  }
+
+  // 粗线形进度条
+  &.t-progress--plump {
+
+    // 进度条
+    .t-progress__bar {
+      width: 100%;
+      background-color: var(--t-neutral-1-gray-3);
+      display: flex;
+      align-items: center;
+
+      .t-progress__inner {
+        width: 0;
+        background-color: var(--t-brand-normal);
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .t-progress__info {
+          color: var(--t-text-white-1);
+        }
+      }
+    }
+
+    // 提示信息
+    .t-progress__bar>.t-progress__info {
+      color: var(--t-text-gray-1);
+    }
+
+    // 成功状态
+    &.t-progress--success {
+
+      // 进度条
+      .t-progress__inner {
+        background-color: var(--t-success-normal);
+      }
+
+      // 进度条信息
+      .t-progress__bar>.t-progress__info {
+        color: var(--t-success-normal);
+      }
+    }
+
+    // 警告状态
+    &.t-progress--warning {
+
+      // 进度条
+      .t-progress__inner {
+        background-color: var(--t-warning-normal);
+      }
+
+      // 进度条信息
+      .t-progress__bar>.t-progress__info {
+        color: var(--t-warning-normal);
+      }
+    }
+
+    // 危险状态
+    &.t-progress--danger {
+
+      // 进度条
+      .t-progress__inner {
+        background-color: var(--t-error-normal);
+      }
+
+      // 进度条信息
+      .t-progress__bar>.t-progress__info {
+        color: var(--t-error-normal);
+      }
+    }
+  }
+
+  // 环形进度条
+  &.t-progress--circle {
+    position: relative;
+
+    // 进度条信息
+    .t-progress__info {
+      width: 100%;
+      color: var(--t-text-gray-1);
+      text-align: center;
+      transform: translateY(-50%);
+      position: absolute;
+      top: 50%;
+      left: 0;
+    }
+
+    // 外层环
+    .t-progress__circle-outer {
+      stroke: var(--t-neutral-1-gray-3);
+    }
+
+    // 内层环
+    .t-progress__circle-inner {
+      stroke: var(--t-brand-normal);
+    }
+
+    // 成功状态
+    &.t-progress--success {
+
+      // 进度条
+      .t-progress__circle-inner {
+        stroke: var(--t-success-normal);
+      }
+
+      // 进度条信息
+      .t-progress__info {
+        color: var(--t-success-normal);
+      }
+    }
+
+    // 警告状态
+    &.t-progress--warning {
+
+      // 进度条
+      .t-progress__circle-inner {
+        stroke: var(--t-warning-normal);
+      }
+
+      // 进度条信息
+      .t-progress__info {
+        color: var(--t-warning-normal);
+      }
+    }
+
+    // 危险状态
+    &.t-progress--danger {
+
+      // 进度条
+      .t-progress__circle-inner {
+        stroke: var(--t-error-normal);
+      }
+
+      // 进度条信息
+      .t-progress__info {
+        color: var(--t-error-normal);
+      }
+    }
+  }
+
+  // 小型尺寸
+  &.t-progress--small {
+
+    // 线形进度条
+    &.t-progress--line {
+      @include t-text-5;
+
+      .t-progress__bar,
+      .t-progress__inner {
+        height: 4px;
+        border-radius: 2px;
+      }
+
+      &.t-progress--success .t-progress__info,
+      &.t-progress--warning .t-progress__info,
+      &.t-progress--danger .t-progress__info {
+        @include t-text-1;
+      }
+    }
+
+    // 粗线形进度条
+    &.t-progress--plump {
+      @include t-text-5;
+
+      .t-progress__bar,
+      .t-progress__inner {
+        height: 16px;
+        border-radius: 8px;
+      }
+
+      .t-progress__inner,
+      .t-progress__bar>.t-progress__info {
+        padding: 0 8px;
+      }
+
+      &.t-progress--success .t-progress__info,
+      &.t-progress--warning .t-progress__info,
+      &.t-progress--danger .t-progress__info {
+        @include t-text-4;
+      }
+    }
+
+    // 环形进度条
+    &.t-progress--circle {
+      @include t-text-bold-4;
+
+      width: 72px;
+      height: 72px;
+
+      &.t-progress--success .t-progress__info,
+      &.t-progress--warning .t-progress__info,
+      &.t-progress--danger .t-progress__info {
+        font-size: 36px;
+        font-weight: normal;
+      }
+    }
+  }
+
+  // 中型尺寸
+  &.t-progress--medium {
+
+    // 线形进度条
+    &.t-progress--line {
+      @include t-text-4;
+
+      .t-progress__bar,
+      .t-progress__inner {
+        height: 6px;
+        border-radius: 3px;
+      }
+
+      &.t-progress--success .t-progress__info,
+      &.t-progress--warning .t-progress__info,
+      &.t-progress--danger .t-progress__info {
+        @include t-text-3;
+      }
+    }
+
+    // 粗线形进度条
+    &.t-progress--plump {
+      @include t-text-5;
+
+      .t-progress__bar,
+      .t-progress__inner {
+        height: 20px;
+        border-radius: 10px;
+      }
+
+      .t-progress__inner,
+      .t-progress__bar>.t-progress__info {
+        padding: 0 10px;
+      }
+
+      &.t-progress--success .t-progress__info,
+      &.t-progress--warning .t-progress__info,
+      &.t-progress--danger .t-progress__info {
+        @include t-text-4;
+      }
+    }
+
+    // 环形进度条
+    &.t-progress--circle {
+      @include t-text-bold-2;
+
+      width: 112px;
+      height: 112px;
+
+      &.t-progress--success .t-progress__info,
+      &.t-progress--warning .t-progress__info,
+      &.t-progress--danger .t-progress__info {
+        font-size: 48px;
+        font-weight: normal;
+      }
+    }
+  }
+
+  // 大型尺寸
+  &.t-progress--large {
+
+    // 线形进度条
+    &.t-progress--line {
+      @include t-text-3;
+
+      .t-progress__bar,
+      .t-progress__inner {
+        height: 8px;
+        border-radius: 4px;
+      }
+
+      &.t-progress--success .t-progress__info,
+      &.t-progress--warning .t-progress__info,
+      &.t-progress--danger .t-progress__info {
+        @include t-text-2;
+      }
+    }
+
+    // 粗线形进度条
+    &.t-progress--plump {
+      @include t-text-4;
+
+      .t-progress__bar,
+      .t-progress__inner {
+        height: 24px;
+        border-radius: 12px;
+      }
+
+      .t-progress__inner,
+      .t-progress__bar>.t-progress__info {
+        padding: 0 12px;
+      }
+
+      &.t-progress--success .t-progress__info,
+      &.t-progress--warning .t-progress__info,
+      &.t-progress--danger .t-progress__info {
+        @include t-text-3;
+      }
+    }
+
+    // 环形进度条
+    &.t-progress--circle {
+      @include t-text-bold-2;
+
+      width: 160px;
+      height: 160px;
+
+      &.t-progress--success .t-progress__info,
+      &.t-progress--warning .t-progress__info,
+      &.t-progress--danger .t-progress__info {
+        font-size: 64px;
+        font-weight: normal;
+      }
+    }
+  }
+}

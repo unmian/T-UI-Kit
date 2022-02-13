@@ -1,0 +1,159 @@
+// 按钮加载动画扩展
+@mixin button-loading($color: #ffffff) {
+  mask: radial-gradient(transparent calc(50% - 0.5px), #ffffff 50%);
+  background-image: conic-gradient(from 90deg at 50% 50%, rgba(255, 255, 255, 0) 0deg, $color 360deg);
+}
+
+// 基础按钮样式扩展
+@mixin base-button($font-color: var(--t-text-gray-1),
+  $background-color: var(--t-neutral-1-gray-3),
+  $background-hover-color: var(--t-neutral-1-gray-4),
+  $background-active-color: var(--t-neutral-1-gray-5),
+  $disabled-color: var(--t-text-gray-4),
+  $background-disabled-color: var(--t-neutral-1-gray-2),
+) {
+  color: $font-color;
+
+  &:not(.t-button--ghost) {
+    background-color: $background-color;
+  }
+
+  .t-button__loading {
+    @include button-loading($disabled-color);
+  }
+
+  &:not(.t-button--ghost):not(:disabled):hover {
+    background-color: $background-hover-color;
+  }
+
+  &:not(.t-button--ghost):not(:disabled):active {
+    background-color: $background-active-color;
+  }
+
+  &:disabled {
+    color: $disabled-color;
+
+    &:not(.t-button--ghost) {
+      background-color: $background-disabled-color;
+    }
+  }
+}
+
+// 描边按钮样式扩展
+@mixin button-outline($font-color: var(--t-text-gray-1),
+  $border-color: var(--t-neutral-1-gray-3),
+  $hover-color: var(--t-brand-hover),
+  $active-color: var(--t-brand-click),
+  $text-disabled-color: var(--t-text-gray-4),
+  $border-disabled-color: var(--t-neutral-1-gray-4),
+) {
+  color: $font-color;
+  border: 1px solid $border-color;
+
+  &:not(.t-button--ghost) {
+    background-color: white;
+  }
+
+  .t-button__loading {
+    @include button-loading($text-disabled-color);
+  }
+
+  &:not(:disabled):hover {
+    color: $hover-color;
+    border-color: $hover-color;
+  }
+
+  &:not(:disabled):active {
+    color: $active-color;
+    border-color: $active-color;
+
+    &:not(.t-button--ghost) {
+      background-color: var(--t-neutral-1-gray-3);
+    }
+  }
+
+  &:disabled {
+    color: $text-disabled-color;
+    border-color: $border-disabled-color;
+
+    &:not(.t-button--ghost) {
+      background-color: var(--t-neutral-1-gray-2);
+    }
+  }
+}
+
+// 虚线描边按钮样式混淆器
+@mixin button-dashed($font-color: var(--t-text-gray-1),
+  $border-color: var(--t-neutral-1-gray-3),
+  $hover-color: var(--t-brand-hover),
+  $active-color: var(--t-brand-click),
+  $text-disabled-color: var(--t-text-gray-4),
+  $border-disabled-color: var(--t-neutral-1-gray-4),
+) {
+  color: $font-color;
+  border: 1px dashed $border-color;
+
+  &:not(.t-button--ghost) {
+    background-color: white;
+  }
+
+  .t-button__loading {
+    @include button-loading($text-disabled-color);
+  }
+
+  &:not(:disabled):hover {
+    color: $hover-color;
+    border-color: $hover-color;
+  }
+
+  &:not(:disabled):active {
+    color: $active-color;
+    border-color: $active-color;
+
+    &:not(.t-button--ghost) {
+      background-color: var(--t-neutral-1-gray-3);
+    }
+  }
+
+  &:disabled {
+    color: $text-disabled-color;
+    border-color: $border-disabled-color;
+
+    &:not(.t-button--ghost) {
+      background-color: var(--t-neutral-1-gray-2);
+    }
+  }
+}
+
+// 文本按钮样式扩展
+@mixin button-text($font-color: var(--t-text-gray-1),
+  $hover-color: var(--t-text-gray-1),
+  $active-color: var(--t-text-gray-1),
+  $disabled-color: var(--t-text-gray-4),
+) {
+  color: $font-color;
+
+  .t-button__loading {
+    @include button-loading($disabled-color);
+  }
+
+  &:not(:disabled):hover {
+    color: $hover-color;
+
+    &:not(.t-button--ghost) {
+      background-color: var(--t-neutral-1-gray-1);
+    }
+  }
+
+  &:not(:disabled):active {
+    color: $active-color;
+
+    &:not(.t-button--ghost) {
+      background-color: var(--t-neutral-1-gray-3);
+    }
+  }
+
+  &:disabled {
+    color: $disabled-color;
+  }
+}

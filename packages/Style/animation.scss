@@ -1,0 +1,176 @@
+// 旋转动画
+@keyframes t-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// 渐隐过渡
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.24s linear;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+// 滑入滑出动画
+.slide-top-enter-active,
+.slide-top-leave-active,
+.slide-bottom-enter-active,
+.slide-bottom-leave-active,
+.slide-left-enter-active,
+.slide-left-leave-active,
+.slide-right-enter-active,
+.slide-right-leave-active,
+.slide-top-bottom-enter-active,
+.slide-top-bottom-leave-active,
+.slide-bottom-top-enter-active,
+.slide-bottom-top-leave-active,
+.slide-left-right-enter-active,
+.slide-left-right-leave-active,
+.slide-right-left-enter-active,
+.slide-right-left-leave-active {
+  transition: all 0.48s ease;
+}
+
+.slide-bottom-enter-from,
+.slide-bottom-top-enter-from,
+.slide-bottom-leave-to,
+.slide-top-bottom-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.slide-top-enter-from,
+.slide-top-bottom-enter-from,
+.slide-top-leave-to,
+.slide-bottom-top-leave-to {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.slide-right-enter-from,
+.slide-right-left-enter-from,
+.slide-right-leave-to,
+.slide-left-right-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+.slide-left-enter-from,
+.slide-left-right-enter-from,
+.slide-left-leave-to,
+.slide-right-left-leave-to {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.slide-top-60-enter-active,
+.slide-top-60-leave-active,
+.slide-bottom-60-enter-active,
+.slide-bottom-60-leave-active,
+.slide-left-60-enter-active,
+.slide-left-60-leave-active,
+.slide-right-60-enter-active,
+.slide-right-60-leave-active,
+.slide-top-bottom-60-enter-active,
+.slide-top-bottom-60-leave-active,
+.slide-bottom-top-60-enter-active,
+.slide-bottom-top-60-leave-active,
+.slide-left-right-60-enter-active,
+.slide-left-right-60-leave-active,
+.slide-right-left-60-enter-active,
+.slide-right-left-60-leave-active {
+  transition: all 0.48s ease;
+}
+
+.slide-bottom-60-enter-from,
+.slide-bottom-top-60-enter-from,
+.slide-bottom-60-leave-to,
+.slide-top-bottom-60-leave-to {
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+.slide-top-60-enter-from,
+.slide-top-bottom-60-enter-from,
+.slide-top-60-leave-to,
+.slide-bottom-top-60-leave-to {
+  opacity: 0;
+  transform: translateY(-60px);
+}
+
+.slide-right-60-enter-from,
+.slide-right-left-60-enter-from,
+.slide-right-60-leave-to,
+.slide-left-right-60-leave-to {
+  opacity: 0;
+  transform: translateX(60px);
+}
+
+.slide-left-60-enter-from,
+.slide-left-right-60-enter-from,
+.slide-left-60-leave-to,
+.slide-right-left-60-leave-to {
+  opacity: 0;
+  transform: translateX(-60px);
+}
+
+.slide-top-half-enter-active,
+.slide-top-half-leave-active,
+.slide-bottom-half-enter-active,
+.slide-bottom-half-leave-active,
+.slide-left-half-enter-active,
+.slide-left-half-leave-active,
+.slide-right-half-enter-active,
+.slide-right-half-leave-active,
+.slide-top-bottom-half-enter-active,
+.slide-top-bottom-half-leave-active,
+.slide-bottom-top-half-enter-active,
+.slide-bottom-top-half-leave-active,
+.slide-left-right-half-enter-active,
+.slide-left-right-half-leave-active,
+.slide-right-left-half-enter-active,
+.slide-right-left-half-leave-active {
+  transform: translateX(0) translateY(0);
+  transition: all 0.48s ease;
+}
+
+.slide-bottom-half-enter-from,
+.slide-bottom-top-half-enter-from,
+.slide-bottom-half-leave-to,
+.slide-top-bottom-half-leave-to {
+  opacity: 0;
+  transform: translateY(50%);
+}
+
+.slide-top-half-enter-from,
+.slide-top-bottom-half-enter-from,
+.slide-top-half-leave-to,
+.slide-bottom-top-half-leave-to {
+  opacity: 0;
+  transform: translateY(-50%);
+}
+
+.slide-right-half-enter-from,
+.slide-right-left-half-enter-from,
+.slide-right-half-leave-to,
+.slide-left-right-half-leave-to {
+  opacity: 0;
+  transform: translateX(50%);
+}
+
+.slide-left-half-enter-from,
+.slide-left-right-half-enter-from,
+.slide-left-half-leave-to,
+.slide-right-left-half-leave-to {
+  opacity: 0;
+  transform: translateX(-50%);
+}
