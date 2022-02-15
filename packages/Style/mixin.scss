@@ -1,0 +1,85 @@
+// 一级文字
+@mixin t-text-1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+@mixin t-text-bold-1 {
+  @include t-text-1;
+
+  font-weight: bold;
+}
+
+// 二级文字
+@mixin t-text-2 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@mixin t-text-bold-2 {
+  @include t-text-2;
+
+  font-weight: bold;
+}
+
+// 三级文字
+@mixin t-text-3 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin t-text-bold-3 {
+  @include t-text-3;
+
+  font-weight: bold;
+}
+
+// 四级文字
+@mixin t-text-4 {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+@mixin t-text-bold-4 {
+  @include t-text-4;
+
+  font-weight: bold;
+}
+
+// 五级文字
+@mixin t-text-5 {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+@mixin t-text-bold-5 {
+  @include t-text-5;
+
+  font-weight: bold;
+}
+
+// 基础阴影
+@mixin t-bottom-shadow($color: #000000) {
+  box-shadow: 0 1px 10px 0 rgba($color: $color, $alpha: 0.1),
+    0 4px 5px 0 rgba($color: $color, $alpha: 0.08),
+    0 2px 4px -1px rgba($color: $color, $alpha: 0.12);
+}
+
+// 中层阴影
+@mixin t-middle-shadow($color: #000000) {
+  box-shadow: 0 3px 14px 2px rgba($color: $color, $alpha: 0.05),
+    0 8px 10px 1px rgba($color: $color, $alpha: 0.06),
+    0 5px 5px -3px rgba($color: $color, $alpha: 0.1);
+}
+
+// 上层阴影
+@mixin t-top-shadow($color: #000000) {
+  box-shadow: 0 6px 30px 5px rgba($color: $color, $alpha: 0.05),
+    0 16px 24px 2px rgba($color: $color, $alpha: 0.04),
+    0 8px 10px -5px rgba($color: $color, $alpha: 0.08);
+}
+
+// 圆角
+@mixin t-radius {
+  border-radius: 3px;
+}

@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+    ],
+    "baseUrl": ".", // paths 路径解析起点
+    "types": [
+      "unplugin-vue2-script-setup/types"
+    ],
+    "paths": {
+      "documents/*": [
+        "documents/*"
+      ], // 别名路径设置
+      "packages/*": [
+        "packages/*"
+      ] // 别名路径设置
+    }
+  },
+  "vueCompilerOptions": {
+    "experimentalCompatMode": 2
+  },
+  "include": [
+    "documents/**/*.ts",
+    "documents/**/*.d.ts",
+    "documents/**/*.tsx",
+    "documents/**/*.vue",
+    "documents/**/*.md",
+    "packages/**/*.ts",
+    "packages/**/*.d.ts",
+    "packages/**/*.d.tsx",
+    "packages/**/*.vue",
+    "packages/**/*.md",
+  ]
+}

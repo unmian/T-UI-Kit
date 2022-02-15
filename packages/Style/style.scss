@@ -1,0 +1,145 @@
+@import "./var.scss";
+
+:root {
+  // 品牌色
+  --t-brand-1: #{map-get($map: $theme-color, $key: t-brand-1)};
+  --t-brand-2: #{map-get($map: $theme-color, $key: t-brand-2)};
+  --t-brand-3: #{map-get($map: $theme-color, $key: t-brand-3)};
+  --t-brand-4: #{map-get($map: $theme-color, $key: t-brand-4)};
+  --t-brand-5: #{map-get($map: $theme-color, $key: t-brand-5)};
+  --t-brand-6: #{map-get($map: $theme-color, $key: t-brand-6)};
+  --t-brand-7: #{map-get($map: $theme-color, $key: t-brand-7)};
+  --t-brand-8: #{map-get($map: $theme-color, $key: t-brand-8)};
+  --t-brand-9: #{map-get($map: $theme-color, $key: t-brand-9)};
+  --t-brand-10: #{map-get($map: $theme-color, $key: t-brand-10)};
+  // 错误色
+  --t-error-1: #{map-get($map: $theme-color, $key: t-error-1)};
+  --t-error-2: #{map-get($map: $theme-color, $key: t-error-2)};
+  --t-error-3: #{map-get($map: $theme-color, $key: t-error-3)};
+  --t-error-4: #{map-get($map: $theme-color, $key: t-error-4)};
+  --t-error-5: #{map-get($map: $theme-color, $key: t-error-5)};
+  --t-error-6: #{map-get($map: $theme-color, $key: t-error-6)};
+  --t-error-7: #{map-get($map: $theme-color, $key: t-error-7)};
+  --t-error-8: #{map-get($map: $theme-color, $key: t-error-8)};
+  --t-error-9: #{map-get($map: $theme-color, $key: t-error-9)};
+  --t-error-10: #{map-get($map: $theme-color, $key: t-error-10)};
+  // 警告色
+  --t-warning-1: #{map-get($map: $theme-color, $key: t-warning-1)};
+  --t-warning-2: #{map-get($map: $theme-color, $key: t-warning-2)};
+  --t-warning-3: #{map-get($map: $theme-color, $key: t-warning-3)};
+  --t-warning-4: #{map-get($map: $theme-color, $key: t-warning-4)};
+  --t-warning-5: #{map-get($map: $theme-color, $key: t-warning-5)};
+  --t-warning-6: #{map-get($map: $theme-color, $key: t-warning-6)};
+  --t-warning-7: #{map-get($map: $theme-color, $key: t-warning-7)};
+  --t-warning-8: #{map-get($map: $theme-color, $key: t-warning-8)};
+  --t-warning-9: #{map-get($map: $theme-color, $key: t-warning-9)};
+  --t-warning-10: #{map-get($map: $theme-color, $key: t-warning-10)};
+  // 安全色
+  --t-success-1: #{map-get($map: $theme-color, $key: t-success-1)};
+  --t-success-2: #{map-get($map: $theme-color, $key: t-success-2)};
+  --t-success-3: #{map-get($map: $theme-color, $key: t-success-3)};
+  --t-success-4: #{map-get($map: $theme-color, $key: t-success-4)};
+  --t-success-5: #{map-get($map: $theme-color, $key: t-success-5)};
+  --t-success-6: #{map-get($map: $theme-color, $key: t-success-6)};
+  --t-success-7: #{map-get($map: $theme-color, $key: t-success-7)};
+  --t-success-8: #{map-get($map: $theme-color, $key: t-success-8)};
+  --t-success-9: #{map-get($map: $theme-color, $key: t-success-9)};
+  --t-success-10: #{map-get($map: $theme-color, $key: t-success-10)};
+  // 品牌行为色
+  --t-brand-light: #{map-get($map: $global, $key: t-brand-light)};
+  --t-brand-focus: #{map-get($map: $global, $key: t-brand-focus)};
+  --t-brand-disabled : #{map-get($map: $global, $key: t-brand-disabled)};
+  --t-brand-hover : #{map-get($map: $global, $key: t-brand-hover)};
+  --t-brand-normal : #{map-get($map: $global, $key: t-brand-normal)};
+  --t-brand-click : #{map-get($map: $global, $key: t-brand-click)};
+  // 错误行为颜色
+  --t-error-light : #{map-get($map: $global, $key: t-error-light)};
+  --t-error-focus : #{map-get($map: $global, $key: t-error-focus)};
+  --t-error-disabled : #{map-get($map: $global, $key: t-error-disabled)};
+  --t-error-hover : #{map-get($map: $global, $key: t-error-hover)};
+  --t-error-normal : #{map-get($map: $global, $key: t-error-normal)};
+  --t-error-click : #{map-get($map: $global, $key: t-error-click)};
+  // 警告行为颜色
+  --t-warning-light : #{map-get($map: $global, $key: t-warning-light)};
+  --t-warning-focus : #{map-get($map: $global, $key: t-warning-focus)};
+  --t-warning-disabled : #{map-get($map: $global, $key: t-warning-disabled)};
+  --t-warning-hover : #{map-get($map: $global, $key: t-warning-hover)};
+  --t-warning-normal : #{map-get($map: $global, $key: t-warning-normal)};
+  --t-warning-click : #{map-get($map: $global, $key: t-warning-click)};
+  // 安全行为颜色
+  --t-success-light : #{map-get($map: $global, $key: t-success-light)};
+  --t-success-focus : #{map-get($map: $global, $key: t-success-focus)};
+  --t-success-disabled : #{map-get($map: $global, $key: t-success-disabled)};
+  --t-success-hover : #{map-get($map: $global, $key: t-success-hover)};
+  --t-success-normal : #{map-get($map: $global, $key: t-success-normal)};
+  --t-success-click : #{map-get($map: $global, $key: t-success-click)};
+  // 暗色字体色
+  --t-text-gray-1 : #{map-get($map: $global, $key: t-text-gray-1)};
+  --t-text-gray-2 : #{map-get($map: $global, $key: t-text-gray-2)};
+  --t-text-gray-3 : #{map-get($map: $global, $key: t-text-gray-3)};
+  --t-text-gray-4 : #{map-get($map: $global, $key: t-text-gray-4)};
+  // 暗色字体色
+  --t-text-white-1 : #{map-get($map: $global, $key: t-text-white-1)};
+  --t-text-white-2 : #{map-get($map: $global, $key: t-text-white-2)};
+  --t-text-white-3 : #{map-get($map: $global, $key: t-text-white-3)};
+  --t-text-white-4 : #{map-get($map: $global, $key: t-text-white-4)};
+  // 暗色中性色
+  --t-neutral-1-white-1 : #{map-get($map: $global, $key: t-neutral-1-white-1)};
+  --t-neutral-1-gray-1 : #{map-get($map: $global, $key: t-neutral-1-gray-1)};
+  --t-neutral-1-gray-2 : #{map-get($map: $global, $key: t-neutral-1-gray-2)};
+  --t-neutral-1-gray-3 : #{map-get($map: $global, $key: t-neutral-1-gray-3)};
+  --t-neutral-1-gray-4 : #{map-get($map: $global, $key: t-neutral-1-gray-4)};
+  --t-neutral-1-gray-5 : #{map-get($map: $global, $key: t-neutral-1-gray-5)};
+  --t-neutral-1-gray-6 : #{map-get($map: $global, $key: t-neutral-1-gray-6)};
+  --t-neutral-1-gray-7 : #{map-get($map: $global, $key: t-neutral-1-gray-7)};
+  --t-neutral-1-gray-8 : #{map-get($map: $global, $key: t-neutral-1-gray-8)};
+  --t-neutral-1-gray-9 : #{map-get($map: $global, $key: t-neutral-1-gray-9)};
+  --t-neutral-1-gray-10 : #{map-get($map: $global, $key: t-neutral-1-gray-10)};
+  --t-neutral-1-gray-11 : #{map-get($map: $global, $key: t-neutral-1-gray-11)};
+  --t-neutral-1-gray-12 : #{map-get($map: $global, $key: t-neutral-1-gray-12)};
+  --t-neutral-1-gray-13 : #{map-get($map: $global, $key: t-neutral-1-gray-13)};
+  --t-neutral-1-gray-14 : #{map-get($map: $global, $key: t-neutral-1-gray-14)};
+  // 亮色中性色
+  --t-neutral-2-white-1 : #{map-get($map: $global, $key: t-neutral-2-white-1)};
+  --t-neutral-2-gray-1 : #{map-get($map: $global, $key: t-neutral-2-gray-1)};
+  --t-neutral-2-gray-2 : #{map-get($map: $global, $key: t-neutral-2-gray-2)};
+  --t-neutral-2-gray-3 : #{map-get($map: $global, $key: t-neutral-2-gray-3)};
+  --t-neutral-2-gray-4 : #{map-get($map: $global, $key: t-neutral-2-gray-4)};
+  --t-neutral-2-gray-5 : #{map-get($map: $global, $key: t-neutral-2-gray-5)};
+  --t-neutral-2-gray-6 : #{map-get($map: $global, $key: t-neutral-2-gray-6)};
+  --t-neutral-2-gray-7 : #{map-get($map: $global, $key: t-neutral-2-gray-7)};
+  --t-neutral-2-gray-8 : #{map-get($map: $global, $key: t-neutral-2-gray-8)};
+  --t-neutral-2-gray-9 : #{map-get($map: $global, $key: t-neutral-2-gray-9)};
+  --t-neutral-2-gray-10 : #{map-get($map: $global, $key: t-neutral-2-gray-10)};
+  --t-neutral-2-gray-11 : #{map-get($map: $global, $key: t-neutral-2-gray-11)};
+  --t-neutral-2-gray-12 : #{map-get($map: $global, $key: t-neutral-2-gray-12)};
+  --t-neutral-2-gray-13 : #{map-get($map: $global, $key: t-neutral-2-gray-13)};
+  --t-neutral-2-gray-14 : #{map-get($map: $global, $key: t-neutral-2-gray-14)};
+  // 间隔
+  --t-space-4 : #{map-get($map: $global, $key: t-space-4)};
+  --t-space-8 : #{map-get($map: $global, $key: t-space-8)};
+  --t-space-12 : #{map-get($map: $global, $key: t-space-12)};
+  --t-space-16 : #{map-get($map: $global, $key: t-space-16)};
+  --t-space-24 : #{map-get($map: $global, $key: t-space-24)};
+  --t-space-32 : #{map-get($map: $global, $key: t-space-32)};
+  --t-space-40 : #{map-get($map: $global, $key: t-space-40)};
+  --t-space-48 : #{map-get($map: $global, $key: t-space-48)};
+  --t-space-64 : #{map-get($map: $global, $key: t-space-64)};
+  --t-space-96 : #{map-get($map: $global, $key: t-space-96)};
+  --t-space-160 : #{map-get($map: $global, $key: t-space-160)};
+  // 内容
+  --t-main-width: #{map-get($map: $global, $key: t-main-width)};
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a:not([class]),
+a[class=""] {
+  text-decoration: none;
+}
+
+@import "./animation.scss";

@@ -1,0 +1,104 @@
+@import "packages/Style/mixin.scss";
+
+.t-message {
+  @include t-radius;
+  @include t-text-4;
+
+  width: fit-content;
+  padding: 13px 16px;
+  color: var(--t-text-gray-1);
+  background-color: var(--t-neutral-1-white-1);
+  box-shadow: -0.5px 0 0 0 #dcdcdc inset,
+    0.5px 0 0 0 #dcdcdc inset,
+    0 -0.5px 0 0 #dcdcdc inset,
+    0 0.5px 0 0 #dcdcdc inset,
+    0 6px 30px 5px rgba($color: #000000, $alpha: 0.05),
+    0 16px 24px 2px rgba($color: #000000, $alpha: 0.04),
+    0 8px 10px -5px rgba($color: #000000, $alpha: 0.08);
+  display: flex;
+  align-items: center;
+
+  .t-message__loading,
+  .t-message__icon {
+    @include t-text-2;
+
+    line-height: 22px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+
+  // 加载动画
+  .t-message__loading {
+    width: 20px;
+    height: 20px;
+    animation: t-rotate 1.2s linear infinite;
+    border-radius: 50%;
+    mask: radial-gradient(transparent calc(50% - 0.5px), #ffffff 50%);
+    background-image: conic-gradient(from 90deg at 50% 50%, rgba(255, 255, 255, 0) 0deg, var(--t-brand-8) 360deg);
+    display: inline-block;
+  }
+
+  // 关闭按钮
+  .t-message__close {
+    @include t-radius;
+
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin-right: 0;
+    margin-left: auto;
+    right: 16px;
+
+    &:hover {
+      background-color: var(--t-neutral-1-gray-1);
+    }
+  }
+
+  &:nth-child(n + 2) {
+    margin-top: 40px;
+  }
+
+  // 信息主题
+  &.t-message--info {
+    .t-message__icon {
+      color: var(--t-brand-normal);
+    }
+  }
+
+  // 成功主题
+  &.t-message--success {
+    .t-message__icon {
+      color: var(--t-success-normal);
+    }
+  }
+
+  // 警告主题
+  &.t-message--warning {
+    .t-message__icon {
+      color: var(--t-warning-normal);
+    }
+  }
+
+  // 错误主题
+  &.t-message--danger {
+    .t-message__icon {
+      color: var(--t-error-normal);
+    }
+  }
+
+  // 疑问主题
+  &.t-message--question {
+    .t-message__icon {
+      color: var(--t-brand-normal);
+    }
+  }
+
+  // 可关闭提示
+  &.t-message--closable {
+    min-width: 400px;
+  }
+}

@@ -1,0 +1,123 @@
+// 暗色标签
+@mixin dark-tag($normal: var(--t-brand-normal),
+  $hover: var(--t-brand-hover),
+  $click: var(--t-brand-click),
+  $disabled: var(--t-brand-disabled),
+) {
+  color: var(--t-text-white-1);
+  background-color: $normal;
+
+  // 禁用状态
+  &.t-tag__disabled {
+    background-color: $disabled;
+
+    .t-tag__close-btn {
+      cursor: not-allowed;
+    }
+  }
+}
+
+// 亮色标签
+@mixin light-tag($normal: var(--t-brand-normal),
+  $hover: var(--t-brand-hover),
+  $click: var(--t-brand-click),
+  $disabled: var(--t-brand-disabled),
+  $light: var(--t-brand-light),
+) {
+  color: $normal;
+  background-color: $light;
+
+  &:not(.t-tag__disabled) {
+    .t-tag__close-btn:hover {
+      color: $hover;
+    }
+
+    .t-tag__close-btn:active {
+      color: $click;
+    }
+  }
+
+  // 禁用状态
+  &.t-tag__disabled {
+    color: $disabled;
+
+    .t-tag__close-btn {
+      cursor: not-allowed;
+    }
+  }
+}
+
+// 扁平标签
+@mixin plain-tag($normal: var(--t-brand-normal),
+  $hover: var(--t-brand-hover),
+  $click: var(--t-brand-click),
+  $disabled: var(--t-brand-disabled),
+) {
+  color: $normal;
+  background-color: var(--t-neutral-1-gray-3);
+
+  &:not(.t-tag__disabled) {
+    .t-tag__close-btn:hover {
+      color: $hover;
+    }
+
+    .t-tag__close-btn:active {
+      color: $click;
+    }
+  }
+
+  // 禁用状态
+  &.t-tag__disabled {
+    color: $disabled;
+    background-color: var(--t-neutral-1-gray-1);
+
+    .t-tag__close-btn {
+      cursor: not-allowed;
+    }
+  }
+}
+
+@mixin dark-link-tag($hover: var(--t-brand-hover),
+  $click: var(--t-brand-click),
+) {
+  &:not(.t-tag__disabled) {
+    &:hover {
+      background-color: $hover;
+    }
+
+    &:active {
+      background-color: $click;
+    }
+  }
+}
+
+// 亮色标签
+@mixin light-link-tag($hover: var(--t-brand-hover),
+  $click: var(--t-brand-click),
+) {
+  &:not(.t-tag__disabled) {
+    &:hover {
+      color: $hover;
+    }
+
+    &:active {
+      color: $click;
+    }
+  }
+}
+
+// 扁平标签
+@mixin plain-link-tag($hover: var(--t-brand-hover),
+  $click: var(--t-brand-click),
+) {
+  &:not(.t-tag__disabled) {
+    &:hover {
+      color: $hover;
+    }
+
+    &:active {
+      color: $click;
+      background-color: var(--t-neutral-1-gray-6);
+    }
+  }
+}

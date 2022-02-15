@@ -1,0 +1,312 @@
+@import "packages/Style/mixin.scss";
+@import "./mixin.scss";
+
+span.t-tag {
+  @include t-radius;
+
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+
+  .t-tag__icon {
+    @include t-text-3;
+
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: var(--t-space-4);
+  }
+
+  .t-tag__text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    display: inline-block
+  }
+
+  .t-tag__close-btn {
+    @include t-text-3;
+
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: var(--t-space-4);
+  }
+
+  // 小型标签
+  &.t-tag--small {
+    @include t-text-5;
+
+    padding: 0 8px;
+    margin-right: var(--t-space-16);
+  }
+
+  // 中型标签
+  &.t-tag--medium {
+    @include t-text-5;
+
+    padding: 2px 8px;
+    margin-right: var(--t-space-24);
+
+    .t-tag__icon {
+      margin-right: var(--t-space-4);
+    }
+  }
+
+  // 大型标签
+  &.t-tag--large {
+    @include t-text-4;
+
+    padding: 5px 12px;
+    margin-right: var(--t-space-32);
+  }
+
+  // 默认主题
+  &.t-tag--default {
+    color: var(--t-text-gray-1);
+    background-color: var(--t-neutral-1-gray-3);
+
+    // 禁用状态
+    &.t-tag__disabled {
+      color: var(--t-text-gray-4);
+      background-color: var(--t-neutral-1-gray-1);
+
+      .t-tag__close-btn {
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  // 主要主题
+  &.t-tag--primary {
+
+    // 暗色变体
+    &.t-tag--dark {
+      @include dark-tag;
+    }
+
+    // 亮色变体
+    &.t-tag--light {
+      @include light-tag;
+    }
+
+    // 扁平变体
+    &.t-tag--plain {
+      @include plain-tag;
+    }
+  }
+
+  // 成功主题
+  &.t-tag--success {
+
+    // 暗色变体
+    &.t-tag--dark {
+      @include dark-tag(var(--t-success-normal),
+        var(--t-success-hover),
+        var(--t-success-click),
+        var(--t-success-disabled),
+      );
+    }
+
+    // 亮色变体
+    &.t-tag--light {
+      @include light-tag(var(--t-success-normal),
+        var(--t-success-hover),
+        var(--t-success-click),
+        var(--t-success-disabled),
+        var(--t-success-light),
+      );
+    }
+
+    // 扁平变体
+    &.t-tag--plain {
+      @include plain-tag(var(--t-success-normal),
+        var(--t-success-hover),
+        var(--t-success-click),
+        var(--t-success-disabled),
+      );
+    }
+  }
+
+  // 警告主题
+  &.t-tag--warning {
+
+    // 暗色变体
+    &.t-tag--dark {
+      @include dark-tag(var(--t-warning-normal),
+        var(--t-warning-hover),
+        var(--t-warning-click),
+        var(--t-warning-disabled),
+      );
+    }
+
+    // 亮色变体
+    &.t-tag--light {
+      @include light-tag(var(--t-warning-normal),
+        var(--t-warning-hover),
+        var(--t-warning-click),
+        var(--t-warning-disabled),
+        var(--t-warning-light),
+      );
+    }
+
+    // 扁平变体
+    &.t-tag--plain {
+      @include plain-tag(var(--t-warning-normal),
+        var(--t-warning-hover),
+        var(--t-warning-click),
+        var(--t-warning-disabled),
+      );
+    }
+  }
+
+  // 危险主题
+  &.t-tag--danger {
+
+    // 暗色变体
+    &.t-tag--dark {
+      @include dark-tag(var(--t-error-normal),
+        var(--t-error-hover),
+        var(--t-error-click),
+        var(--t-error-disabled),
+      );
+    }
+
+    // 亮色变体
+    &.t-tag--light {
+      @include light-tag(var(--t-error-normal),
+        var(--t-error-hover),
+        var(--t-error-click),
+        var(--t-error-disabled),
+        var(--t-error-light),
+      );
+    }
+
+    // 扁平变体
+    &.t-tag--plain {
+      @include plain-tag(var(--t-error-normal),
+        var(--t-error-hover),
+        var(--t-error-click),
+        var(--t-error-disabled),
+      );
+    }
+  }
+}
+
+a span.t-tag {
+
+  // 默认主题
+  &.t-tag--default {
+    &:not(.t-tag__disabled) {
+      &:hover {
+        color: var(--t-brand-hover);
+      }
+
+      &:active {
+        color: var(--t-brand-click);
+        background-color: var(--t-neutral-1-gray-6);
+      }
+    }
+  }
+
+  // 主要主题
+  &.t-tag--primary {
+
+    // 暗色变体
+    &.t-tag--dark {
+      @include dark-link-tag;
+    }
+
+    // 亮色变体
+    &.t-tag--light {
+      @include light-link-tag;
+    }
+
+    // 扁平变体
+    &.t-tag--plain {
+      @include plain-link-tag;
+    }
+  }
+
+  // 成功主题
+  &.t-tag--success {
+
+    // 暗色变体
+    &.t-tag--dark {
+      @include dark-link-tag(var(--t-success-hover),
+        var(--t-success-click),
+      );
+    }
+
+    // 亮色变体
+    &.t-tag--light {
+      @include light-link-tag(var(--t-success-hover),
+        var(--t-success-click),
+      );
+    }
+
+    // 扁平变体
+    &.t-tag--plain {
+      @include plain-link-tag(var(--t-success-hover),
+        var(--t-success-click),
+      );
+    }
+  }
+
+  // 警告主题
+  &.t-tag--warning {
+
+    // 暗色变体
+    &.t-tag--dark {
+      @include dark-link-tag(var(--t-warning-hover),
+        var(--t-warning-click),
+      );
+    }
+
+    // 亮色变体
+    &.t-tag--light {
+      @include light-link-tag(var(--t-warning-hover),
+        var(--t-warning-click),
+      );
+    }
+
+    // 扁平变体
+    &.t-tag--plain {
+      @include plain-link-tag(var(--t-warning-hover),
+        var(--t-warning-click),
+      );
+    }
+  }
+
+  // 危险主题
+  &.t-tag--danger {
+
+    // 暗色变体
+    &.t-tag--dark {
+      @include dark-link-tag(var(--t-error-hover),
+        var(--t-error-click),
+      );
+    }
+
+    // 亮色变体
+    &.t-tag--light {
+      @include light-link-tag(var(--t-error-hover),
+        var(--t-error-click),
+      );
+    }
+
+    // 扁平变体
+    &.t-tag--plain {
+      @include plain-link-tag(var(--t-error-hover),
+        var(--t-error-click),
+      );
+    }
+  }
+}

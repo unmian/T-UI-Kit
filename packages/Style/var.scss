@@ -1,0 +1,146 @@
+// 主题颜色
+$theme-color: ( // 品牌色
+  t-brand-1: #ecf2fe,
+  t-brand-2: #d4e3fc,
+  t-brand-3: #bbd3fb,
+  t-brand-4: #96bbf8,
+  t-brand-5: #699ef5,
+  t-brand-6: #4787f0,
+  t-brand-7: #266fe8,
+  t-brand-8: #0052d9,
+  t-brand-9: #0034b5,
+  t-brand-10: #001f97,
+
+  // 错误色
+  t-error-1: #fdecee,
+  t-error-2: #f9d7d9,
+  t-error-3: #f8b9be,
+  t-error-4: #f78d94,
+  t-error-5: #f36d78,
+  t-error-6: #e34d59,
+  t-error-7: #c9353f,
+  t-error-8: #b11f26,
+  t-error-9: #951114,
+  t-error-10: #680506,
+
+  // 警告色
+  t-warning-1: #fef3e6,
+  t-warning-2: #f9e0c7,
+  t-warning-3: #f7c797,
+  t-warning-4: #f2995f,
+  t-warning-5: #ed7b2f,
+  t-warning-6: #d35a21,
+  t-warning-7: #ba431b,
+  t-warning-8: #9e3610,
+  t-warning-9: #842b0b,
+  t-warning-10: #5a1907,
+
+  // 安全色
+  t-success-1: #e8f8f2,
+  t-success-2: #bcebdc,
+  t-success-3: #85dbbe,
+  t-success-4: #48c79c,
+  t-success-5: #00a870,
+  t-success-6: #078d5c,
+  t-success-7: #067945,
+  t-success-8: #056334,
+  t-success-9: #044f2a,
+  t-success-10: #033017,
+
+);
+
+// 全局变量
+$global: ( // 品牌行为色
+  t-brand-light: map-get($map: $theme-color, $key: t-brand-1),
+  t-brand-focus: map-get($map: $theme-color, $key: t-brand-2),
+  t-brand-disabled: map-get($map: $theme-color, $key: t-brand-3),
+  t-brand-hover: map-get($map: $theme-color, $key: t-brand-7),
+  t-brand-normal: map-get($map: $theme-color, $key: t-brand-8),
+  t-brand-click: map-get($map: $theme-color, $key: t-brand-9),
+
+  // 错误行为颜色
+  t-error-light: map-get($map: $theme-color, $key: t-error-1),
+  t-error-focus: map-get($map: $theme-color, $key: t-error-2),
+  t-error-disabled: map-get($map: $theme-color, $key: t-error-3),
+  t-error-hover: map-get($map: $theme-color, $key: t-error-5),
+  t-error-normal: map-get($map: $theme-color, $key: t-error-6),
+  t-error-click: map-get($map: $theme-color, $key: t-error-7),
+
+  // 警告行为颜色
+  t-warning-light: map-get($map: $theme-color, $key: t-warning-1),
+  t-warning-focus: map-get($map: $theme-color, $key: t-warning-2),
+  t-warning-disabled: map-get($map: $theme-color, $key: t-warning-3),
+  t-warning-hover: map-get($map: $theme-color, $key: t-warning-4),
+  t-warning-normal: map-get($map: $theme-color, $key: t-warning-5),
+  t-warning-click: map-get($map: $theme-color, $key: t-warning-6),
+
+  // 安全行为颜色
+  t-success-light: map-get($map: $theme-color, $key: t-success-1),
+  t-success-focus: map-get($map: $theme-color, $key: t-success-2),
+  t-success-disabled: map-get($map: $theme-color, $key: t-success-3),
+  t-success-hover: map-get($map: $theme-color, $key: t-success-4),
+  t-success-normal: map-get($map: $theme-color, $key: t-success-5),
+  t-success-click: map-get($map: $theme-color, $key: t-success-6),
+
+  // 暗色字体色
+  t-text-gray-1: rgba($color: #000000, $alpha: 0.9),
+  t-text-gray-2: rgba($color: #000000, $alpha: 0.6),
+  t-text-gray-3: rgba($color: #000000, $alpha: 0.4),
+  t-text-gray-4: rgba($color: #000000, $alpha: 0.26),
+
+  // 暗色字体色
+  t-text-white-1: rgba($color: #ffffff, $alpha: 0.9),
+  t-text-white-2: rgba($color: #ffffff, $alpha: 0.55),
+  t-text-white-3: rgba($color: #ffffff, $alpha: 0.35),
+  t-text-white-4: rgba($color: #ffffff, $alpha: 0.22),
+
+  // 暗色中性色
+  t-neutral-1-white-1: white,
+  t-neutral-1-gray-1: #f3f3f3,
+  t-neutral-1-gray-2: #eeeeee,
+  t-neutral-1-gray-3: #e7e7e7,
+  t-neutral-1-gray-4: gainsboro,
+  t-neutral-1-gray-5: #c5c5c5,
+  t-neutral-1-gray-6: #a6a6a6,
+  t-neutral-1-gray-7: #8b8b8b,
+  t-neutral-1-gray-8: #777777,
+  t-neutral-1-gray-9: #5e5e5e,
+  t-neutral-1-gray-10: #4b4b4b,
+  t-neutral-1-gray-11: #383838,
+  t-neutral-1-gray-12: #2c2c2c,
+  t-neutral-1-gray-13: #242424,
+  t-neutral-1-gray-14: #181818,
+
+  // 亮色中性色
+  t-neutral-2-white-1: white,
+  t-neutral-2-gray-1: #f1f2f5,
+  t-neutral-2-gray-2: #ebedf1,
+  t-neutral-2-gray-3: #e3e6eb,
+  t-neutral-2-gray-4: #e3e6eb,
+  t-neutral-2-gray-5: #bcc4d0,
+  t-neutral-2-gray-6: #97a3b7,
+  t-neutral-2-gray-7: #7787a2,
+  t-neutral-2-gray-8: #5f7292,
+  t-neutral-2-gray-9: #4b5b76,
+  t-neutral-2-gray-10: #3c485c,
+  t-neutral-2-gray-11: #2c3645,
+  t-neutral-2-gray-12: #232a35,
+  t-neutral-2-gray-13: #1c222b,
+  t-neutral-2-gray-14: #13161b,
+
+  // 间隔
+  t-space-4: 4px,
+  t-space-8: 8px,
+  t-space-12: 12px,
+  t-space-16: 16px,
+  t-space-24: 24px,
+  t-space-32: 32px,
+  t-space-40: 40px,
+  t-space-48: 48px,
+  t-space-64: 64px,
+  t-space-96: 96px,
+  t-space-160: 160px,
+
+  // 内容
+  t-main-width: 1208px,
+);

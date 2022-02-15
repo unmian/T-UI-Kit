@@ -1,0 +1,120 @@
+@import "packages/Style/mixin.scss";
+
+.t-message__list {
+  display: flex;
+  position: fixed;
+  z-index: 6000;
+
+  // 左上方消息列表
+  &.t-message__list--top-left {
+    top: var(--t-space-32);
+    left: var(--t-space-32);
+    flex-direction: column;
+    align-items: flex-start;
+
+    .t-message {
+      margin: 0 0 var(--t-space-8);
+    }
+  }
+
+  // 上方消息列表
+  &.t-message__list--top {
+    top: var(--t-space-32);
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    align-items: center;
+
+    .t-message {
+      margin: 0 0 var(--t-space-8);
+    }
+  }
+
+  // 右上方消息列表
+  &.t-message__list--top-right {
+    top: var(--t-space-32);
+    right: var(--t-space-32);
+    flex-direction: column;
+    align-items: flex-end;
+
+    .t-message {
+      margin: 0 0 var(--t-space-8);
+    }
+  }
+
+  // 左侧消息列表
+  &.t-message__list--left {
+    top: 50%;
+    left: var(--t-space-32);
+    transform: translateY(-50%);
+    flex-direction: column;
+    align-items: flex-start;
+
+    .t-message {
+      margin: 0 0 var(--t-space-8);
+    }
+  }
+
+  // 居中消息列表
+  &.t-message__list--center {
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    flex-direction: column;
+    align-items: center;
+
+    .t-message {
+      margin: 0 0 var(--t-space-8);
+    }
+  }
+
+  // 右侧消息列表
+  &.t-message__list--right {
+    top: 50%;
+    right: var(--t-space-32);
+    transform: translateY(-50%);
+    flex-direction: column;
+    align-items: flex-end;
+
+    .t-message {
+      margin: 0 0 var(--t-space-8);
+    }
+  }
+
+  // 左下方消息列表
+  &.t-message__list--bottom-left {
+    bottom: var(--t-space-32);
+    left: var(--t-space-32);
+    flex-direction: column-reverse;
+    align-items: flex-start;
+
+    .t-message {
+      margin: var(--t-space-8) 0 0;
+    }
+  }
+
+  // 下方消息列表
+  &.t-message__list--bottom {
+    bottom: var(--t-space-32);
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .t-message {
+      margin: var(--t-space-8) 0 0;
+    }
+  }
+
+  // 右下方消息列表
+  &.t-message__list--bottom-right {
+    bottom: var(--t-space-32);
+    right: var(--t-space-32);
+    flex-direction: column-reverse;
+    align-items: flex-end;
+
+    .t-message {
+      margin: var(--t-space-8) 0 0;
+    }
+  }
+}

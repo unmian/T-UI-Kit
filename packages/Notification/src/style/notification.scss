@@ -1,0 +1,121 @@
+@import "packages/Style/mixin.scss";
+
+div.t-notification {
+  @include t-radius;
+  @include t-top-shadow;
+
+  width: 400px;
+  padding: var(--t-space-16) var(--t-space-24);
+  box-sizing: border-box;
+  border: 0.5px solid var(--t-neutral-1-gray-4);
+  background-color: var(--t-neutral-1-white-1);
+  display: flex;
+
+  // 图标
+  .t-notification__icon {
+    padding-top: var(--t-space-4);
+    font-size: 24px;
+    line-height: 24px;
+    margin-right: var(--t-space-8);
+  }
+
+  // 主体内容
+  .t-notification__main {
+    padding: var(--t-space-4) 0 var(--t-space-8);
+    flex: 1;
+
+    // 头部
+    .t-notification__header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      // 标题
+      .t-notification__title {
+        @include t-text-bold-3;
+
+        color: var(--t-text-gray-1);
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        flex: 1;
+      }
+
+      // 关闭按钮
+      .t-notification__close-btn {
+        @include t-text-3;
+
+        width: 20px;
+        height: 20px;
+        color: var(--t-text-gray-2);
+        user-select: none;
+        cursor: pointer;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+          color: var(--t-text-gray-1);
+        }
+      }
+    }
+
+    // 内容
+    .t-notification__content {
+      @include t-text-4;
+
+      max-height: 66px;
+      padding-right: 5px;
+      color: var(--t-text-gray-2);
+      word-break: break-all;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -moz-box;
+      display: -webkit-box;
+      line-clamp: 3;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      box-sizing: border-box;
+      margin-top: var(--t-space-8);
+    }
+
+    // 底部
+    .t-notification__footer {
+      text-align: right;
+      margin-top: var(--t-space-16);
+    }
+  }
+
+  // 信息主题
+  &.t-notification--info {
+    .t-notification__icon {
+      color: var(--t-brand-normal);
+    }
+  }
+
+  // 成功主题
+  &.t-notification--success {
+    .t-notification__icon {
+      color: var(--t-success-normal);
+    }
+  }
+
+  // 警告主题
+  &.t-notification--warning {
+    .t-notification__icon {
+      color: var(--t-warning-normal);
+    }
+  }
+
+  // 危险主题
+  &.t-notification--danger {
+    .t-notification__icon {
+      color: var(--t-error-normal);
+    }
+  }
+
+  // 间距
+  &:nth-child(n + 2) {
+    margin-top: var(--t-space-24);
+  }
+}
