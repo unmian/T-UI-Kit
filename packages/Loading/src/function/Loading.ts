@@ -1,20 +1,20 @@
 /*
  * @Author: Quarter
  * @Date: 2022-01-06 12:23:24
- * @LastEditTime: 2022-01-10 11:17:18
+ * @LastEditTime: 2022-02-15 09:46:17
  * @LastEditors: Quarter
  * @Description: 加载全局方法
  * @FilePath: /t-ui-kit/packages/Loading/src/function/Loading.ts
  */
-
 import { createVNode } from "@vue/runtime-dom";
 import { render } from "vue";
 import { LoadingConfig } from "../type";
 import Loading from "../Loading.vue";
+import { HTMLRendererNode } from "packages/Global";
 
-// 消息索引
+// 加载索引
 let LOADING_COUNTER: number = 0;
-// 消息异步任务
+// 加载异步任务
 const LOADING_ASYNC = new Map<number, { timeout?: number, node: HTMLDivElement, onClose?: () => void }>();
 
 /**
@@ -41,21 +41,21 @@ const loading = (cfg?: LoadingConfig): number => {
     showOverlay,
     attach: attach || document.body,
   });
-  const container = document.createElement("div");
-  render(vnode, container);
+  const node = document.createElement("div") as HTMLRendererNode;
+  render(vnode, node);
   // 延时关闭
   if (duration > 0) {
     const timeout = setTimeout(() => {
       LOADING_ASYNC.delete(counter);
-      render(null, container);
-      container.remove();
+      render(null, node);
+      node.remove();
       if (typeof onClose === "function") {
         onClose();
       }
     }, duration);
-    LOADING_ASYNC.set(counter, { timeout: timeout as unknown as number, node: container, onClose });
+    LOADING_ASYNC.set(counter, { timeout: timeout as unknown as number, node, onClose });
   } else {
-    LOADING_ASYNC.set(counter, { node: container, onClose });
+    LOADING_ASYNC.set(counter, { node, onClose });
   }
   return counter;
 };

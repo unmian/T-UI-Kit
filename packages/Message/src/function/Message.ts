@@ -1,7 +1,7 @@
 /*
  * @Author: Quarter
  * @Date: 2022-01-06 12:16:01
- * @LastEditTime: 2022-02-13 02:34:12
+ * @LastEditTime: 2022-02-14 01:16:24
  * @LastEditors: Quarter
  * @Description: 全局提示函数调用
  * @FilePath: /t-ui-kit/packages/Message/src/function/Message.ts
@@ -77,7 +77,7 @@ Reflect.set(message, "close", (index: number) => {
     const list = MESSAGE_LIST.get(placement);
     if (list instanceof HTMLDivElement && list.vm && list.vm.component?.exposed) {
       const { remove } = list.vm.component.exposed;
-      remove(index);
+      if (typeof remove === "function") remove(index);
     }
     MESSAGE_INDEX.delete(index);
   }
@@ -93,7 +93,7 @@ Reflect.set(message, "clear", () => {
   MESSAGE_LIST.forEach((list: HTMLRendererNode) => {
     if (list instanceof HTMLDivElement && list.vm && list.vm.component?.exposed) {
       const { clear } = list.vm.component.exposed;
-      clear();
+      if (typeof clear === "function") clear();
     }
   });
 });

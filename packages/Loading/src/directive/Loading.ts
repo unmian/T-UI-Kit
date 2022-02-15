@@ -1,13 +1,13 @@
 /*
  * @Author: Quarter
  * @Date: 2022-01-07 06:17:52
- * @LastEditTime: 2022-01-10 11:59:36
+ * @LastEditTime: 2022-02-15 09:55:50
  * @LastEditors: Quarter
  * @Description: 加载指令
  * @FilePath: /t-ui-kit/packages/Loading/src/directive/Loading.ts
  */
-
 import { createVNode, DirectiveBinding } from "@vue/runtime-dom";
+import { HTMLDirectiveElement } from "packages/Global";
 import { render } from "vue";
 import Loading from "../Loading.vue";
 import { LoadingSize } from "../type";
@@ -15,12 +15,12 @@ import { LoadingSize } from "../type";
 /**
  * @description: 挂载之前
  * @author: Quarter
- * @param {HTMLElement} el HTML 元素
+ * @param {HTMLDirectiveElement} el HTML 元素
  * @param {DirectiveBinding} binding 指令绑定参数
  * @return
  */
-const beforeMount = (el: HTMLElement, binding: DirectiveBinding) => {
-  if (!(el as any).$loading && !(el as any).$loadingContainer) {
+const beforeMount = (el: HTMLDirectiveElement, binding: DirectiveBinding) => {
+  if (!(el as HTMLDirectiveElement).$instance && !(el as HTMLDirectiveElement).$container) {
     const styles = getComputedStyle(el);
     if (!["relative", "absolute", "fixed", "sticky"].includes(styles.position)) {
       el.style.position = "relative";
@@ -40,48 +40,54 @@ const beforeMount = (el: HTMLElement, binding: DirectiveBinding) => {
       fullscreen,
       attach: el,
     });
-    (el as any).$loading = instance;
-    (el as any).$loadingContainer = document.createElement("div");
-    render(instance, (el as any).$loadingContainer);
+    (el as HTMLDirectiveElement).$instance = instance;
+    (el as HTMLDirectiveElement).$container = document.createElement("div");
+    render(instance, (el as HTMLDirectiveElement).$container as HTMLElement);
   }
 };
 
 /**
  * @description: 更新
  * @author: Quarter
- * @param {HTMLElement} el HTML 元素
+ * @param {HTMLDirectiveElement} el HTML 元素
  * @param {DirectiveBinding} binding 指令绑定参数
  * @return
  */
-const updated = (el: HTMLElement, binding: DirectiveBinding) => {
+const updated = (el: HTMLDirectiveElement, binding: DirectiveBinding) => {
   const { small, large, showOverlay = true, fullscreen } = binding.modifiers;
   const loading = !!binding.value;
-  (el as any).$loading.component.props.loading = loading;
-  let size: LoadingSize = "medium";
-  if (small) size = "small";
-  if (large) size = "large";
-  if (typeof binding.arg === "string" && ["small", "large"].includes(binding.arg)) {
-    size = binding.arg as LoadingSize;
+  const { $instance } = (el as HTMLDirectiveElement);
+  if ($instance) {
+    let size: LoadingSize = "medium";
+    if (small) size = "small";
+    if (large) size = "large";
+    if (typeof binding.arg === "string" && ["small", "large"].includes(binding.arg)) {
+      size = binding.arg as LoadingSize;
+    }
+    if ($instance.component) {
+      $instance.component.props.loading = loading;
+      $instance.component.props.size = size;
+      $instance.component.props.showOverlay = showOverlay;
+      $instance.component.props.fullscreen = fullscreen;
+    }
   }
-  (el as any).$loading.component.props.size = size;
-  (el as any).$loading.component.props.showOverlay = showOverlay;
-  (el as any).$loading.component.props.fullscreen = fullscreen;
 };
 
 /**
  * @description: 卸载之前
  * @author: Quarter
- * @param {HTMLElement} el HTML 元素
+ * @param {HTMLDirectiveElement} el HTML 元素
  * @param {DirectiveBinding} binding 指令绑定参数
  * @return
  */
-const beforeUnmount = (el: HTMLElement, binding: DirectiveBinding) => {
-  if ((el as any).$loadingContainer instanceof HTMLElement) {
-    render(null, (el as any).$loadingContainer);
-    (el as any).$loadingContainer.remove();
+const beforeUnmount = (el: HTMLDirectiveElement, binding: DirectiveBinding) => {
+  const { $container } = el as HTMLDirectiveElement;
+  if ($container instanceof HTMLElement) {
+    render(null, $container);
+    $container.remove();
   }
-  delete (el as any).$loading;
-  delete (el as any).$loadingContainer;
+  delete (el as HTMLDirectiveElement).$instance;
+  delete (el as HTMLDirectiveElement).$container;
 };
 
 export default {

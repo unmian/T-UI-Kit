@@ -1,15 +1,17 @@
+<!--
+ * @Author: Quarter
+ * @Date: 2022-01-04 00:42:07
+ * @LastEditTime: 2022-02-15 10:45:08
+ * @LastEditors: Quarter
+ * @Description: 主应用
+ * @FilePath: /t-ui-kit/documents/App.vue
+-->
 <script setup lang="ts">
-import ComponentList from "./assets/list.json";
+import ComponentList from "./assets/menus.json";
 import { reactive } from "vue";
 
 const menus = reactive({
-  links: ComponentList.map((group) => ({
-    groupName: group.groupName,
-    children: group.children.map((item) => ({
-      path: `/components/${item.compName}`,
-      name: item.compZhName,
-    })),
-  })),
+  links: ComponentList,
 });
 </script>
 
@@ -17,11 +19,8 @@ const menus = reactive({
   <div class="t-ui-kit-doc">
     <aside>
       <ul>
-        <li
-          v-for="(group, groupIndex) of menus.links"
-          :key="`group-item-${groupIndex}`"
-        >
-          <div class="group-label">{{ group.groupName }}</div>
+        <li v-for="(group, groupIndex) of menus.links" :key="`group-item-${groupIndex}`">
+          <div class="group-label">{{ group.groupZhName }}</div>
           <div>
             <ul>
               <li
@@ -29,7 +28,11 @@ const menus = reactive({
                 :key="`link-item-${linkIndex}`"
                 class="item-label"
               >
-                <router-link :to="link.path">{{ link.name }}</router-link>
+                <a v-if="link.disabled" disabled>{{ link.compClassName }}&nbsp;{{ link.compZhName }}</a>
+                <router-link
+                  v-else
+                  :to="`/${group.groupName}/${link.compName}`"
+                >{{ link.compClassName }}&nbsp;{{ link.compZhName }}</router-link>
               </li>
             </ul>
           </div>
@@ -105,11 +108,12 @@ body {
         overflow: hidden;
         text-overflow: ellipsis;
         text-decoration: none;
+        cursor: pointer;
         border-radius: 3px;
         box-sizing: border-box;
         display: block;
 
-        &:not(.router-link-active):hover {
+        &:not([disabled]):not(.router-link-active):hover {
           color: rgba($color: #000000, $alpha: 0.9);
           background-color: #f3f3f3;
         }
@@ -117,6 +121,11 @@ body {
         &.router-link-active {
           color: white;
           background-color: #0052d9;
+        }
+
+        &[disabled] {
+          color: rgba($color: #000000, $alpha: 0.3);
+          cursor: not-allowed;
         }
       }
     }
@@ -131,7 +140,6 @@ body {
     .main-content {
       max-width: 1208px;
       padding: 15px 24px;
-      height: 100%;
       box-sizing: border-box;
       margin: 0 auto;
     }

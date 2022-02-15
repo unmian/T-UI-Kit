@@ -1,7 +1,7 @@
 /*
  * @Author: Quarter
  * @Date: 2022-01-06 12:16:01
- * @LastEditTime: 2022-02-13 02:34:07
+ * @LastEditTime: 2022-02-14 01:16:42
  * @LastEditors: Quarter
  * @Description: 消息通知函数调用
  * @FilePath: /t-ui-kit/packages/Notification/src/function/Notify.ts
@@ -72,7 +72,7 @@ Reflect.set(notify, "close", (index: number) => {
     const list = NOTIFICATION_LIST.get(placement);
     if (list instanceof HTMLDivElement && list.vm && list.vm.component?.exposed) {
       const { remove } = list.vm.component.exposed;
-      remove(index);
+      if (typeof remove === "function") remove(index);
     }
     NOTIFICATION_INDEX.delete(index);
   }
@@ -88,7 +88,7 @@ Reflect.set(notify, "clear", () => {
   NOTIFICATION_LIST.forEach((list: HTMLRendererNode) => {
     if (list instanceof HTMLDivElement && list.vm && list.vm.component?.exposed) {
       const { clear } = list.vm.component.exposed;
-      clear();
+      if (typeof clear === "function") clear();
     }
   });
 });

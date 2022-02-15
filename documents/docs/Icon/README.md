@@ -1,14 +1,14 @@
 <!--
  * @Author: Quarter
  * @Date: 2021-12-30 11:45:22
- * @LastEditTime: 2022-02-13 01:08:41
+ * @LastEditTime: 2022-02-15 09:04:58
  * @LastEditors: Quarter
  * @Description: 图标组件文档
  * @FilePath: /t-ui-kit/documents/docs/Icon/README.md
 -->
 <script lang="ts" setup>
-  import { IconGrid } from "documents/components";
-  import icons from "./icons.json";
+import { IconGrid } from "documents/components";
+import icons from "documents/assets/icons.json";
 </script>
 
 # 图标 Icon
