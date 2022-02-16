@@ -1,7 +1,7 @@
 /*
  * @Author: Quarter
  * @Date: 2021-12-29 08:45:31
- * @LastEditTime: 2022-02-15 10:43:42
+ * @LastEditTime: 2022-02-16 09:03:09
  * @LastEditors: Quarter
  * @Description: 路由配置
  * @FilePath: /t-ui-kit/documents/router/index.ts
@@ -13,12 +13,14 @@ const routes: RouteRecordRaw[] = new Array();
 
 menus.forEach(({ groupName, children }) => {
   if (Array.isArray(children)) {
-    children.forEach(({ compName, compZhName, compClassName }) => {
-      routes.push({
-        name: compClassName + "Doc",
-        path: `/${groupName}/${compName}`,
-        component: () => import(/* @vite-ignore */`/documents/docs/${compClassName}/README.md`),
-      });
+    children.forEach(({ compName, compClassName, disabled }) => {
+      if (!disabled) {
+        routes.push({
+          name: compClassName + "Doc",
+          path: `/${groupName}/${compName}`,
+          component: () => import(/* @vite-ignore */`/documents/docs/${compClassName}/README.md`),
+        });
+      }
     });
   }
 });

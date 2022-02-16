@@ -7,7 +7,7 @@
  * @FilePath: /t-ui-kit/documents/docs/Message/README.md
 -->
 <script setup>
-import { CodePreview } from "documents/components";
+import { ComponentDemo } from "documents/components";
 </script>
 
 # 全局提示 Message
@@ -18,44 +18,44 @@ import { CodePreview } from "documents/components";
 
 ### 主题 - theme <t-tag theme="primary" variant="light">MessageTheme</t-tag>
 
-<CodePreview url="/documents/docs/Message/ThemeDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Message/ThemeDemo.vue"></component-demo>
 
 ### 关闭按钮 - close-btn <t-tag theme="primary" variant="light">Boolean</t-tag>
 
-<CodePreview url="/documents/docs/Message/CloseBtnDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Message/CloseBtnDemo.vue"></component-demo>
 
 ### 延时 - duration <t-tag theme="primary" variant="light">Number</t-tag>
 
-<CodePreview url="/documents/docs/Message/DurationDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Message/DurationDemo.vue"></component-demo>
 
 ## 事件 Emits
 
 ### 关闭 - close
 
-<CodePreview url="/documents/docs/Message/EmitCloseDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Message/EmitCloseDemo.vue"></component-demo>
 
 ### 延时结束 - duration-end
 
-<CodePreview url="/documents/docs/Message/EmitDurationEndDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Message/EmitDurationEndDemo.vue"></component-demo>
 
 ## 函数 Function
 
 ### 常规用法 - $message <t-tag theme="primary" variant="light">MessageFunc</t-tag>
 
-<CodePreview url="/documents/docs/Message/FunctionDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Message/FunctionDemo.vue"></component-demo>
 
 ### 快速主题
 
-<CodePreview url="/documents/docs/Message/FuncThemeDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Message/FuncThemeDemo.vue"></component-demo>
 
 ### 指定方位 - placement <t-tag theme="primary" variant="light">MessagePlacement</t-tag>
 
-<CodePreview url="/documents/docs/Message/FuncPlacementDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Message/FuncPlacementDemo.vue"></component-demo>
 
 ### 关闭 - close <t-tag theme="primary" variant="light">Function</t-tag>
 
-<CodePreview url="/documents/docs/Message/FuncCloseDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Message/FuncCloseDemo.vue"></component-demo>
 
 ### 清空 - clear <t-tag theme="primary" variant="light">Function</t-tag>
 
-<CodePreview url="/documents/docs/Message/FuncClearDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Message/FuncClearDemo.vue"></component-demo>

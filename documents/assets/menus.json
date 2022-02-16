@@ -271,8 +271,7 @@
         "compName": "skeleton",
         "compZhName": "骨架屏",
         "compDesc": "这是一个按钮",
-        "compClassName": "Skeleton",
-        "disabled": true
+        "compClassName": "Skeleton"
       },
       {
         "compName": "table",

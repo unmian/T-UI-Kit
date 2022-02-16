@@ -7,7 +7,7 @@
  * @FilePath: /t-ui-kit/documents/docs/Button/README.md
 -->
 <script setup>
-import { CodePreview } from "documents/components";
+import { ComponentDemo } from "documents/components";
 </script>
 
 # 按钮 Button
@@ -18,36 +18,36 @@ import { CodePreview } from "documents/components";
 
 ### 按钮尺寸 - size <t-tag theme="primary" variant="light">ButtonSize</t-tag>
 
-<CodePreview url="/documents/docs/Button/SizeDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Button/SizeDemo.vue"></component-demo>
 
 ### 按钮主题 - theme <t-tag theme="primary" variant="light">ButtonTheme</t-tag>
 
-<CodePreview url="/documents/docs/Button/ThemeDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Button/ThemeDemo.vue"></component-demo>
 
 ### 按钮变体 - variant <t-tag theme="primary" variant="light">ButtonVariant</t-tag>
 
-<CodePreview url="/documents/docs/Button/VariantDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Button/VariantDemo.vue"></component-demo>
 
 ### 按钮禁用 - disabled <t-tag theme="primary" variant="light">Boolean</t-tag>
 
-<CodePreview url="/documents/docs/Button/DisabledDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Button/DisabledDemo.vue"></component-demo>
 
 ### 按钮图标 - icon <t-tag theme="primary" variant="light">String</t-tag>
 
-<CodePreview url="/documents/docs/Button/IconDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Button/IconDemo.vue"></component-demo>
 
 ### 按钮加载 - loading <t-tag theme="primary" variant="light">Boolean</t-tag>
 
-<CodePreview url="/documents/docs/Button/LoadingDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Button/LoadingDemo.vue"></component-demo>
 
 ### 幽灵按钮 - ghost <t-tag theme="primary" variant="light">Boolean</t-tag>
 
-<CodePreview url="/documents/docs/Button/GhostDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Button/GhostDemo.vue"></component-demo>
 
 ### 圆形按钮 - circle <t-tag theme="primary" variant="light">Boolean</t-tag>
 
-<CodePreview url="/documents/docs/Button/CircleDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Button/CircleDemo.vue"></component-demo>
 
 ### 块级按钮 - block <t-tag theme="primary" variant="light">Boolean</t-tag>
 
-<CodePreview url="/documents/docs/Button/BlockDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Button/BlockDemo.vue"></component-demo>

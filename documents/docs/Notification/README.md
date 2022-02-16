@@ -7,7 +7,7 @@
  * @FilePath: /t-ui-kit/documents/docs/Notification/README.md
 -->
 <script setup>
-import { CodePreview } from "documents/components";
+import { ComponentDemo } from "documents/components";
 </script>
 
 
@@ -19,66 +19,66 @@ import { CodePreview } from "documents/components";
 
 ### 标题 - title <t-tag theme="primary" variant="light">String</t-tag>
 
-<CodePreview url="/documents/docs/Notification/TitleDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Notification/TitleDemo.vue"></component-demo>
 
 ### 内容 - content <t-tag theme="primary" variant="light">String</t-tag>
 
-<CodePreview url="/documents/docs/Notification/ContentDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Notification/ContentDemo.vue"></component-demo>
 
 ### 图标 - icon <t-tag theme="primary" variant="light">String</t-tag>
 
-<CodePreview url="/documents/docs/Notification/IconDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Notification/IconDemo.vue"></component-demo>
 
 ### 关闭按钮 - close-btn <t-tag theme="primary" variant="light">Boolean</t-tag>
 
-<CodePreview url="/documents/docs/Notification/CloseBtnDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Notification/CloseBtnDemo.vue"></component-demo>
 
 ### 主题 - theme <t-tag theme="primary" variant="light">NotificationTheme</t-tag>
 
-<CodePreview url="/documents/docs/Notification/ThemeDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Notification/ThemeDemo.vue"></component-demo>
 
 ### 延时 - duration <t-tag theme="primary" variant="light">Number</t-tag>
 
-<CodePreview url="/documents/docs/Notification/DurationDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Notification/DurationDemo.vue"></component-demo>
 
 ## 插槽
 
 ### 内容 - default <t-tag theme="primary" variant="light">Slot</t-tag>
 
-<CodePreview url="/documents/docs/Notification/DefaultSlotDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Notification/DefaultSlotDemo.vue"></component-demo>
 
 ### 底部 - footer <t-tag theme="primary" variant="light">Slot</t-tag>
 
-<CodePreview url="/documents/docs/Notification/FooterSlotDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Notification/FooterSlotDemo.vue"></component-demo>
 
 ## 事件 Emits
 
 ### 关闭 - close
 
-<CodePreview url="/documents/docs/Notification/EmitCloseDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Notification/EmitCloseDemo.vue"></component-demo>
 
 ### 延时结束 - duration-end
 
-<CodePreview url="/documents/docs/Notification/EmitDurationEndDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Notification/EmitDurationEndDemo.vue"></component-demo>
 
 ## 函数 Function
 
 ### 常规用法 - $notify
 
-<CodePreview url="/documents/docs/Notification/FunctionDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Notification/FunctionDemo.vue"></component-demo>
 
 ### 快速主题
 
-<CodePreview url="/documents/docs/Notification/FuncThemeDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Notification/FuncThemeDemo.vue"></component-demo>
 
 ### 指定方位 - placement <t-tag theme="primary" variant="light">NotificationPlacement</t-tag>
 
-<CodePreview url="/documents/docs/Notification/FuncPlacementDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Notification/FuncPlacementDemo.vue"></component-demo>
 
 ### 关闭 - close
 
-<CodePreview url="/documents/docs/Notification/FuncCloseDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Notification/FuncCloseDemo.vue"></component-demo>
 
 ### 清空 - clear
 
-<CodePreview url="/documents/docs/Notification/FuncClearDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Notification/FuncClearDemo.vue"></component-demo>

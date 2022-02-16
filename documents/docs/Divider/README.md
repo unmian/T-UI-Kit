@@ -7,7 +7,7 @@
  * @FilePath: /t-ui-kit/documents/docs/Divider/README.md
 -->
 <script setup>
-import { CodePreview } from "documents/components";
+import { ComponentDemo } from "documents/components";
 </script>
 
 # 分割线 Divider
@@ -18,12 +18,12 @@ import { CodePreview } from "documents/components";
 
 ### 虚线 - dashed <t-tag theme="primary" variant="light">Boolean</t-tag>
 
-<CodePreview url="/documents/docs/Divider/DashedDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Divider/DashedDemo.vue"></component-demo>
 
 ### 布局 - layout <t-tag theme="primary" variant="light">DividerLayout</t-tag>
 
-<CodePreview url="/documents/docs/Divider/LayoutDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Divider/LayoutDemo.vue"></component-demo>
 
 ### 排列方式 - align <t-tag theme="primary" variant="light">DividerAlign</t-tag>
 
-<CodePreview url="/documents/docs/Divider/AlignDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Divider/AlignDemo.vue"></component-demo>

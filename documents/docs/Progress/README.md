@@ -1,13 +1,13 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-11 09:03:16
- * @LastEditTime: 2022-02-13 00:57:15
+ * @LastEditTime: 2022-02-16 05:22:26
  * @LastEditors: Quarter
  * @Description: 进度条说明文档
  * @FilePath: /t-ui-kit/documents/docs/Progress/README.md
 -->
 <script setup>
-import { CodePreview } from "documents/components";
+import { ComponentDemo } from "documents/components";
 </script>
 
 # 进度条 Progress
@@ -18,16 +18,16 @@ import { CodePreview } from "documents/components";
 
 ### 进度 - percentage <t-tag theme="primary" variant="light">Number</t-tag>
 
-<CodePreview url="/documents/docs/Progress/PercentageDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Progress/PercentageDemo.vue"></component-demo>
 
 ### 主题 - theme <t-tag theme="primary" variant="light">MessageTheme</t-tag>
 
-<CodePreview url="/documents/docs/Progress/ThemeDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Progress/ThemeDemo.vue"></component-demo>
 
 ### 尺寸 - size <t-tag theme="primary" variant="light">ProgressSize</t-tag>
 
-<CodePreview url="/documents/docs/Progress/SizeDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Progress/SizeDemo.vue"></component-demo>
 
 ### 状态 - status <t-tag theme="primary" variant="light">ProgressStatus</t-tag>
 
-<CodePreview url="/documents/docs/Progress/StatusDemo.vue"></CodePreview>
+<component-demo url="/documents/docs/Progress/StatusDemo.vue"></component-demo>

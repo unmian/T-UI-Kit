@@ -1,7 +1,7 @@
 /*
  * @Author: Quarter
  * @Date: 2021-12-29 07:39:03
- * @LastEditTime: 2022-01-12 03:06:03
+ * @LastEditTime: 2022-02-16 05:16:38
  * @LastEditors: Quarter
  * @Description: UI 组件入口文件
  * @FilePath: /t-ui-kit/packages/index.ts
@@ -15,13 +15,14 @@ import { AlertPlugin } from "./Alert";
 import { ButtonPlugin } from "./Button";
 import { ClipboardPlugin } from "./Clipboard";
 import { DividerPlugin } from "./Divider";
-import { LoadingPlugin } from "./Loading";
 import { IconPlugin } from "./Icon";
+import { LoadingPlugin } from "./Loading";
 import { MessagePlugin } from "./Message";
 import { NotificationPlugin } from "./Notification";
 import { PopconfirmPlugin } from "./Popconfirm";
 import { PopupPlugin } from "./Popup";
 import { ProgressPlugin } from "./Progress";
+import { SkeletonPlugin } from "./Skeleton";
 import { TagPlugin } from "./Tag";
 
 const TUIKitPlugin: Plugin = {
@@ -30,13 +31,14 @@ const TUIKitPlugin: Plugin = {
     ButtonPlugin.install?.(app);
     ClipboardPlugin.install?.(app);
     DividerPlugin.install?.(app);
-    LoadingPlugin.install?.(app);
     IconPlugin.install?.(app);
+    LoadingPlugin.install?.(app);
     MessagePlugin.install?.(app);
     NotificationPlugin.install?.(app);
     PopconfirmPlugin.install?.(app);
     PopupPlugin.install?.(app);
     ProgressPlugin.install?.(app);
+    SkeletonPlugin.install?.(app);
     TagPlugin.install?.(app);
   },
 };
@@ -54,4 +56,5 @@ export * from "./Notification";
 export * from "./Popconfirm";
 export * from "./Popup";
 export * from "./Progress";
+export * from "./Skeleton";
 export * from "./Tag";
