@@ -1,7 +1,7 @@
 /*
  * @Author: Quarter
  * @Date: 2021-12-29 07:28:23
- * @LastEditTime: 2022-02-15 06:01:26
+ * @LastEditTime: 2022-02-15 15:41:24
  * @LastEditors: Quarter
  * @Description: vite 基础配置
  * @FilePath: /t-ui-kit/build/base.config.ts
@@ -9,7 +9,7 @@
 import { resolve } from "path";
 import { defineConfig } from "vite";
 import { createVuePlugin } from "vite-plugin-vue2";
-import Markdown from "vite-plugin-md";
+import Markdown from "vite-plugin-mkd";
 
 // 文档: https://vitejs.dev/config/
 export default defineConfig({

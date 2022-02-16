@@ -1,15 +1,13 @@
 <!--
  * @Author: Quarter
  * @Date: 2021-12-29 08:45:57
- * @LastEditTime: 2022-02-15 05:37:49
+ * @LastEditTime: 2022-02-15 12:40:33
  * @LastEditors: Quarter
  * @Description: 按钮组件文档
  * @FilePath: /t-ui-kit/documents/docs/Button/README.md
 -->
 <script setup>
-import { ComponentDemo } from "documents/components";
-
-exposeComponent("ComponentDemo");
+import { /* defineComponent */ ComponentDemo } from "documents/components";
 </script>
 
 # 按钮 Button

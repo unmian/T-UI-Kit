@@ -1,15 +1,13 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-05 01:59:50
- * @LastEditTime: 2022-02-13 10:30:19
+ * @LastEditTime: 2022-02-15 12:30:47
  * @LastEditors: Quarter
  * @Description: 全局提示
  * @FilePath: /t-ui-kit/documents/docs/Message/README.md
 -->
 <script setup>
-import { ComponentDemo } from "documents/components";
-
-exposeComponent("ComponentDemo");
+import { /* defineComponent */ ComponentDemo } from "documents/components";
 </script>
 
 # 全局提示 Message

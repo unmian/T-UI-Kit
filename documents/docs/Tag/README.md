@@ -1,15 +1,13 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-08 05:28:45
- * @LastEditTime: 2022-02-13 10:31:07
+ * @LastEditTime: 2022-02-15 12:31:00
  * @LastEditors: Quarter
  * @Description: 
  * @FilePath: /t-ui-kit/documents/docs/Tag/README.md
 -->
 <script setup>
-import { ComponentDemo } from "documents/components";
-
-exposeComponent("ComponentDemo");
+import { /* defineComponent */ ComponentDemo } from "documents/components";
 </script>
 
 # 标签 Tag

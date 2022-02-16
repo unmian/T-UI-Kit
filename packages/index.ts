@@ -1,7 +1,7 @@
 /*
  * @Author: Quarter
  * @Date: 2021-12-29 07:39:03
- * @LastEditTime: 2022-02-14 09:10:57
+ * @LastEditTime: 2022-02-16 08:46:36
  * @LastEditors: Quarter
  * @Description: UI 组件入口文件
  * @FilePath: /t-ui-kit/packages/index.ts
@@ -21,6 +21,7 @@ import { NotificationPlugin } from "./Notification";
 // import { PopconfirmPlugin } from "./Popconfirm";
 // import { PopupPlugin } from "./Popup";
 import { ProgressPlugin } from "./Progress";
+import { SkeletonPlugin } from "./Skeleton";
 import { TagPlugin } from "./Tag";
 
 export const TUIPlugin: PluginObject<any> = {
@@ -34,6 +35,7 @@ export const TUIPlugin: PluginObject<any> = {
     MessagePlugin.install(vue);
     NotificationPlugin.install(vue);
     ProgressPlugin.install(vue);
+    SkeletonPlugin.install(vue);
     TagPlugin.install(vue);
   },
 };
@@ -45,10 +47,11 @@ export * from "./Button";
 export * from "./Clipboard";
 export * from "./Divider";
 export * from "./Icon";
-// export * from "./Loading";
+export * from "./Loading";
 export * from "./Message";
-// export * from "./Notification";
+export * from "./Notification";
 // export * from "./Popconfirm";
 // export * from "./Popup";
-// export * from "./Progress";
+export * from "./Progress";
+export * from "./Skeleton";
 export * from "./Tag";

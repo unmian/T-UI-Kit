@@ -1,15 +1,13 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-05 03:27:26
- * @LastEditTime: 2022-02-15 08:43:54
+ * @LastEditTime: 2022-02-15 12:30:41
  * @LastEditors: Quarter
  * @Description: 加载组件文档
  * @FilePath: /t-ui-kit/documents/docs/Loading/README.md
 -->
 <script setup>
-import { ComponentDemo } from "documents/components";
-
-exposeComponent("ComponentDemo");
+import { /* defineComponent */ ComponentDemo } from "documents/components";
 </script>
 
 # 加载 Loading

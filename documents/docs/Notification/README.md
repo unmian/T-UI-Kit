@@ -1,15 +1,13 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-11 03:28:09
- * @LastEditTime: 2022-02-13 10:30:40
+ * @LastEditTime: 2022-02-15 12:30:51
  * @LastEditors: Quarter
  * @Description: 消息通知说明文档
  * @FilePath: /t-ui-kit/documents/docs/Notification/README.md
 -->
 <script setup>
-import { ComponentDemo } from "documents/components";
-
-exposeComponent("ComponentDemo");
+import { /* defineComponent */ ComponentDemo } from "documents/components";
 </script>
 
 # 消息通知 Notification

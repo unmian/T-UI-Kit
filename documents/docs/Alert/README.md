@@ -1,15 +1,13 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-11 03:13:00
- * @LastEditTime: 2022-02-15 09:57:31
+ * @LastEditTime: 2022-02-15 12:29:26
  * @LastEditors: Quarter
  * @Description: 警告提醒说明文档
  * @FilePath: /t-ui-kit/documents/docs/Alert/README.md
 -->
 <script setup>
-import { ComponentDemo } from "documents/components";
-
-exposeComponent("ComponentDemo");
+import { /* defineComponent */ ComponentDemo } from "documents/components";
 </script>
 
 # 警告提醒 Alert

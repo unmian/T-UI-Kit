@@ -1,15 +1,13 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-11 05:45:48
- * @LastEditTime: 2022-02-15 05:37:32
+ * @LastEditTime: 2022-02-15 12:30:36
  * @LastEditors: Quarter
  * @Description: 分割线说明文档
  * @FilePath: /t-ui-kit/documents/docs/Divider/README.md
 -->
 <script setup>
-import { ComponentDemo } from "documents/components";
-
-exposeComponent("ComponentDemo");
+import { /* defineComponent */ ComponentDemo } from "documents/components";
 </script>
 
 # 分割线 Divider

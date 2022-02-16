@@ -16,9 +16,6 @@
       "dom.iterable",
     ],
     "baseUrl": ".", // paths 路径解析起点
-    "types": [
-      "unplugin-vue2-script-setup/types"
-    ],
     "paths": {
       "documents/*": [
         "documents/*"
