@@ -1,7 +1,7 @@
 /*
  * @Author: Quarter
  * @Date: 2021-12-29 07:39:03
- * @LastEditTime: 2022-02-17 01:13:19
+ * @LastEditTime: 2022-02-17 11:05:03
  * @LastEditors: Quarter
  * @Description: UI 组件入口文件
  * @FilePath: /t-ui-kit/packages/index.ts
@@ -13,6 +13,7 @@ import "./Style";
 
 import { AlertPlugin } from "./Alert";
 import { AvatarPlugin } from "./Avatar";
+import { BadgePlugin } from "./Badge";
 import { ButtonPlugin } from "./Button";
 import { ClipboardPlugin } from "./Clipboard";
 import { DividerPlugin } from "./Divider";
@@ -30,6 +31,7 @@ const TUIKitPlugin: Plugin = {
   install(app: App) {
     AlertPlugin.install?.(app);
     AvatarPlugin.install?.(app);
+    BadgePlugin.install?.(app);
     ButtonPlugin.install?.(app);
     ClipboardPlugin.install?.(app);
     DividerPlugin.install?.(app);
@@ -49,6 +51,7 @@ export default TUIKitPlugin;
 
 export * from "./Alert";
 export * from "./Avatar";
+export * from "./Badge";
 export * from "./Button";
 export * from "./Clipboard";
 export * from "./Divider";

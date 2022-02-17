@@ -230,8 +230,7 @@
         "compName": "badge",
         "compZhName": "徽标",
         "compDesc": "这是一个按钮",
-        "compClassName": "Badge",
-        "disabled": true
+        "compClassName": "Badge"
       },
       {
         "compName": "calendar",
