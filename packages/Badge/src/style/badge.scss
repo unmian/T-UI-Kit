@@ -1,0 +1,70 @@
+@import "packages/Style/mixin.scss";
+
+div.t-badge {
+  display: inline-block;
+  position: relative;
+
+  >sup {
+    background-color: var(--t-error-normal);
+    transform: translateX(50%) translateY(-50%);
+    transform-origin: 50% 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  sup.t-badge__count {
+    color: var(--t-text-white-1);
+    box-sizing: border-box;
+  }
+
+  // 点状徽标
+  &.t-badge--dot {
+
+    .t-badge__dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  // 圆角矩形
+  &.t-badge--round {
+    sup.t-badge__count {
+      @include t-radius;
+    }
+  }
+
+  // 小尺寸
+  &.t-badge--small {
+    sup.t-badge__count {
+      min-width: 16px;
+      height: 16px;
+      padding: 2px 4px;
+      font-size: 12px;
+      line-height: 12px;
+    }
+
+    &.t-badge--circle sup.t-badge__count {
+      border-radius: 8px;
+    }
+  }
+
+  // 中尺寸
+  &.t-badge--medium {
+    sup.t-badge__count {
+      @include t-text-5;
+
+      min-width: 20px;
+      height: 20px;
+      padding: 0 6px;
+    }
+
+    &.t-badge--circle sup.t-badge__count {
+      border-radius: 10px;
+    }
+  }
+}

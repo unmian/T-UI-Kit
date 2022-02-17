@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-02-17 01:07:50
- * @LastEditTime: 2022-02-17 07:45:30
+ * @LastEditTime: 2022-02-17 11:39:10
  * @LastEditors: Quarter
  * @Description: 头像组
  * @FilePath: /t-ui-kit/packages/Avatar/src/AvatarGroup.vue
@@ -10,6 +10,7 @@
   <div class="t-avatar-group" :class="classNameList">
     <render-node
       v-for="(avatar, index) of visibleAvatar"
+      :key="`avatar-node-${String(avatar.key || index)}`"
       :node="avatar"
       :size="size"
       :is-group="index > 0"
