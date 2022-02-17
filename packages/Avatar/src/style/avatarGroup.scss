@@ -1,0 +1,29 @@
+@import "packages/Style/mixin.scss";
+
+.t-avatar-group {
+  display: inline-flex;
+  align-items: center;
+
+  .t-avatar {
+    border: 2px solid var(--t-border-color, var(--t-neutral-1-white-1));
+  }
+
+
+  // 左侧在上
+  &.t-avatar-group--left-up {
+    @for $index from 1 through 50 {
+      .t-avatar:nth-child(#{50 - $index}) {
+        z-index: $index;
+      }
+    }
+  }
+
+  // 右侧在上
+  &.t-avatar-group--right-up {
+    @for $index from 1 through 50 {
+      .t-avatar:nth-child(#{$index}) {
+        z-index: $index;
+      }
+    }
+  }
+}

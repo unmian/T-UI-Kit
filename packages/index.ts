@@ -1,7 +1,7 @@
 /*
  * @Author: Quarter
  * @Date: 2021-12-29 07:39:03
- * @LastEditTime: 2022-02-16 05:16:38
+ * @LastEditTime: 2022-02-17 01:13:19
  * @LastEditors: Quarter
  * @Description: UI 组件入口文件
  * @FilePath: /t-ui-kit/packages/index.ts
@@ -12,6 +12,7 @@ import { App, Plugin } from "vue";
 import "./Style";
 
 import { AlertPlugin } from "./Alert";
+import { AvatarPlugin } from "./Avatar";
 import { ButtonPlugin } from "./Button";
 import { ClipboardPlugin } from "./Clipboard";
 import { DividerPlugin } from "./Divider";
@@ -28,6 +29,7 @@ import { TagPlugin } from "./Tag";
 const TUIKitPlugin: Plugin = {
   install(app: App) {
     AlertPlugin.install?.(app);
+    AvatarPlugin.install?.(app);
     ButtonPlugin.install?.(app);
     ClipboardPlugin.install?.(app);
     DividerPlugin.install?.(app);
@@ -46,6 +48,7 @@ const TUIKitPlugin: Plugin = {
 export default TUIKitPlugin;
 
 export * from "./Alert";
+export * from "./Avatar";
 export * from "./Button";
 export * from "./Clipboard";
 export * from "./Divider";
