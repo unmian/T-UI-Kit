@@ -1,0 +1,89 @@
+@import "packages/Style/mixin.scss";
+
+.t-avatar {
+  color: var(--t-brand-normal);
+  text-align: center;
+  cursor: default;
+  background-color: var(--t-brand-focus);
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+
+  // 仅文本
+  &.t-avatar--text {
+    color: var(--t-neutral-1-white-1);
+    background-color: var(--t-brand-normal);
+  }
+
+  // 圆形
+  &.t-avatar--circle {
+    border-radius: 50%;
+  }
+
+  // 圆形
+  &.t-avatar--round {
+    @include t-radius;
+  }
+
+  // 小尺寸
+  &.t-avatar--size-small {
+    @include t-text-4;
+
+    width: 24px;
+    height: 24px;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .t-icon {
+      font-size: 16px;
+    }
+  }
+
+  // 中尺寸
+  &.t-avatar--size-medium {
+    @include t-text-3;
+
+    width: 32px;
+    height: 32px;
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+
+    .t-icon {
+      font-size: 20px;
+    }
+  }
+
+  // 大尺寸
+  &.t-avatar--size-large {
+    @include t-text-2;
+
+    width: 40px;
+    height: 40px;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .t-icon {
+      font-size: 24px;
+    }
+  }
+
+  // 间距
+  &:nth-child(n + 2) {
+    margin-left: var(--t-space-40);
+  }
+}

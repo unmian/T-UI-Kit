@@ -224,8 +224,7 @@
         "compName": "avatar",
         "compZhName": "头像",
         "compDesc": "这是一个按钮",
-        "compClassName": "Avatar",
-        "disabled": true
+        "compClassName": "Avatar"
       },
       {
         "compName": "badge",
