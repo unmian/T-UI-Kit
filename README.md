@@ -1,3 +1,53 @@
 # t-ui-kit
 
 一个基于 TDesign Community 设计标准的适用于 Vue 框架的 UI 组件
+
+## 组件待办列表
+
+- [x] Button 按钮
+- [x] Divider 分割线
+- [x] Icon 图标
+- [ ] Grid 栅格
+- [ ] Layout 布局
+- [ ] Affix 固钉
+- [ ] Anchor 锚点
+- [ ] Breadcrumb 面包屑
+- [ ] Dropdown 下拉菜单
+- [ ] Menu 导航菜单
+- [ ] Pagination 分页
+- [ ] Steps 步骤条
+- [ ] Tabs 选项卡
+- [ ] Cascader 级联组件
+- [ ] Checkbox 多选框
+- [ ] DatePicker 日期选择器
+- [ ] Form 表单
+- [ ] Input 输入框
+- [ ] InputNumber 数字输入框
+- [ ] Radio 单选框
+- [ ] Select 选择器
+- [ ] Slider 滑块
+- [ ] Switch 开关
+- [ ] Textarea 多行文本框
+- [ ] Transfer 穿梭框
+- [ ] TimePicker 时间选择器
+- [ ] TreeSelect 树选择器
+- [ ] Upload 上传
+- [x] Avatar 头像
+- [x] Badge 徽标
+- [ ] Calendar 日历
+- [ ] Comment 评论
+- [ ] List 列表
+- [ ] Loading 加载
+- [x] Progress 进度条
+- [x] Skeleton 骨架屏
+- [ ] Table 表格
+- [x] Tag 标签
+- [ ] Tooltip 文本提示
+- [ ] Tree 树
+- [x] Alert 警告提醒
+- [ ] Dialog 对话框
+- [ ] Drawer 抽屉
+- [x] Message 全局提示
+- [x] Notification 消息通知
+- [ ] Popconfirm 气泡确认框
+- [ ] Popup 弹出层

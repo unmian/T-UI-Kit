@@ -74,7 +74,7 @@ span.t-tag {
     background-color: var(--t-neutral-1-gray-3);
 
     // 禁用状态
-    &.t-tag__disabled {
+    &.t-tag--disabled {
       color: var(--t-text-gray-4);
       background-color: var(--t-neutral-1-gray-1);
 
@@ -204,7 +204,7 @@ a span.t-tag {
 
   // 默认主题
   &.t-tag--default {
-    &:not(.t-tag__disabled) {
+    &:not(.t-tag--disabled) {
       &:hover {
         color: var(--t-brand-hover);
       }
