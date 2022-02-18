@@ -8,7 +8,7 @@
   background-color: $normal;
 
   // 禁用状态
-  &.t-tag__disabled {
+  &.t-tag--disabled {
     background-color: $disabled;
 
     .t-tag__close-btn {
@@ -27,7 +27,7 @@
   color: $normal;
   background-color: $light;
 
-  &:not(.t-tag__disabled) {
+  &:not(.t-tag--disabled) {
     .t-tag__close-btn:hover {
       color: $hover;
     }
@@ -38,7 +38,7 @@
   }
 
   // 禁用状态
-  &.t-tag__disabled {
+  &.t-tag--disabled {
     color: $disabled;
 
     .t-tag__close-btn {
@@ -56,7 +56,7 @@
   color: $normal;
   background-color: var(--t-neutral-1-gray-3);
 
-  &:not(.t-tag__disabled) {
+  &:not(.t-tag--disabled) {
     .t-tag__close-btn:hover {
       color: $hover;
     }
@@ -67,7 +67,7 @@
   }
 
   // 禁用状态
-  &.t-tag__disabled {
+  &.t-tag--disabled {
     color: $disabled;
     background-color: var(--t-neutral-1-gray-1);
 
@@ -80,7 +80,7 @@
 @mixin dark-link-tag($hover: var(--t-brand-hover),
   $click: var(--t-brand-click),
 ) {
-  &:not(.t-tag__disabled) {
+  &:not(.t-tag--disabled) {
     &:hover {
       background-color: $hover;
     }
@@ -95,7 +95,7 @@
 @mixin light-link-tag($hover: var(--t-brand-hover),
   $click: var(--t-brand-click),
 ) {
-  &:not(.t-tag__disabled) {
+  &:not(.t-tag--disabled) {
     &:hover {
       color: $hover;
     }
@@ -110,7 +110,7 @@
 @mixin plain-link-tag($hover: var(--t-brand-hover),
   $click: var(--t-brand-click),
 ) {
-  &:not(.t-tag__disabled) {
+  &:not(.t-tag--disabled) {
     &:hover {
       color: $hover;
     }
