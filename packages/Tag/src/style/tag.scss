@@ -82,6 +82,16 @@ span.t-tag {
         cursor: not-allowed;
       }
     }
+
+    // 悬浮状态
+    &.t-tag--hover {
+      background-color: var(--t-neutral-1-gray-4);
+    }
+  
+    // 激活状态
+    &.t-tag--active {
+      background-color: var(--t-neutral-1-gray-6);
+    }
   }
 
   // 主要主题

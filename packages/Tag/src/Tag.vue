@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-08 05:27:23
- * @LastEditTime: 2022-01-12 03:18:57
+ * @LastEditTime: 2022-02-20 09:17:56
  * @LastEditors: Quarter
  * @Description: 标签
  * @FilePath: /t-ui-kit/packages/Tag/src/Tag.vue
@@ -13,6 +13,7 @@ import "./style/tag.scss";
 import { computed, PropType } from "@vue/runtime-core";
 import { TagSize, TagTheme, TagVariant } from "./type";
 import { Icon } from "packages/Icon";
+import { ref } from "vue";
 
 const props = defineProps({
   size: {
@@ -36,6 +37,11 @@ const props = defineProps({
   maxWidth: String, // 最大宽度
 });
 const emits = defineEmits(["close"]);
+
+// 是否悬浮到关闭按钮
+const isHover = ref<boolean>(false);
+// 是否惦记关闭按钮
+const isActive = ref<boolean>(false);
 
 /**
  * @description: 标签尺寸
@@ -95,6 +101,12 @@ const classNameList = computed<string[]>(() => {
     classList.push("t-tag--closable");
     if (props.disabled) {
       classList.push("t-tag--disabled");
+    } else {
+      if (isActive.value) {
+        classList.push("t-tag--active");
+      } else if (isHover.value) {
+        classList.push("t-tag--hover");
+      }
     }
   }
   return classList;
@@ -115,8 +127,18 @@ const close = (): void => {
     <span v-if="props.icon" class="t-tag__icon">
       <icon :name="props.icon"></icon>
     </span>
-    <span class="t-tag__text" :style="{ maxWidth }"><slot></slot></span>
-    <span v-if="props.closable" class="t-tag__close-btn" @click="close">
+    <span class="t-tag__text" :style="{ maxWidth }">
+      <slot></slot>
+    </span>
+    <span
+      v-if="props.closable"
+      class="t-tag__close-btn"
+      @click="close"
+      @mousedown="isActive = true"
+      @mouseup="isActive = false"
+      @mouseenter="isHover = true"
+      @mouseout="isHover = false; isActive = false"
+    >
       <icon name="close"></icon>
     </span>
   </span>

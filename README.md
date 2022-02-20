@@ -4,8 +4,8 @@
 
 ## 组件待办列表
 
-- [x] ~~Button 按钮 @v1.0~~
-- [x] ~~Divider 分割线 @v1.0~~
+- [x] ~~Button 按钮 @v1.0.5~~
+- [x] ~~Divider 分割线 @v1.0.5~~
 - [x] ~~Icon 图标 @v1.0~~
 - [ ] Grid 栅格
 - [ ] Layout 布局
@@ -32,22 +32,22 @@
 - [ ] TimePicker 时间选择器
 - [ ] TreeSelect 树选择器
 - [ ] Upload 上传
-- [x] ~~Avatar 头像 @v1.0~~
+- [x] ~~Avatar 头像 @v1.0.5~~
 - [x] ~~Badge 徽标数 @v1.0.5~~
 - [ ] Calendar 日历
 - [ ] Comment 评论
 - [ ] List 列表
-- [x] ~~Loading 加载 @v1.0~~
-- [x] ~~Progress 进度条 @v1.0~~
-- [x] ~~Skeleton 骨架屏 @v1.0~~
+- [x] ~~Loading 加载 @v1.0.5~~
+- [x] ~~Progress 进度条 @v1.0.5~~
+- [x] ~~Skeleton 骨架屏 @v1.0.5~~
 - [ ] Table 表格
-- [x] ~~Tag 标签 @v1.0~~
+- [x] ~~Tag 标签 @v1.0.5~~
 - [ ] Tooltip 文本提示
 - [ ] Tree 树
-- [x] Alert 警告提醒
+- [x] ~~Alert 警告提醒 @v1.0.5~~
 - [ ] Dialog 对话框
 - [x] ~~Drawer 抽屉 @v1.0.5~~
-- [x] ~~Message 全局提示 @v1.0~~
-- [x] ~~Notification 消息通知 @v1.0~~
+- [x] ~~Message 全局提示 @v1.0.5~~
+- [x] ~~Notification 消息通知 @v1.0.5~~
 - [ ] Popconfirm 气泡确认框
 - [ ] Popup 弹出层

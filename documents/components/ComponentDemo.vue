@@ -1,20 +1,23 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-07 07:32:59
- * @LastEditTime: 2022-01-12 03:09:16
+ * @LastEditTime: 2022-02-20 08:50:18
  * @LastEditors: Quarter
  * @Description: 代码预览
- * @FilePath: /t-ui-kit/packages/Global/CodePreview.vue
+ * @FilePath: /t-ui-kit/documents/components/ComponentDemo.vue
 -->
 <script lang="ts" setup>
 import "packages/Style";
 
-import { computed, defineAsyncComponent, ref, useAttrs } from "vue";
+import { computed, defineAsyncComponent, inject, ref, useAttrs } from "vue";
 import { Icon } from "packages/Icon";
 import { Clipboard } from "packages/Clipboard";
+import { MessageFunc } from "packages/Message";
 
 const attrs = useAttrs();
 
+// 全局消息
+const $message = inject<MessageFunc>("$message");
 // 代码内容
 const code = ref("");
 // 自定义组件
@@ -56,7 +59,7 @@ const filterCode = computed<string>(() => {
  */
 const handleCodeCopy = () => {
   Clipboard.copy(code.value).then(() => {
-    alert("复制成功");
+    $message?.success("示例代码复制成功");
   });
 };
 

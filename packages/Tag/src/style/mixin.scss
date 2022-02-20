@@ -15,6 +15,16 @@
       cursor: not-allowed;
     }
   }
+
+  // 悬浮状态
+  &.t-tag--hover {
+    background-color: $hover;
+  }
+
+  // 激活状态
+  &.t-tag--active {
+    background-color: $click;
+  }
 }
 
 // 亮色标签
@@ -27,22 +37,32 @@
   color: $normal;
   background-color: $light;
 
-  &:not(.t-tag--disabled) {
-    .t-tag__close-btn:hover {
-      color: $hover;
-    }
-
-    .t-tag__close-btn:active {
-      color: $click;
-    }
-  }
-
   // 禁用状态
   &.t-tag--disabled {
     color: $disabled;
 
     .t-tag__close-btn {
       cursor: not-allowed;
+    }
+  }
+
+  // 悬浮状态
+  &.t-tag--hover {
+    color: var(--t-text-white-1);
+    background-color: $hover;
+
+    .t-tag__close-btn {
+      color: var(--t-text-white-1);
+    }
+  }
+
+  // 激活状态
+  &.t-tag--active {
+    color: var(--t-text-white-1);
+    background-color: $click;
+
+    .t-tag__close-btn {
+      color: var(--t-text-white-1);
     }
   }
 }
@@ -56,16 +76,6 @@
   color: $normal;
   background-color: var(--t-neutral-1-gray-3);
 
-  &:not(.t-tag--disabled) {
-    .t-tag__close-btn:hover {
-      color: $hover;
-    }
-
-    .t-tag__close-btn:active {
-      color: $click;
-    }
-  }
-
   // 禁用状态
   &.t-tag--disabled {
     color: $disabled;
@@ -73,6 +83,26 @@
 
     .t-tag__close-btn {
       cursor: not-allowed;
+    }
+  }
+
+  // 悬浮状态
+  &.t-tag--hover {
+    color: $hover;
+    background-color: var(--t-neutral-1-gray-4);
+
+    .t-tag__close-btn {
+      color: $hover;
+    }
+  }
+
+  // 激活状态
+  &.t-tag--active {
+    color: $click;
+    background-color: var(--t-neutral-1-gray-6);
+
+    .t-tag__close-btn {
+      color: $click;
     }
   }
 }
