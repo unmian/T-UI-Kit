@@ -15,7 +15,7 @@
   transition: opacity 0.24s linear;
 }
 
-.fade-enter-from,
+.fade-enter,
 .fade-leave-to {
   opacity: 0;
 }
@@ -40,32 +40,32 @@
   transition: all 0.48s ease;
 }
 
-.slide-bottom-enter-from,
-.slide-bottom-top-enter-from,
+.slide-bottom-enter,
+.slide-bottom-top-enter,
 .slide-bottom-leave-to,
 .slide-top-bottom-leave-to {
   opacity: 0;
   transform: translateY(30px);
 }
 
-.slide-top-enter-from,
-.slide-top-bottom-enter-from,
+.slide-top-enter,
+.slide-top-bottom-enter,
 .slide-top-leave-to,
 .slide-bottom-top-leave-to {
   opacity: 0;
   transform: translateY(-30px);
 }
 
-.slide-right-enter-from,
-.slide-right-left-enter-from,
+.slide-right-enter,
+.slide-right-left-enter,
 .slide-right-leave-to,
 .slide-left-right-leave-to {
   opacity: 0;
   transform: translateX(30px);
 }
 
-.slide-left-enter-from,
-.slide-left-right-enter-from,
+.slide-left-enter,
+.slide-left-right-enter,
 .slide-left-leave-to,
 .slide-right-left-leave-to {
   opacity: 0;
@@ -91,32 +91,32 @@
   transition: all 0.48s ease;
 }
 
-.slide-bottom-60-enter-from,
-.slide-bottom-top-60-enter-from,
+.slide-bottom-60-enter,
+.slide-bottom-top-60-enter,
 .slide-bottom-60-leave-to,
 .slide-top-bottom-60-leave-to {
   opacity: 0;
   transform: translateY(60px);
 }
 
-.slide-top-60-enter-from,
-.slide-top-bottom-60-enter-from,
+.slide-top-60-enter,
+.slide-top-bottom-60-enter,
 .slide-top-60-leave-to,
 .slide-bottom-top-60-leave-to {
   opacity: 0;
   transform: translateY(-60px);
 }
 
-.slide-right-60-enter-from,
-.slide-right-left-60-enter-from,
+.slide-right-60-enter,
+.slide-right-left-60-enter,
 .slide-right-60-leave-to,
 .slide-left-right-60-leave-to {
   opacity: 0;
   transform: translateX(60px);
 }
 
-.slide-left-60-enter-from,
-.slide-left-right-60-enter-from,
+.slide-left-60-enter,
+.slide-left-right-60-enter,
 .slide-left-60-leave-to,
 .slide-right-left-60-leave-to {
   opacity: 0;
@@ -143,34 +143,86 @@
   transition: all 0.48s ease;
 }
 
-.slide-bottom-half-enter-from,
-.slide-bottom-top-half-enter-from,
+.slide-bottom-half-enter,
+.slide-bottom-top-half-enter,
 .slide-bottom-half-leave-to,
 .slide-top-bottom-half-leave-to {
   opacity: 0;
   transform: translateY(50%);
 }
 
-.slide-top-half-enter-from,
-.slide-top-bottom-half-enter-from,
+.slide-top-half-enter,
+.slide-top-bottom-half-enter,
 .slide-top-half-leave-to,
 .slide-bottom-top-half-leave-to {
   opacity: 0;
   transform: translateY(-50%);
 }
 
-.slide-right-half-enter-from,
-.slide-right-left-half-enter-from,
+.slide-right-half-enter,
+.slide-right-left-half-enter,
 .slide-right-half-leave-to,
 .slide-left-right-half-leave-to {
   opacity: 0;
   transform: translateX(50%);
 }
 
-.slide-left-half-enter-from,
-.slide-left-right-half-enter-from,
+.slide-left-half-enter,
+.slide-left-right-half-enter,
 .slide-left-half-leave-to,
 .slide-right-left-half-leave-to {
+  opacity: 0;
+  transform: translateX(-50%);
+}
+
+.slide-top-all-enter-active,
+.slide-top-all-leave-active,
+.slide-bottom-all-enter-active,
+.slide-bottom-all-leave-active,
+.slide-left-all-enter-active,
+.slide-left-all-leave-active,
+.slide-right-all-enter-active,
+.slide-right-all-leave-active,
+.slide-top-bottom-all-enter-active,
+.slide-top-bottom-all-leave-active,
+.slide-bottom-top-all-enter-active,
+.slide-bottom-top-all-leave-active,
+.slide-left-right-all-enter-active,
+.slide-left-right-all-leave-active,
+.slide-right-left-all-enter-active,
+.slide-right-left-all-leave-active {
+  transform: translateX(0) translateY(0);
+  transition: all 0.48s ease;
+}
+
+.slide-bottom-all-enter,
+.slide-bottom-top-all-enter,
+.slide-bottom-all-leave-to,
+.slide-top-bottom-all-leave-to {
+  opacity: 0;
+  transform: translateY(50%);
+}
+
+.slide-top-all-enter,
+.slide-top-bottom-all-enter,
+.slide-top-all-leave-to,
+.slide-bottom-top-all-leave-to {
+  opacity: 0;
+  transform: translateY(-50%);
+}
+
+.slide-right-all-enter,
+.slide-right-left-all-enter,
+.slide-right-all-leave-to,
+.slide-left-right-all-leave-to {
+  opacity: 0;
+  transform: translateX(50%);
+}
+
+.slide-left-all-enter,
+.slide-left-right-all-enter,
+.slide-left-all-leave-to,
+.slide-right-left-all-leave-to {
   opacity: 0;
   transform: translateX(-50%);
 }

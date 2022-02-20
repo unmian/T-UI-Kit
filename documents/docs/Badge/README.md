@@ -1,16 +1,16 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-02-17 10:36:26
- * @LastEditTime: 2022-02-17 11:46:45
+ * @LastEditTime: 2022-02-19 06:22:39
  * @LastEditors: Quarter
- * @Description: 徽标说明文档
+ * @Description: 徽标数说明文档
  * @FilePath: /t-ui-kit/documents/docs/Badge/README.md
 -->
 <script setup>
 import { /* defineComponent */ ComponentDemo } from "documents/components";
 </script>
 
-# 徽标 Badge
+# 徽标数 Badge
 
 > 出现在图标或文字右上角的徽标标识。
 

@@ -228,7 +228,7 @@
       },
       {
         "compName": "badge",
-        "compZhName": "徽标",
+        "compZhName": "徽标数",
         "compDesc": "这是一个按钮",
         "compClassName": "Badge"
       },
@@ -321,8 +321,7 @@
         "compName": "drawer",
         "compZhName": "抽屉",
         "compDesc": "这是一个按钮",
-        "compClassName": "Drawer",
-        "disabled": true
+        "compClassName": "Drawer"
       },
       {
         "compName": "message",

@@ -1,9 +1,9 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-02-17 11:01:29
- * @LastEditTime: 2022-02-17 11:47:11
+ * @LastEditTime: 2022-02-19 06:23:17
  * @LastEditors: Quarter
- * @Description: 徽标形状示例
+ * @Description: 徽标数形状示例
  * @FilePath: /t-ui-kit/documents/docs/Badge/ShapeDemo.vue
 -->
 <template>

@@ -1,9 +1,9 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-02-17 11:00:36
- * @LastEditTime: 2022-02-17 11:47:03
+ * @LastEditTime: 2022-02-19 06:23:10
  * @LastEditors: Quarter
- * @Description: 徽标数量示例
+ * @Description: 徽标数数量示例
  * @FilePath: /t-ui-kit/documents/docs/Badge/CountDemo.vue
 -->
 <template>

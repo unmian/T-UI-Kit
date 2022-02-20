@@ -1,9 +1,9 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-02-17 11:01:14
- * @LastEditTime: 2022-02-17 11:47:17
+ * @LastEditTime: 2022-02-19 06:23:21
  * @LastEditors: Quarter
- * @Description: 徽标尺寸示例
+ * @Description: 徽标数尺寸示例
  * @FilePath: /t-ui-kit/documents/docs/Badge/SizeDemo.vue
 -->
 <template>

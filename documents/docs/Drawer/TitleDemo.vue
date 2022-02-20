@@ -1,0 +1,26 @@
+<!--
+ * @Author: Quarter
+ * @Date: 2022-02-18 08:29:56
+ * @LastEditTime: 2022-02-20 06:36:54
+ * @LastEditors: Quarter
+ * @Description: 抽屉标题示例
+ * @FilePath: /t-ui-kit/documents/docs/Drawer/TitleDemo.vue
+-->
+<template>
+  <div>
+    <t-button theme="primary" @click="visible = true">打开抽屉</t-button>
+    <t-drawer :visible.sync="visible" title="标题名称"></t-drawer>
+  </div>
+</template>
+
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
+  data() {
+    return {
+      visible: false, // 是否可见
+    };
+  },
+});
+</script>
