@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-08 05:27:23
- * @LastEditTime: 2022-02-04 12:44:27
+ * @LastEditTime: 2022-02-20 09:37:06
  * @LastEditors: Quarter
  * @Description: 标签
  * @FilePath: /t-ui-kit/packages/Tag/src/Tag.vue
@@ -14,7 +14,15 @@
     <span class="t-tag__text" :style="{ maxWidth }">
       <slot></slot>
     </span>
-    <span v-if="closable" class="t-tag__close-btn" @click="close">
+    <span
+      v-if="closable"
+      class="t-tag__close-btn"
+      @click="close"
+      @mousedown="isActive = true"
+      @mouseup="isActive = false"
+      @mouseenter="isHover = true"
+      @mouseout="isHover = false; isActive = false"
+    >
       <icon name="close"></icon>
     </span>
   </span>
@@ -53,6 +61,12 @@ export default Vue.extend({
     closable: Boolean, // 是否可关闭
     disabled: Boolean, // 是否禁用
     maxWidth: String, // 最大宽度
+  },
+  data() {
+    return {
+      isHover: false, // 是否悬浮
+      isActive: false, // 是否点击
+    };
   },
   computed: {
     /**
@@ -110,6 +124,12 @@ export default Vue.extend({
         classList.push("t-tag--closable");
         if (this.disabled) {
           classList.push("t-tag--disabled");
+        } else {
+          if (this.isActive) {
+            classList.push("t-tag--active");
+          } else if (this.isHover) {
+            classList.push("t-tag--hover");
+          }
         }
       }
       return classList;

@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-07 07:32:59
- * @LastEditTime: 2022-02-15 06:06:03
+ * @LastEditTime: 2022-02-20 08:49:48
  * @LastEditors: Quarter
  * @Description: 代码预览
  * @FilePath: /t-ui-kit/documents/components/ComponentDemo.vue
@@ -71,7 +71,7 @@ export default Vue.extend({
      */
     handleCodeCopy(): void {
       this.$clipboard?.copy(this.code).then(() => {
-        alert("复制成功");
+        this.$message?.success("示例代码复制成功");
       });
     },
     /**
