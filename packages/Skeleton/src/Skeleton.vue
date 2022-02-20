@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-02-16 03:22:10
- * @LastEditTime: 2022-02-16 07:52:26
+ * @LastEditTime: 2022-02-19 08:46:01
  * @LastEditors: Quarter
  * @Description: 骨架屏
  * @FilePath: /t-ui-kit/packages/Skeleton/src/Skeleton.vue

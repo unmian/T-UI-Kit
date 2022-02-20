@@ -1,7 +1,7 @@
 /*
  * @Author: Quarter
  * @Date: 2022-01-11 06:23:18
- * @LastEditTime: 2022-02-13 02:29:19
+ * @LastEditTime: 2022-02-18 05:48:07
  * @LastEditors: Quarter
  * @Description: 抽屉入口
  * @FilePath: /t-ui-kit/packages/Drawer/index.ts
@@ -17,4 +17,4 @@ export const DrawerPlugin: Plugin = {
 
 export { Drawer };
 
-// export * from "./src/type";
+export * from "./src/type";

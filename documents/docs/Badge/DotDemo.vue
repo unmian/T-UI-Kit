@@ -1,9 +1,9 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-02-17 11:01:02
- * @LastEditTime: 2022-02-17 11:23:29
+ * @LastEditTime: 2022-02-19 06:23:43
  * @LastEditors: Quarter
- * @Description: 点状徽标示例
+ * @Description: 点状徽标数示例
  * @FilePath: /t-ui-kit/documents/docs/Badge/DotDemo.vue
 -->
 <template>
