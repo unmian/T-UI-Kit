@@ -1,14 +1,14 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-10 09:24:13
- * @LastEditTime: 2022-01-10 09:52:30
+ * @LastEditTime: 2022-02-21 08:35:57
  * @LastEditors: Quarter
  * @Description: 函数调用快速主题示例
- * @FilePath: /t-ui-kit/packages/Message/docs/FuncThemeDemo.vue
+ * @FilePath: /t-ui-kit/documents/docs/Message/FuncThemeDemo.vue
 -->
 <script lang="ts" setup>
-import { inject } from "@vue/runtime-core";
-import { MessageFunc } from "../src/type";
+import { inject } from "vue";
+import { MessageFunc } from "packages/Message";
 
 // 全局提示函数
 const $message = inject<MessageFunc>("$message");

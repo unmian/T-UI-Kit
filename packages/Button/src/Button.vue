@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2021-12-29 07:36:34
- * @LastEditTime: 2022-02-13 02:19:26
+ * @LastEditTime: 2022-02-21 09:08:43
  * @LastEditors: Quarter
  * @Description: 按钮
  * @FilePath: /t-ui-kit/packages/Button/src/Button.vue
@@ -11,8 +11,9 @@ import "packages/Style";
 import "./style/button.scss";
 
 import { computed, PropType } from "vue";
-import { ButtonVariant, ButtonSize, ButtonTheme } from "./type";
 import { Icon } from "packages/Icon";
+
+import type { ButtonVariant, ButtonSize, ButtonTheme } from "./type";
 
 // 定义参数和事件
 const props = defineProps({

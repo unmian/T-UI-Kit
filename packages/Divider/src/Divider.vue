@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-11 05:47:23
- * @LastEditTime: 2022-02-13 02:28:56
+ * @LastEditTime: 2022-02-21 09:08:28
  * @LastEditors: Quarter
  * @Description: 分割线
  * @FilePath: /t-ui-kit/packages/Divider/src/Divider.vue
@@ -10,8 +10,9 @@
 import "packages/Style";
 import "./style/divider.scss";
 
-import { computed, PropType, useSlots } from "@vue/runtime-core";
-import { DividerLayout, DividerAlign } from "./type";
+import { computed, PropType, useSlots } from "vue";
+
+import type { DividerLayout, DividerAlign } from "./type";
 
 const props = defineProps({
   dashed: {

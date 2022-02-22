@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-02-17 10:39:58
- * @LastEditTime: 2022-02-17 11:46:28
+ * @LastEditTime: 2022-02-21 09:08:54
  * @LastEditors: Quarter
  * @Description: 徽标组件
  * @FilePath: /t-ui-kit/packages/Badge/src/Badge.vue
@@ -11,7 +11,8 @@ import "packages/Style";
 import "./style/badge.scss";
 
 import { computed, PropType } from "vue";
-import { BadgeShape, BadgeSize } from "./type";
+
+import type { BadgeShape, BadgeSize } from "./type";
 
 const props = defineProps({
   count: [Number, String], // 计数

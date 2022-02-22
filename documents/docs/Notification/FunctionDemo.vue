@@ -7,7 +7,7 @@
  * @FilePath: /t-ui-kit/packages/Notification/docs/FunctionDemo.vue
 -->
 <script lang="ts" setup>
-import { inject } from "@vue/runtime-core";
+import { inject } from "vue";
 import { NotifyFunc } from "packages/Notification";
 import { MessageFunc } from "packages/Message";
 

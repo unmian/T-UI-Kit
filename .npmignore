@@ -2,6 +2,7 @@
 .idea
 .vscode
 build/
+dist/
 docs/
 examples/
 documents/
@@ -13,6 +14,7 @@ typings/
 yarn.lock
 tsconfig.json
 index.html
+favicon.ico
 .npmignore
 .gitignore
 

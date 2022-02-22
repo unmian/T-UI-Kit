@@ -1,14 +1,14 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-08 03:16:05
- * @LastEditTime: 2022-01-10 11:47:00
+ * @LastEditTime: 2022-02-21 08:35:44
  * @LastEditors: Quarter
  * @Description: 加载指令示例
- * @FilePath: /t-ui-kit/packages/Loading/docs/DicSizeDemo.vue
+ * @FilePath: /t-ui-kit/documents/docs/Loading/DicSizeDemo.vue
 -->
 <script lang="ts" setup>
 import { ref } from "@vue/reactivity";
-import { LoadingSize } from "../src/type";
+import { LoadingSize } from "packages/Loading";
 
 // 加载动画
 const loading = ref(true);

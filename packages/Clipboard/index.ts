@@ -1,7 +1,7 @@
 /*
  * @Author: Quarter
  * @Date: 2022-01-04 07:42:11
- * @LastEditTime: 2022-01-05 01:49:18
+ * @LastEditTime: 2022-02-21 09:00:00
  * @LastEditors: Quarter
  * @Description: 剪贴板指令入口
  * @FilePath: /t-ui-kit/packages/Clipboard/index.ts
@@ -17,6 +17,6 @@ export const ClipboardPlugin: Plugin = {
   },
 };
 
-type ClipboardProperties = typeof Clipboard;
+export type ClipboardProperties = typeof Clipboard;
 
-export { Clipboard, ClipboardProperties };
+export { Clipboard };

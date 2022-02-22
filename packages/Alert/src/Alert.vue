@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-11 02:17:01
- * @LastEditTime: 2022-02-13 02:20:11
+ * @LastEditTime: 2022-02-21 10:43:13
  * @LastEditors: Quarter
  * @Description: 警告提醒
  * @FilePath: /t-ui-kit/packages/Alert/src/Alert.vue
@@ -10,10 +10,10 @@
 import "packages/Style";
 import "./style/alert.scss";
 
-import { computed, PropType, useSlots, VNode } from "@vue/runtime-core";
-import { AlertTheme } from "./type";
+import { computed, PropType, useSlots, VNode, ref } from "vue";
 import { Icon } from "packages/Icon";
-import { ref } from "vue";
+
+import type { AlertTheme } from "./type";
 
 const props = defineProps({
   icon: String as PropType<string>, // 图标

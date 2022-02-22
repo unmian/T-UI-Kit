@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-11 09:01:37
- * @LastEditTime: 2022-02-13 02:37:25
+ * @LastEditTime: 2022-02-21 09:06:02
  * @LastEditors: Quarter
  * @Description: 进度条
  * @FilePath: /t-ui-kit/packages/Progress/src/Progress.vue
@@ -11,8 +11,9 @@ import "packages/Style";
 import "./style/progress.scss";
 
 import { computed, PropType } from "vue";
-import { ProgressSize, ProgressStatus, ProgressTheme } from "./type";
 import { Icon } from "packages/Icon";
+
+import type { ProgressSize, ProgressStatus, ProgressTheme } from "./type";
 
 const props = defineProps({
   percentage: {

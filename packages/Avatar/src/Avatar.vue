@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-02-17 01:07:43
- * @LastEditTime: 2022-02-17 08:18:50
+ * @LastEditTime: 2022-02-21 09:09:10
  * @LastEditors: Quarter
  * @Description: 头像
  * @FilePath: /t-ui-kit/packages/Avatar/src/Avatar.vue
@@ -12,7 +12,8 @@ import "./style/avatar.scss";
 
 import { computed, CSSProperties, nextTick, onBeforeUnmount, onMounted, PropType, ref, watch } from "vue";
 import { Icon } from "packages/Icon";
-import { AvatarShape, AvatarSize } from "./type";
+
+import type { AvatarShape, AvatarSize } from "./type";
 
 const props = defineProps({
   image: String, // 图片地址

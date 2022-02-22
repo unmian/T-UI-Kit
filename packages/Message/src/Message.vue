@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-05 01:51:50
- * @LastEditTime: 2022-02-13 02:36:08
+ * @LastEditTime: 2022-02-21 09:07:26
  * @LastEditors: Quarter
  * @Description: 全局提示组件
  * @FilePath: /t-ui-kit/packages/Message/src/Message.vue
@@ -10,10 +10,10 @@
 import "packages/Style";
 import "./style/message.scss";
 
-import { computed, PropType } from "@vue/runtime-core";
-import { MessageTheme } from "./type";
+import { computed, PropType, watch, onBeforeUnmount, onMounted } from "vue";
 import { Icon } from "packages/Icon";
-import { onBeforeUnmount, onMounted, ref, watch } from "vue";
+
+import type { MessageTheme } from "./type";
 
 const props = defineProps({
   theme: {

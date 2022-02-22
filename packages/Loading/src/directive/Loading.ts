@@ -1,16 +1,17 @@
 /*
  * @Author: Quarter
  * @Date: 2022-01-07 06:17:52
- * @LastEditTime: 2022-02-15 09:55:50
+ * @LastEditTime: 2022-02-21 09:07:44
  * @LastEditors: Quarter
  * @Description: 加载指令
  * @FilePath: /t-ui-kit/packages/Loading/src/directive/Loading.ts
  */
-import { createVNode, DirectiveBinding } from "@vue/runtime-dom";
-import { HTMLDirectiveElement } from "packages/Global";
+import { createVNode, DirectiveBinding } from "vue";
 import { render } from "vue";
 import Loading from "../Loading.vue";
-import { LoadingSize } from "../type";
+
+import type { HTMLDirectiveElement } from "packages/Global";
+import type { LoadingSize } from "../type";
 
 /**
  * @description: 挂载之前

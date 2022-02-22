@@ -1,13 +1,13 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-08 01:52:47
- * @LastEditTime: 2022-02-17 08:31:21
+ * @LastEditTime: 2022-02-21 08:46:18
  * @LastEditors: Quarter
  * @Description: 全局提示关闭事件示例
  * @FilePath: /t-ui-kit/documents/docs/Message/EmitCloseDemo.vue
 -->
 <script lang="ts" setup>
-import { inject } from "@vue/runtime-core";
+import { inject } from "vue";
 import { MessageFunc } from "packages/Message";
 
 // 全局提示

@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-11 02:23:32
- * @LastEditTime: 2022-02-13 02:36:00
+ * @LastEditTime: 2022-02-21 09:07:06
  * @LastEditors: Quarter
  * @Description: 消息通知
  * @FilePath: /t-ui-kit/packages/Notification/src/Notification.vue
@@ -16,10 +16,12 @@ import {
   onMounted,
   PropType,
   useSlots,
-} from "@vue/runtime-core";
-import { NotificationTheme } from "./type";
+  Slot,
+  watch,
+} from "vue";
 import { Icon } from "packages/Icon";
-import { Slot, watch } from "vue";
+
+import type { NotificationTheme } from "./type";
 
 const props = defineProps({
   theme: {
@@ -178,11 +180,7 @@ const handleClose = () => {
     <div class="t-notification__main">
       <div class="t-notification__header">
         <div class="t-notification__title">{{ props.title }}</div>
-        <div
-          v-if="props.closeBtn"
-          class="t-notification__close-btn"
-          @click="handleClose"
-        >
+        <div v-if="props.closeBtn" class="t-notification__close-btn" @click="handleClose">
           <Icon name="close"></Icon>
         </div>
       </div>

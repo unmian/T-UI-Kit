@@ -1,13 +1,13 @@
 <!--
  * @Author: Quarter
  * @Date: 2021-12-31 02:17:49
- * @LastEditTime: 2022-01-12 03:26:21
+ * @LastEditTime: 2022-02-21 08:45:40
  * @LastEditors: Quarter
  * @Description: 图标网格
- * @FilePath: /t-ui-kit/packages/Global/src/IconGrid.vue
+ * @FilePath: /t-ui-kit/documents/components/IconGrid.vue
 -->
 <script lang="ts" setup>
-import { computed, PropType, inject } from "@vue/runtime-core";
+import { computed, PropType, inject } from "vue";
 import { MessageFunc } from "packages/Message";
 import { ClipboardProperties } from "packages/Clipboard";
 

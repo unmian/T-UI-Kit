@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-02-17 01:07:50
- * @LastEditTime: 2022-02-17 06:51:17
+ * @LastEditTime: 2022-02-21 09:09:02
  * @LastEditors: Quarter
  * @Description: 头像组
  * @FilePath: /t-ui-kit/packages/Avatar/src/AvatarGroup.vue
@@ -10,9 +10,10 @@
 import "packages/Style";
 import "./style/avatarGroup.scss";
 
-import { computed, PropType, ref, useSlots, VNode, watch } from "vue";
+import { computed, PropType, useSlots, VNode } from "vue";
 import Avatar from "./Avatar.vue";
-import { AvatarCascading, AvatarSize } from "./type";
+
+import type { AvatarCascading, AvatarSize } from "./type";
 
 const props = defineProps({
   cascading: { // 级联顺序

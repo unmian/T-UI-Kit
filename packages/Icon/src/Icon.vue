@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2021-12-30 11:44:08
- * @LastEditTime: 2022-02-03 02:27:06
+ * @LastEditTime: 2022-02-21 09:00:57
  * @LastEditors: Quarter
  * @Description: 图标组件
  * @FilePath: /t-ui-kit/packages/Icon/src/Icon.vue
@@ -10,8 +10,7 @@
 import "packages/Style";
 import "./style/icon.scss";
 
-import { PropType } from "@vue/runtime-core";
-import { computed } from "vue";
+import { PropType, computed } from "vue";
 
 const props = defineProps({
   name: String as PropType<string>, // 图标名称

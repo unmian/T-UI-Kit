@@ -1,15 +1,14 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-10 09:27:15
- * @LastEditTime: 2022-01-10 11:04:41
+ * @LastEditTime: 2022-02-21 08:46:37
  * @LastEditors: Quarter
  * @Description: 函数调用清空消息示例
- * @FilePath: /t-ui-kit/packages/Message/docs/FuncClearDemo.vue
+ * @FilePath: /t-ui-kit/documents/docs/Message/FuncClearDemo.vue
 -->
 <script lang="ts" setup>
-import { inject } from "@vue/runtime-core";
-import { ref } from "vue";
-import { MessageFunc } from "../src/type";
+import { inject } from "vue";
+import { MessageFunc } from "packages/Message";
 
 // 全局提示函数
 const $message = inject<MessageFunc>("$message");

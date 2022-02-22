@@ -1,13 +1,13 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-12 06:08:07
- * @LastEditTime: 2022-01-12 08:45:38
+ * @LastEditTime: 2022-02-21 08:45:54
  * @LastEditors: Quarter
  * @Description: 警告提醒主题示例
- * @FilePath: /t-ui-kit/packages/Alert/docs/OperationDemo.vue
+ * @FilePath: /t-ui-kit/documents/docs/Alert/OperationDemo.vue
 -->
 <script lang="ts" setup>
-import { inject } from "@vue/runtime-core";
+import { inject } from "vue";
 import { MessageFunc } from "packages/Message";
 
 // 全局提示

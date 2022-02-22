@@ -1,15 +1,15 @@
 /*
  * @Author: Quarter
  * @Date: 2022-01-04 08:21:31
- * @LastEditTime: 2022-01-10 09:17:55
+ * @LastEditTime: 2022-02-22 11:49:57
  * @LastEditors: Quarter
  * @Description: 
  * @FilePath: /t-ui-kit/packages/t-ui.d.ts
  */
 
-import { MessageFunc } from "./Message";
-import { Clipboard } from "./Clipboard";
-import { LoadingFunc } from "./Loading";
+import type { MessageFunc } from "./Message";
+import type { Clipboard } from "./Clipboard";
+import type { LoadingFunc } from "./Loading";
 
 declare module "@vue/runtime-core" {
   export interface ComponentCustomProperties {

@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-06 12:22:22
- * @LastEditTime: 2022-02-13 02:36:22
+ * @LastEditTime: 2022-02-21 09:07:03
  * @LastEditors: Quarter
  * @Description: 通知通知列表
  * @FilePath: /t-ui-kit/packages/Notification/src/NotificationList.vue
@@ -10,10 +10,10 @@
 import "packages/Style";
 import "./style/notificationList.scss";
 
-import { computed, PropType } from "@vue/runtime-core";
-import { NotifyConfig, NotificationPlacement } from "./type";
+import { computed, PropType, ref } from "vue";
 import { Notification } from "packages/Notification";
-import { ref } from "vue";
+
+import type { NotifyConfig, NotificationPlacement } from "./type";
 
 const props = defineProps({
   placement: {

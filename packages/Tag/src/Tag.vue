@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-08 05:27:23
- * @LastEditTime: 2022-02-20 09:17:56
+ * @LastEditTime: 2022-02-21 09:06:29
  * @LastEditors: Quarter
  * @Description: 标签
  * @FilePath: /t-ui-kit/packages/Tag/src/Tag.vue
@@ -10,10 +10,10 @@
 import "packages/Style";
 import "./style/tag.scss";
 
-import { computed, PropType } from "@vue/runtime-core";
-import { TagSize, TagTheme, TagVariant } from "./type";
+import { computed, PropType, ref } from "vue";
 import { Icon } from "packages/Icon";
-import { ref } from "vue";
+
+import type { TagSize, TagTheme, TagVariant } from "./type";
 
 const props = defineProps({
   size: {

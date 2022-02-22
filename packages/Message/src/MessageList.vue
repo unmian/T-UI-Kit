@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-06 12:22:22
- * @LastEditTime: 2022-02-13 02:32:52
+ * @LastEditTime: 2022-02-21 09:07:20
  * @LastEditors: Quarter
  * @Description: 全局提示列表
  * @FilePath: /t-ui-kit/packages/Message/src/MessageList.vue
@@ -10,10 +10,10 @@
 import "packages/Style";
 import "./style/messageList.scss";
 
-import { computed, PropType } from "@vue/runtime-core";
-import { MessageConfig, MessagePlacement } from "./type";
+import { computed, PropType, ref } from "vue";
 import { Message } from "packages/Message";
-import { ref } from "vue";
+
+import type { MessageConfig, MessagePlacement } from "./type";
 
 const props = defineProps({
   placement: {

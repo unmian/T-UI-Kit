@@ -7,7 +7,7 @@
  * @FilePath: /t-ui-kit/packages/Notification/docs/DurationEndEmitDemo.vue
 -->
 <script lang="ts" setup>
-import { inject } from "@vue/runtime-core";
+import { inject } from "vue";
 import { MessageFunc } from "packages/Message";
 import { ref } from "vue";
 

@@ -1,15 +1,15 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-10 09:24:57
- * @LastEditTime: 2022-01-12 05:35:54
+ * @LastEditTime: 2022-02-21 08:36:35
  * @LastEditors: Quarter
  * @Description: 函数调用指定消息位置示例
- * @FilePath: /t-ui-kit/packages/Message/docs/FuncPlacementDemo.vue
+ * @FilePath: /t-ui-kit/documents/docs/Message/FuncPlacementDemo.vue
 -->
 <script lang="ts" setup>
-import { inject } from "@vue/runtime-core";
+import { inject } from "vue";
 import { ref } from "vue";
-import { MessageFunc } from "../src/type";
+import { MessageFunc } from "packages/Message";
 
 // 全局提示函数
 const $message = inject<MessageFunc>("$message");

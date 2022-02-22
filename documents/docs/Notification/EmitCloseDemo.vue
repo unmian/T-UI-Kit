@@ -7,7 +7,7 @@
  * @FilePath: /t-ui-kit/packages/Notification/docs/CloseEmitDemo.vue
 -->
 <script lang="ts" setup>
-import { inject } from "@vue/runtime-core";
+import { inject } from "vue";
 import { MessageFunc } from "packages/Message";
 
 // 全局提示

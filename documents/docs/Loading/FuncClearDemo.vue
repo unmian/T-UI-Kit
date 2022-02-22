@@ -1,13 +1,13 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-10 10:58:28
- * @LastEditTime: 2022-01-10 11:30:20
+ * @LastEditTime: 2022-02-21 08:46:00
  * @LastEditors: Quarter
  * @Description: 函数调用关闭示例
- * @FilePath: /t-ui-kit/packages/Loading/docs/FuncClearDemo.vue
+ * @FilePath: /t-ui-kit/documents/docs/Loading/FuncClearDemo.vue
 -->
 <script lang="ts" setup>
-import { inject } from "@vue/runtime-core";
+import { inject } from "vue";
 import { LoadingFunc } from "packages/Loading";
 import { ref } from "vue";
 

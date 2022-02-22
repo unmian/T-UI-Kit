@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-02-16 03:22:10
- * @LastEditTime: 2022-02-19 08:46:01
+ * @LastEditTime: 2022-02-21 11:14:10
  * @LastEditors: Quarter
  * @Description: 骨架屏
  * @FilePath: /t-ui-kit/packages/Skeleton/src/Skeleton.vue
@@ -11,7 +11,8 @@ import "packages/Style";
 import "./style/skeleton.scss";
 
 import { computed, PropType } from "vue";
-import { SkeletonTheme, SkeletonAnimation, SkeletonSize } from "./type";
+
+import type { SkeletonTheme, SkeletonAnimation, SkeletonSize } from "./type";
 
 const props = defineProps({
   loading: { // 加载状态
@@ -24,7 +25,7 @@ const props = defineProps({
   },
   animation: { // 动画类型
     type: String as PropType<SkeletonAnimation>,
-    default: "SkeletonAnimation",
+    default: "gradient",
   },
   size: { // 骨架屏尺寸
     type: String as PropType<SkeletonSize>,

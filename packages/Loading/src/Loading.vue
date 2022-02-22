@@ -1,16 +1,18 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-05 03:21:11
- * @LastEditTime: 2022-01-11 07:44:49
+ * @LastEditTime: 2022-02-21 09:07:36
  * @LastEditors: Quarter
  * @Description: 加载
  * @FilePath: /t-ui-kit/packages/Loading/src/Loading.vue
 -->
 <script lang="ts" setup>
-import { PropType } from "@vue/runtime-core";
-import { computed } from "vue";
+import "packages/Style";
 import "./style/loading.scss";
-import { LoadingSize } from "./type";
+
+import { PropType, computed } from "vue";
+
+import type { LoadingSize } from "./type";
 
 const props = defineProps({
   loading: {

@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-11 06:23:23
- * @LastEditTime: 2022-02-20 06:26:49
+ * @LastEditTime: 2022-02-21 09:08:11
  * @LastEditors: Quarter
  * @Description: 抽屉
  * @FilePath: /t-ui-kit/packages/Drawer/src/Drawer.vue
@@ -10,10 +10,11 @@
 import "packages/Style";
 import "./style/drawer.scss";
 
-import { computed, CSSProperties, PropType, ref, useSlots, watch, nextTick } from "vue";
+import { computed, CSSProperties, PropType, ref, useSlots, watch } from "vue";
 import { Icon } from "packages/Icon";
 import { Button as TButton } from "packages/Button";
-import { DrawerPlacement } from "./type";
+
+import type { DrawerPlacement } from "./type";
 
 const props = defineProps({
   visible: { // 是否可见
