@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-11 02:23:32
- * @LastEditTime: 2022-02-14 01:28:44
+ * @LastEditTime: 2022-02-22 11:58:11
  * @LastEditors: Quarter
  * @Description: 消息通知
  * @FilePath: /t-ui-kit/packages/Notification/src/Notification.vue
@@ -40,11 +40,11 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropOptions } from "vue";
+import Vue, { PropOptions, VNode } from "vue";
 import { Icon } from "packages/Icon";
 import { RenderNode } from "packages/Global"
-import { NotificationTheme } from "./type";
-import { VNode } from "vue/types/umd";
+
+import type { NotificationTheme } from "./type";
 
 import "packages/Style";
 import "./style/notification.scss";

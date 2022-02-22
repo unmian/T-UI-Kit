@@ -1,7 +1,7 @@
 /*
  * @Author: Quarter
  * @Date: 2021-12-29 07:28:23
- * @LastEditTime: 2022-02-15 15:41:24
+ * @LastEditTime: 2022-02-21 11:22:26
  * @LastEditors: Quarter
  * @Description: vite 基础配置
  * @FilePath: /t-ui-kit/build/base.config.ts
@@ -34,7 +34,6 @@ export default defineConfig({
   plugins: [
     createVuePlugin({ include: [/\.vue$/, /\.md$/] }),
     Markdown({
-      // vueVersion: "3.x",
       include: [/\.md$/],
     }),
   ],

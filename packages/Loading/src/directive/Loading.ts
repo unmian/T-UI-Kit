@@ -1,16 +1,17 @@
 /*
  * @Author: Quarter
  * @Date: 2022-01-07 06:17:52
- * @LastEditTime: 2022-02-15 08:56:25
+ * @LastEditTime: 2022-02-22 11:56:26
  * @LastEditors: Quarter
  * @Description: 加载指令
  * @FilePath: /t-ui-kit/packages/Loading/src/directive/Loading.ts
  */
 import { HTMLDirectiveElement } from "packages/Global";
-import { DirectiveOptions } from "vue";
-import { DirectiveBinding } from "vue/types/options";
 import Loading from "../Loading.vue";
-import { LoadingInstance, LoadingSize } from "../type";
+
+import type { DirectiveOptions } from "vue";
+import type { DirectiveBinding } from "vue/types/options";
+import type { LoadingInstance, LoadingSize } from "../type";
 
 /**
  * @description: 挂载之前

@@ -1,14 +1,15 @@
 /*
  * @Author: Quarter
  * @Date: 2022-01-06 12:16:01
- * @LastEditTime: 2022-02-14 01:15:26
+ * @LastEditTime: 2022-02-22 11:57:53
  * @LastEditors: Quarter
  * @Description: 消息通知函数调用
  * @FilePath: /t-ui-kit/packages/Notification/src/function/Notify.ts
  */
-import { HTMLRendererNode } from "packages/Global";
-import { NotifyConfig, NotifyFunc, NotificationPlacement, NotificationTheme, NotificationListInstance } from "../type";
 import NotificationList from "../NotificationList.vue";
+
+import type { HTMLRendererNode } from "packages/Global";
+import type { NotifyConfig, NotifyFunc, NotificationPlacement, NotificationTheme, NotificationListInstance } from "../type";
 
 // 通知计数器
 let NOTIFICATION_COUNTER: number = 0;

@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-02-17 01:07:43
- * @LastEditTime: 2022-02-17 08:18:26
+ * @LastEditTime: 2022-02-22 11:52:23
  * @LastEditors: Quarter
  * @Description: 头像
  * @FilePath: /t-ui-kit/packages/Avatar/src/Avatar.vue
@@ -21,9 +21,10 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropOptions, VNode } from "vue";
+import Vue, { PropOptions } from "vue";
 import { Icon } from "packages/Icon";
-import { AvatarShape, AvatarSize } from "./type";
+
+import type { AvatarShape, AvatarSize } from "./type";
 
 import "packages/Style";
 import "./style/avatar.scss";

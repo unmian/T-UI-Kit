@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-02-16 03:22:10
- * @LastEditTime: 2022-02-16 08:58:01
+ * @LastEditTime: 2022-02-22 12:00:16
  * @LastEditors: Quarter
  * @Description: 骨架屏
  * @FilePath: /t-ui-kit/packages/Skeleton/src/Skeleton.vue
@@ -80,7 +80,8 @@
 <script lang="ts">
 import Vue, { PropOptions } from "vue";
 import { SlotNode } from "packages/Global";
-import { SkeletonTheme, SkeletonAnimation, SkeletonSize } from "./type";
+
+import type { SkeletonTheme, SkeletonAnimation, SkeletonSize } from "./type";
 
 import "packages/Style";
 import "./style/skeleton.scss";
@@ -101,7 +102,7 @@ export default Vue.extend({
     } as PropOptions<SkeletonTheme>,
     animation: { // 动画类型
       type: String,
-      default: "SkeletonAnimation",
+      default: "gradient",
     } as PropOptions<SkeletonAnimation>,
     size: { // 骨架屏尺寸
       type: String,

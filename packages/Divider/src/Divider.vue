@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-11 05:47:23
- * @LastEditTime: 2022-02-05 02:20:55
+ * @LastEditTime: 2022-02-22 11:54:41
  * @LastEditors: Quarter
  * @Description: 分割线
  * @FilePath: /t-ui-kit/packages/Divider/src/Divider.vue
@@ -16,7 +16,8 @@
 
 <script lang="ts">
 import Vue, { PropOptions } from "vue";
-import { DividerLayout, DividerAlign } from "./type";
+
+import type { DividerLayout, DividerAlign } from "./type";
 
 import "packages/Style";
 import "./style/divider.scss";

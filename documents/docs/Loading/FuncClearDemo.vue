@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-10 10:58:28
- * @LastEditTime: 2022-02-14 09:25:00
+ * @LastEditTime: 2022-02-22 12:04:15
  * @LastEditors: Quarter
  * @Description: 函数调用关闭示例
  * @FilePath: /t-ui-kit/documents/docs/Loading/FuncClearDemo.vue
@@ -31,7 +31,6 @@
 
 <script lang="ts">
 import Vue from "vue";
-import { LoadingFunc } from "packages/Loading";
 
 export default Vue.extend({
   methods: {
@@ -44,13 +43,11 @@ export default Vue.extend({
       if (this.$loading) {
         this.$loading({
           size: "small",
-          showOverlay: true,
           attach: this.$refs.container1,
           duration: 0,
         });
         this.$loading({
           size: "small",
-          showOverlay: true,
           attach: this.$refs.container2,
           duration: 0,
         });

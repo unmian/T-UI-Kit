@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-06 12:22:22
- * @LastEditTime: 2022-02-04 12:33:45
+ * @LastEditTime: 2022-02-22 11:57:33
  * @LastEditors: Quarter
  * @Description: 全局提示列表
  * @FilePath: /t-ui-kit/packages/Message/src/MessageList.vue
@@ -31,7 +31,8 @@
 <script lang="ts">
 import Vue, { PropOptions } from "vue";
 import { Message } from "packages/Message";
-import { MessageConfig, MessagePlacement } from "./type";
+
+import type { MessageConfig, MessagePlacement } from "./type";
 
 import "packages/Style";
 import "./style/messageList.scss";

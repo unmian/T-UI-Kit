@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-08 05:27:23
- * @LastEditTime: 2022-02-20 09:37:06
+ * @LastEditTime: 2022-02-22 12:00:37
  * @LastEditors: Quarter
  * @Description: 标签
  * @FilePath: /t-ui-kit/packages/Tag/src/Tag.vue
@@ -31,7 +31,8 @@
 <script lang="ts">
 import Vue, { PropOptions } from "vue";
 import { Icon } from "packages/Icon";
-import { TagSize, TagTheme, TagVariant } from "./type";
+
+import type { TagSize, TagTheme, TagVariant } from "./type";
 
 import "packages/Style";
 import "./style/tag.scss";

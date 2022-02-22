@@ -1,15 +1,16 @@
 /*
  * @Author: Quarter
  * @Date: 2022-01-06 12:16:01
- * @LastEditTime: 2022-02-14 01:14:32
+ * @LastEditTime: 2022-02-22 11:57:12
  * @LastEditors: Quarter
  * @Description: 全局提示函数调用
  * @FilePath: /t-ui-kit/packages/Message/src/function/Message.ts
  */
 
-import { HTMLRendererNode } from "packages/Global";
-import { MessageConfig, MessageFunc, MessageListInstance, MessagePlacement, MessageTheme } from "../type";
 import MessageList from "../MessageList.vue";
+
+import type { HTMLRendererNode } from "packages/Global";
+import type { MessageConfig, MessageFunc, MessageListInstance, MessagePlacement, MessageTheme } from "../type";
 
 // 消息计数器
 let MESSAGE_COUNTER: number = 0;

@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-08 03:16:05
- * @LastEditTime: 2022-02-14 09:17:57
+ * @LastEditTime: 2022-02-22 12:04:08
  * @LastEditors: Quarter
  * @Description: 加载指令示例
  * @FilePath: /t-ui-kit/documents/docs/Loading/DicSizeDemo.vue
@@ -24,7 +24,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import { LoadingSize } from "packages/Loading";
+import type { LoadingSize } from "packages/Loading";
 
 export default Vue.extend({
   data() {

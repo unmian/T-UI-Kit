@@ -1,11 +1,13 @@
 /*
  * @Author: Quarter
  * @Date: 2022-01-04 07:42:03
- * @LastEditTime: 2022-02-03 02:52:54
+ * @LastEditTime: 2022-02-22 11:54:13
  * @LastEditors: Quarter
  * @Description: 剪贴板📋
  * @FilePath: /t-ui-kit/packages/Clipboard/src/function/Clipboard.ts
  */
+
+import type { ClipboardFunc } from "../type";
 
 /**
  * @description: 剪贴板
@@ -57,4 +59,4 @@ const clipboard = {
   },
 };
 
-export default clipboard;
+export default clipboard as ClipboardFunc;

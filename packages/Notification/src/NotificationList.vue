@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-06 12:22:22
- * @LastEditTime: 2022-02-14 01:04:39
+ * @LastEditTime: 2022-02-22 11:59:18
  * @LastEditors: Quarter
  * @Description: 通知通知列表
  * @FilePath: /t-ui-kit/packages/Notification/src/NotificationList.vue
@@ -34,7 +34,8 @@
 <script lang="ts">
 import Vue, { PropOptions } from "vue";
 import { Notification } from "packages/Notification";
-import { NotifyConfig, NotificationPlacement } from "./type";
+
+import type { NotifyConfig, NotificationPlacement } from "./type";
 
 import "packages/Style";
 import "./style/notificationList.scss";

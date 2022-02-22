@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-11 09:01:37
- * @LastEditTime: 2022-02-06 03:07:38
+ * @LastEditTime: 2022-02-22 12:00:05
  * @LastEditors: Quarter
  * @Description: 进度条
  * @FilePath: /t-ui-kit/packages/Progress/src/Progress.vue
@@ -61,7 +61,8 @@
 <script lang="ts">
 import Vue, { PropOptions } from "vue";
 import { Icon } from "packages/Icon";
-import { ProgressSize, ProgressStatus, ProgressTheme } from "./type";
+
+import type { ProgressSize, ProgressStatus, ProgressTheme } from "./type";
 
 import "packages/Style";
 import "./style/progress.scss";

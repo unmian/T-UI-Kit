@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-05 01:51:50
- * @LastEditTime: 2022-02-04 02:58:41
+ * @LastEditTime: 2022-02-22 11:57:28
  * @LastEditors: Quarter
  * @Description: 全局提示组件
  * @FilePath: /t-ui-kit/packages/Message/src/Message.vue
@@ -24,7 +24,8 @@
 <script lang="ts">
 import Vue, { PropOptions } from "vue";
 import { Icon } from "packages/Icon";
-import { MessageTheme } from "./type";
+
+import type { MessageTheme } from "./type";
 
 import "packages/Style";
 import "./style/message.scss";

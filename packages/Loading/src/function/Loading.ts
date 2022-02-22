@@ -1,14 +1,15 @@
 /*
  * @Author: Quarter
  * @Date: 2022-01-06 12:23:24
- * @LastEditTime: 2022-02-15 08:40:57
+ * @LastEditTime: 2022-02-22 11:56:03
  * @LastEditors: Quarter
  * @Description: 加载全局方法
  * @FilePath: /t-ui-kit/packages/Loading/src/function/Loading.ts
  */
-import { LoadingConfig, LoadingFunc, LoadingInstance } from "../type";
 import Loading from "../Loading.vue";
-import { HTMLRendererNode } from "packages/Global";
+
+import type { LoadingConfig, LoadingFunc, LoadingInstance } from "../type";
+import type { HTMLRendererNode } from "packages/Global";
 
 // 加载索引
 let LOADING_COUNTER: number = 0;

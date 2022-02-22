@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-10 10:58:28
- * @LastEditTime: 2022-02-15 01:04:24
+ * @LastEditTime: 2022-02-21 11:15:36
  * @LastEditors: Quarter
  * @Description: 函数调用关闭示例
  * @FilePath: /t-ui-kit/documents/docs/Loading/FuncCloseDemo.vue
@@ -40,7 +40,6 @@ export default Vue.extend({
       if (this.$loading && this.index === null) {
         this.index = this.$loading({
           size: "small",
-          showOverlay: true,
           attach: this.$refs.container,
           duration: 0,
           onClose: () => {

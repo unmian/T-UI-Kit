@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-11 02:17:01
- * @LastEditTime: 2022-02-05 02:06:16
+ * @LastEditTime: 2022-02-22 11:51:51
  * @LastEditors: Quarter
  * @Description: 警告提醒
  * @FilePath: /t-ui-kit/packages/Alert/src/Alert.vue
@@ -56,7 +56,8 @@
 import Vue, { PropOptions, VNode } from "vue";
 import { Icon } from "packages/Icon";
 import { RenderNode } from "packages/Global";
-import { AlertTheme } from "./type";
+
+import type { AlertTheme } from "./type";
 
 import "packages/Style";
 import "./style/alert.scss";

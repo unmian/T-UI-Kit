@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-02-17 10:39:58
- * @LastEditTime: 2022-02-17 11:46:22
+ * @LastEditTime: 2022-02-22 11:53:13
  * @LastEditors: Quarter
  * @Description: 徽标组件
  * @FilePath: /t-ui-kit/packages/Badge/src/Badge.vue
@@ -18,7 +18,8 @@
 
 <script lang="ts">
 import Vue, { PropOptions } from "vue";
-import { BadgeShape, BadgeSize } from "./type";
+
+import type { BadgeShape, BadgeSize } from "./type";
 
 import "packages/Style";
 import "./style/badge.scss";

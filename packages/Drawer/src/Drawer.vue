@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-11 06:23:23
- * @LastEditTime: 2022-02-20 06:27:17
+ * @LastEditTime: 2022-02-22 12:05:58
  * @LastEditors: Quarter
  * @Description: 抽屉
  * @FilePath: /t-ui-kit/packages/Drawer/src/Drawer.vue
@@ -98,7 +98,8 @@ import Vue, { PropOptions } from "vue";
 import { Icon } from "packages/Icon";
 import { Button as TButton } from "packages/Button";
 import { Teleport } from "packages/Global";
-import { DrawerPlacement } from "./type";
+
+import type { DrawerPlacement } from "./type";
 
 import "packages/Style";
 import "./style/drawer.scss";

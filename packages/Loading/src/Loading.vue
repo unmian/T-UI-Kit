@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-05 03:21:11
- * @LastEditTime: 2022-02-15 08:59:28
+ * @LastEditTime: 2022-02-22 11:55:55
  * @LastEditors: Quarter
  * @Description: 加载
  * @FilePath: /t-ui-kit/packages/Loading/src/Loading.vue
@@ -40,7 +40,8 @@
 <script lang="ts">
 import Vue, { PropOptions } from "vue";
 import { Teleport } from "packages/Global";
-import { LoadingSize } from "./type";
+
+import type { LoadingSize } from "./type";
 
 import "packages/Style";
 import "./style/loading.scss";

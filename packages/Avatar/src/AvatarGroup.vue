@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-02-17 01:07:50
- * @LastEditTime: 2022-02-17 11:39:10
+ * @LastEditTime: 2022-02-22 11:52:16
  * @LastEditors: Quarter
  * @Description: 头像组
  * @FilePath: /t-ui-kit/packages/Avatar/src/AvatarGroup.vue
@@ -27,7 +27,8 @@
 import Vue, { PropOptions, VNode } from "vue";
 import { RenderNode } from "packages/Global";
 import Avatar from "./Avatar.vue";
-import { AvatarCascading, AvatarSize } from "./type";
+
+import type { AvatarCascading, AvatarSize } from "./type";
 
 import "packages/Style";
 import "./style/avatarGroup.scss";
