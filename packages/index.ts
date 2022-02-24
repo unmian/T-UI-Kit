@@ -1,7 +1,7 @@
 /*
  * @Author: Quarter
  * @Date: 2021-12-29 07:39:03
- * @LastEditTime: 2022-02-18 05:51:29
+ * @LastEditTime: 2022-02-23 05:24:01
  * @LastEditors: Quarter
  * @Description: UI 组件入口文件
  * @FilePath: /t-ui-kit/packages/index.ts
@@ -16,6 +16,7 @@ import { AvatarPlugin } from "./Avatar";
 import { BadgePlugin } from "./Badge";
 import { ButtonPlugin } from "./Button";
 import { ClipboardPlugin } from "./Clipboard";
+import { DialogPlugin } from "./Dialog";
 import { DividerPlugin } from "./Divider";
 import { DrawerPlugin } from "./Drawer";
 import { IconPlugin } from "./Icon";
@@ -35,6 +36,7 @@ const TUIKitPlugin: Plugin = {
     BadgePlugin.install?.(app);
     ButtonPlugin.install?.(app);
     ClipboardPlugin.install?.(app);
+    DialogPlugin.install?.(app);
     DividerPlugin.install?.(app);
     DrawerPlugin.install?.(app);
     IconPlugin.install?.(app);
@@ -56,6 +58,7 @@ export * from "./Avatar";
 export * from "./Badge";
 export * from "./Button";
 export * from "./Clipboard";
+export * from "./Dialog";
 export * from "./Divider";
 export * from "./Drawer";
 export * from "./Icon";

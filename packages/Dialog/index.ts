@@ -1,7 +1,7 @@
 /*
  * @Author: Quarter
  * @Date: 2022-01-11 02:18:15
- * @LastEditTime: 2022-01-11 03:23:41
+ * @LastEditTime: 2022-02-23 05:23:36
  * @LastEditors: Quarter
  * @Description: 弹窗入口
  * @FilePath: /t-ui-kit/packages/Dialog/index.ts
@@ -17,4 +17,4 @@ export const DialogPlugin: Plugin = {
 
 export { Dialog };
 
-// export * from "./src/type";
+export * from "./src/type";

@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-07 07:32:59
- * @LastEditTime: 2022-02-20 08:50:18
+ * @LastEditTime: 2022-02-24 05:23:46
  * @LastEditors: Quarter
  * @Description: 代码预览
  * @FilePath: /t-ui-kit/documents/components/ComponentDemo.vue
@@ -18,6 +18,8 @@ const attrs = useAttrs();
 
 // 全局消息
 const $message = inject<MessageFunc>("$message");
+// 加载动画
+const loading = ref<number>(0);
 // 代码内容
 const code = ref("");
 // 自定义组件
@@ -25,16 +27,24 @@ const CustomComponent = defineAsyncComponent(
   () => import(/* @vite-ignore */ attrs.url + "")
 );
 
+loading.value++;
 if (process.env.NODE_ENV === "production") {
   fetch(attrs.url + "")
     .then((res) => res.text())
     .then((text) => {
       code.value = text;
+    })
+    .finally(() => {
+      loading.value--;
     });
 } else {
-  import(/* @vite-ignore */ attrs.url + "?raw").then((res) => {
-    code.value = res.default;
-  });
+  import(/* @vite-ignore */ attrs.url + "?raw")
+    .then((res) => {
+      code.value = res.default;
+    })
+    .finally(() => {
+      loading.value--;
+    });
 }
 
 // 代码展开
@@ -74,15 +84,17 @@ const handleCodePreview = () => {
 </script>
 
 <template>
-  <div class="code-preview">
+  <div class="code-preview" v-loading="loading > 0">
     <div class="code-preview__body">
       <CustomComponent></CustomComponent>
     </div>
     <div class="code-preview__operation">
-      <span @click="handleCodeCopy"><Icon name="file-copy"></Icon></span>
-      <span :class="{ active: codeExpand }" @click="handleCodePreview"
-        ><Icon name="code"></Icon
-      ></span>
+      <span @click="handleCodeCopy">
+        <Icon name="file-copy"></Icon>
+      </span>
+      <span :class="{ active: codeExpand }" @click="handleCodePreview">
+        <Icon name="code"></Icon>
+      </span>
     </div>
     <div v-if="codeExpand" class="code-preview__code">
       <pre>{{ filterCode }}</pre>

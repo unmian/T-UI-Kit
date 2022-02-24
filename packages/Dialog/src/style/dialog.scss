@@ -1,0 +1,184 @@
+@import "packages/Style/mixin.scss";
+
+div.t-dialog {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  position: fixed;
+  z-index: 2500;
+  top: 0;
+  left: 0;
+  margin: 0;
+
+  // 打开的遮罩
+  &.t-dialog--open {
+    pointer-events: initial;
+  }
+
+  // 正在拖动
+  &.t-dialog--is-dragging {
+    user-select: none;
+
+    .t-dialog__box {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  // 遮罩层
+  .t-dialog__mask {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    background-color: var(--t-dialog-mask, var(--t-text-gray-2));
+    user-select: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  // 对话框容器
+  .t-dialog__box {
+    @include t-radius;
+    @include t-bottom-shadow;
+
+    width: fit-content;
+    min-width: 480px;
+    max-width: 960px;
+    padding: 24px 32px 32px;
+    background-color: var(--t-neutral-1-white-1);
+    box-sizing: border-box;
+    position: absolute;
+
+    // 容器
+    .t-dialog__container {
+      display: flex;
+
+      // 图标
+      .t-dialog__icon {
+        width: 24px;
+        height: 24px;
+        font-size: 22px;
+        line-height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 8px;
+      }
+
+      // 主体内容
+      .t-dialog__content {
+        flex: 1;
+
+        // 头部
+        .t-dialog__header {
+          @include t-text-bold-3;
+
+          width: 100%;
+          min-height: 24px;
+          color: var(--t-text-gray-1);
+        }
+
+        // 主体
+        .t-dialog__body {
+          @include t-text-4;
+
+          color: var(--t-text-gray-2);
+          margin-top: var(--t-space-16);
+        }
+      }
+    }
+
+    // 底部
+    .t-dialog__footer {
+      @include t-text-4;
+
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 24px;
+    }
+
+    // 拖拽器
+    .t-dialog__dragger {
+      width: calc(100% - 30px);
+      height: 20px;
+      cursor: move;
+      position: absolute;
+      top: 4px;
+      left: 15px;
+    }
+
+    // 关闭按钮
+    .t-dialog__close-btn {
+      @include t-radius;
+
+      width: 20px;
+      height: 20px;
+      color: var(--t-text-gray-2);
+      font-size: 20px;
+      cursor: pointer;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 24px;
+      right: 24px;
+
+      &:hover {
+        background-color: var(--t-neutral-1-gray-1);
+      }
+
+      &:active {
+        color: var(--t-text-gray-1);
+        background-color: var(--t-neutral-1-gray-2);
+      }
+    }
+  }
+
+  // 上方对话框
+  &.t-dialog--top {
+    .t-dialog__box {
+      max-height: 60%;
+      top: 20%;
+      left: auto;
+      right: auto;
+    }
+  }
+
+  // 居中对话框
+  &.t-dialog--center {
+    align-items: center;
+
+    .t-dialog__box {
+      max-height: 80%;
+      top: auto;
+      bottom: auto;
+      left: auto;
+      right: auto;
+    }
+  }
+
+  // 信息主题
+  &.t-dialog--theme-info {
+    color: var(--t-brand-normal);
+  }
+
+  // 警告主题
+  &.t-dialog--theme-warning {
+    color: var(--t-warning-normal);
+  }
+
+  // 危险主题
+  &.t-dialog--theme-danger {
+    color: var(--t-error-normal);
+  }
+
+  // 成功主题
+  &.t-dialog--theme-success {
+    color: var(--t-success-normal);
+  }
+}

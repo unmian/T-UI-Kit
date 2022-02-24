@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-05 03:21:11
- * @LastEditTime: 2022-02-21 09:07:36
+ * @LastEditTime: 2022-02-24 05:26:25
  * @LastEditors: Quarter
  * @Description: 加载
  * @FilePath: /t-ui-kit/packages/Loading/src/Loading.vue
@@ -29,7 +29,7 @@ const props = defineProps({
   size: {
     // 加载的大小
     type: String as PropType<LoadingSize>,
-    default: "medium",
+    default: "small",
   },
   showOverlay: {
     // 是否显示包裹层
@@ -54,7 +54,7 @@ const loadingSize = computed<LoadingSize>(() => {
   if (sizeList.includes(props.size)) {
     return props.size;
   }
-  return "medium";
+  return "small";
 });
 
 /**

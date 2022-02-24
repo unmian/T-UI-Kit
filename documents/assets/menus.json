@@ -313,8 +313,7 @@
         "compName": "dialog",
         "compZhName": "对话框",
         "compDesc": "这是一个按钮",
-        "compClassName": "Dialog",
-        "disabled": true
+        "compClassName": "Dialog"
       },
       {
         "compName": "drawer",

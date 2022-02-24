@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-11 06:23:23
- * @LastEditTime: 2022-02-21 09:08:11
+ * @LastEditTime: 2022-02-23 07:29:50
  * @LastEditors: Quarter
  * @Description: 抽屉
  * @FilePath: /t-ui-kit/packages/Drawer/src/Drawer.vue
@@ -262,6 +262,7 @@ const handleMouseDown = (e: MouseEvent): void => {
   }
   window.addEventListener("mousemove", handleMouseMove);
   window.addEventListener("mouseup", handleMouseUp);
+  window.addEventListener("mouseleave", handleMouseUp);
 };
 
 /**
@@ -300,6 +301,7 @@ const handleMouseUp = (e: MouseEvent): void => {
   dragStartSize.value = 0;
   window.removeEventListener("mousemove", handleMouseMove);
   window.removeEventListener("mouseup", handleMouseUp);
+  window.removeEventListener("mouseleave", handleMouseUp);
 };
 
 /**
