@@ -1,13 +1,13 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-07 07:32:59
- * @LastEditTime: 2022-02-20 08:49:48
+ * @LastEditTime: 2022-02-24 05:29:30
  * @LastEditors: Quarter
  * @Description: 代码预览
  * @FilePath: /t-ui-kit/documents/components/ComponentDemo.vue
 -->
 <template>
-  <div class="component-demo">
+  <div class="component-demo" v-loading="loading > 0">
     <div class="component-demo__body">
       <component :is="customComponent"></component>
     </div>
@@ -32,6 +32,7 @@ export default Vue.extend({
   name: "ComponentDemo",
   data() {
     return {
+      loading: 0,
       code: "",
       codeExpand: false,
       customComponent: () => import(/* @vite-ignore */ this.$attrs.url + "")
@@ -51,16 +52,24 @@ export default Vue.extend({
     }
   },
   created() {
+    this.loading++;
     if (process.env.NODE_ENV === "production") {
       fetch(this.$attrs.url + "")
         .then((res) => res.text())
         .then((text) => {
           this.code = text;
+        })
+        .finally(() => {
+          this.loading--;
         });
     } else {
-      import(/* @vite-ignore */ this.$attrs.url + "?raw").then((res) => {
-        this.code = res.default;
-      });
+      import(/* @vite-ignore */ this.$attrs.url + "?raw")
+        .then((res) => {
+          this.code = res.default;
+        })
+        .finally(() => {
+          this.loading--;
+        });
     }
   },
   methods: {

@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-11 06:23:23
- * @LastEditTime: 2022-02-22 12:05:58
+ * @LastEditTime: 2022-02-24 05:28:40
  * @LastEditors: Quarter
  * @Description: 抽屉
  * @FilePath: /t-ui-kit/packages/Drawer/src/Drawer.vue
@@ -340,6 +340,7 @@ export default Vue.extend({
       }
       window.addEventListener("mousemove", this.handleMouseMove);
       window.addEventListener("mouseup", this.handleMouseUp);
+      window.addEventListener("mouseleave", this.handleMouseUp);
     },
     /**
      * @description: 处理拖拽鼠标点击移动事件
@@ -376,6 +377,7 @@ export default Vue.extend({
       this.dragStartSize = 0;
       window.removeEventListener("mousemove", this.handleMouseMove);
       window.removeEventListener("mouseup", this.handleMouseUp);
+      window.removeEventListener("mouseleave", this.handleMouseUp);
     },
   },
   watch: {

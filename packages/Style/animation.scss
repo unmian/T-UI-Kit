@@ -20,6 +20,26 @@
   opacity: 0;
 }
 
+// 缩放过渡
+.scale-enter-active,
+.scale-leave-active {
+  opacity: 0;
+  transform-origin: center;
+  transition: opacity 0.24s linear, transform 0.24s linear;
+}
+
+.scale-enter,
+.scale-leave-to {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.scale-enter-to,
+.scale-leave {
+  opacity: 1;
+  transform: scale(1);
+}
+
 // 滑入滑出动画
 .slide-top-enter-active,
 .slide-top-leave-active,

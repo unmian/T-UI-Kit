@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-05 03:21:11
- * @LastEditTime: 2022-02-22 11:55:55
+ * @LastEditTime: 2022-02-24 05:27:54
  * @LastEditors: Quarter
  * @Description: 加载
  * @FilePath: /t-ui-kit/packages/Loading/src/Loading.vue
@@ -66,7 +66,7 @@ export default Vue.extend({
     size: {
       // 加载的大小
       type: String,
-      default: "medium",
+      default: "small",
     } as PropOptions<LoadingSize>,
     showOverlay: {
       // 是否显示包裹层
@@ -94,7 +94,7 @@ export default Vue.extend({
       if (sizeList.includes(this.size)) {
         return this.size;
       }
-      return "medium";
+      return "small";
     },
     /**
      * @description: 附着节点

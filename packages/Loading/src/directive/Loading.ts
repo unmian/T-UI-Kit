@@ -1,7 +1,7 @@
 /*
  * @Author: Quarter
  * @Date: 2022-01-07 06:17:52
- * @LastEditTime: 2022-02-22 11:56:26
+ * @LastEditTime: 2022-02-24 06:16:32
  * @LastEditors: Quarter
  * @Description: 加载指令
  * @FilePath: /t-ui-kit/packages/Loading/src/directive/Loading.ts
@@ -26,11 +26,11 @@ const bind = (el: HTMLElement, binding: DirectiveBinding) => {
     if (!["relative", "absolute", "fixed", "sticky"].includes(styles.position)) {
       el.style.position = "relative";
     }
-    const { small, large, fullscreen } = binding.modifiers;
-    let size: LoadingSize = "medium";
-    if (small) size = "small";
+    const { medium, large, fullscreen } = binding.modifiers;
+    let size: LoadingSize = "small";
+    if (medium) size = "medium";
     if (large) size = "large";
-    if (typeof binding.arg === "string" && ["small", "large"].includes(binding.arg)) {
+    if (typeof binding.arg === "string" && ["medium", "large"].includes(binding.arg)) {
       size = binding.arg as LoadingSize;
     }
     const loading = !!binding.value;
@@ -57,13 +57,13 @@ const bind = (el: HTMLElement, binding: DirectiveBinding) => {
  * @return
  */
 const componentUpdated = (el: HTMLElement, binding: DirectiveBinding) => {
-  const { small, large, fullscreen } = binding.modifiers;
+  const { medium, large, fullscreen } = binding.modifiers;
   const loading = !!binding.value;
   const instance = (el as HTMLDirectiveElement<LoadingInstance>).$instance;
-  let size: LoadingSize = "medium";
-  if (small) size = "small";
+  let size: LoadingSize = "small";
+  if (medium) size = "medium";
   if (large) size = "large";
-  if (typeof binding.arg === "string" && ["small", "large"].includes(binding.arg)) {
+  if (typeof binding.arg === "string" && ["medium", "large"].includes(binding.arg)) {
     size = binding.arg as LoadingSize;
   }
   if (instance) {

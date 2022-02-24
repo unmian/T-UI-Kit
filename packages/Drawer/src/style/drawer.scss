@@ -13,8 +13,6 @@ div.t-drawer {
 
   // 打开的遮罩
   &.t-drawer--open {
-    width: 100%;
-    height: 100%;
     pointer-events: initial;
   }
 

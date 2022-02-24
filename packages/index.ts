@@ -1,7 +1,7 @@
 /*
  * @Author: Quarter
  * @Date: 2021-12-29 07:39:03
- * @LastEditTime: 2022-02-19 13:16:17
+ * @LastEditTime: 2022-02-24 05:32:28
  * @LastEditors: Quarter
  * @Description: UI 组件入口文件
  * @FilePath: /t-ui-kit/packages/index.ts
@@ -15,6 +15,7 @@ import { AvatarPlugin } from "./Avatar";
 import { BadgePlugin } from "./Badge";
 import { ButtonPlugin } from "./Button";
 import { ClipboardPlugin } from "./Clipboard";
+import { DialogPlugin } from "./Dialog";
 import { DividerPlugin } from "./Divider";
 import { DrawerPlugin } from "./Drawer";
 import { LoadingPlugin } from "./Loading";
@@ -34,6 +35,7 @@ export const TUIPlugin: PluginObject<any> = {
     BadgePlugin.install(vue);
     ButtonPlugin.install(vue);
     ClipboardPlugin.install(vue);
+    DialogPlugin.install(vue);
     DividerPlugin.install(vue);
     DrawerPlugin.install(vue);
     IconPlugin.install(vue);
@@ -53,6 +55,7 @@ export * from "./Avatar";
 export * from "./Badge";
 export * from "./Button";
 export * from "./Clipboard";
+export * from "./Dialog";
 export * from "./Divider";
 export * from "./Drawer";
 export * from "./Icon";
