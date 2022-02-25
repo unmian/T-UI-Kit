@@ -1,712 +1,944 @@
 {
   "common": [
     {
-      "name": "home"
+      "name": "home",
+      "entity": "&#xe972;"
     },
     {
-      "name": "setting"
+      "name": "setting",
+      "entity": "&#xe9bf;"
     },
     {
-      "name": "tools"
+      "name": "tools",
+      "entity": "&#xe9d0;"
     },
     {
-      "name": "time"
+      "name": "time",
+      "entity": "&#xe9ce;"
     },
     {
-      "name": "time-filled"
+      "name": "time-filled",
+      "entity": "&#xe9cd;"
     },
     {
-      "name": "calendar"
+      "name": "calendar",
+      "entity": "&#xe912;"
     },
     {
-      "name": "menu-application"
+      "name": "menu-application",
+      "entity": "&#xe991;"
     },
     {
-      "name": "app"
+      "name": "app",
+      "entity": "&#xe903;"
     },
     {
-      "name": "tips"
+      "name": "tips",
+      "entity": "&#xe9cf;"
     },
     {
-      "name": "flag"
+      "name": "flag",
+      "entity": "&#xe9e6;"
     },
     {
-      "name": "hourglass"
+      "name": "hourglass",
+      "entity": "&#xe973;"
     },
     {
-      "name": "notification"
+      "name": "notification",
+      "entity": "&#xe99e;"
     },
     {
-      "name": "notification-filled"
+      "name": "notification-filled",
+      "entity": "&#xe99d;"
     },
     {
-      "name": "pin"
+      "name": "pin",
+      "entity": "&#xe9a8;"
     },
     {
-      "name": "books"
+      "name": "books",
+      "entity": "&#xe90e;"
     },
     {
-      "name": "layers"
+      "name": "layers",
+      "entity": "&#xe97a;"
     },
     {
-      "name": "jump"
+      "name": "jump",
+      "entity": "&#xe978;"
     },
     {
-      "name": "backtop"
+      "name": "backtop",
+      "entity": "&#xe90b;"
     },
     {
-      "name": "backtop-rectangle"
+      "name": "backtop-rectangle",
+      "entity": "&#xe90a;"
     },
     {
-      "name": "secured"
+      "name": "secured",
+      "entity": "&#xe9bc;"
     },
     {
-      "name": "code"
+      "name": "loading",
+      "entity": "&#xe97e;"
+    },
+    {
+      "name": "code",
+      "entity": "&#xe93e;"
     }
   ],
   "business": [
     {
-      "name": "control.platform"
+      "name": "control.platform",
+      "entity": "&#xe93f;"
     },
     {
-      "name": "dashboard"
+      "name": "dashboard",
+      "entity": "&#xe941;"
     },
     {
-      "name": "precise.monitor"
+      "name": "precise.monitor",
+      "entity": "&#xe9ae;"
     },
     {
-      "name": "shop"
+      "name": "shop",
+      "entity": "&#xe9c1;"
     },
     {
-      "name": "cart"
+      "name": "cart",
+      "entity": "&#xe91c;"
     },
     {
-      "name": "wallet"
+      "name": "wallet",
+      "entity": "&#xe9e2;"
     },
     {
-      "name": "creditcard"
+      "name": "creditcard",
+      "entity": "&#xe940;"
     },
     {
-      "name": "money-circle"
+      "name": "money-circle",
+      "entity": "&#xe999;"
     },
     {
-      "name": "discount"
+      "name": "discount",
+      "entity": "&#xe944;"
     },
     {
-      "name": "discount-filled"
+      "name": "discount-filled",
+      "entity": "&#xe944;"
     },
     {
-      "name": "thumb-up"
+      "name": "thumb-up",
+      "entity": "&#xe9cc;"
     },
     {
-      "name": "thumb-down"
+      "name": "thumb-down",
+      "entity": "&#xe9cb;"
     },
     {
-      "name": "gift"
+      "name": "gift",
+      "entity": "&#xe96b;"
     },
     {
-      "name": "service"
+      "name": "service",
+      "entity": "&#xe9be;"
     },
     {
-      "name": "chat"
+      "name": "chat",
+      "entity": "&#xe921;"
     }
   ],
   "media": [
     {
-      "name": "play"
+      "name": "play",
+      "entity": "&#xe9ac;"
     },
     {
-      "name": "pause"
+      "name": "pause",
+      "entity": "&#xe9a6;"
     },
     {
-      "name": "play-circle-stroke"
+      "name": "play-circle-stroke",
+      "entity": "&#xe9aa;"
     },
     {
-      "name": "play-circle"
+      "name": "play-circle",
+      "entity": "&#xe9ab;"
     },
     {
-      "name": "pause-circle"
+      "name": "pause-circle",
+      "entity": "&#xe9a5;"
     },
     {
-      "name": "stop-circle"
+      "name": "stop-circle",
+      "entity": "&#xe9c7;"
     },
     {
-      "name": "play-circle-filled"
+      "name": "play-circle-filled",
+      "entity": "&#xe9a9;"
     },
     {
-      "name": "pause-circle-filled"
+      "name": "pause-circle-filled",
+      "entity": "&#xe9a4;"
     },
     {
-      "name": "stop-circle-filled"
+      "name": "stop-circle-filled",
+      "entity": "&#xe9c6;"
     }
   ],
   "operation": [
     {
-      "name": "add"
+      "name": "add",
+      "entity": "&#xe902;"
     },
     {
-      "name": "remove"
+      "name": "remove",
+      "entity": "&#xe9b5;"
     },
     {
-      "name": "add-circle"
+      "name": "add-circle",
+      "entity": "&#xe900;"
     },
     {
-      "name": "minus-circle"
+      "name": "minus-circle",
+      "entity": "&#xe995;"
     },
     {
-      "name": "minus-circle-filled"
+      "name": "minus-circle-filled",
+      "entity": "&#xe994;"
     },
     {
-      "name": "add-rectangle"
+      "name": "add-rectangle",
+      "entity": "&#xe901;"
     },
     {
-      "name": "minus-rectangle"
+      "name": "minus-rectangle",
+      "entity": "&#xe996;"
     },
     {
-      "name": "queue"
+      "name": "queue",
+      "entity": "&#xe9b2;"
     },
     {
-      "name": "search"
+      "name": "search",
+      "entity": "&#xe9bb;"
     },
     {
-      "name": "zoom-in"
+      "name": "zoom-in",
+      "entity": "&#xe9e4;"
     },
     {
-      "name": "zoom-out"
+      "name": "zoom-out",
+      "entity": "&#xe9e5;"
     },
     {
-      "name": "browse-off"
+      "name": "browse-off",
+      "entity": "&#xe90f;"
     },
     {
-      "name": "browse"
+      "name": "browse",
+      "entity": "&#xe910;"
     },
     {
-      "name": "filter"
+      "name": "filter",
+      "entity": "&#xe95a;"
     },
     {
-      "name": "filter-clear"
+      "name": "filter-clear",
+      "entity": "&#xe959;"
     },
     {
-      "name": "edit"
+      "name": "edit",
+      "entity": "&#xe948;"
     },
     {
-      "name": "edit-1"
+      "name": "edit-1",
+      "entity": "&#xe947;"
     },
     {
-      "name": "save"
+      "name": "save",
+      "entity": "&#xe9b9;"
     },
     {
-      "name": "delete"
+      "name": "delete",
+      "entity": "&#xe942;"
     },
     {
-      "name": "slash"
+      "name": "slash",
+      "entity": "&#xe9c2;"
     },
     {
-      "name": "clear"
+      "name": "clear",
+      "entity": "&#xe936;"
     },
     {
-      "name": "rollback"
+      "name": "rollback",
+      "entity": "&#xe9b6;"
     },
     {
-      "name": "enter"
+      "name": "enter",
+      "entity": "&#xe94a;"
     },
     {
-      "name": "refresh"
+      "name": "refresh",
+      "entity": "&#xe9b4;"
     },
     {
-      "name": "history"
+      "name": "history",
+      "entity": "&#xe971;"
     },
     {
-      "name": "fullsreen"
+      "name": "fullsreen",
+      "entity": "&#xe968;"
     },
     {
-      "name": "fullscreen-exit"
+      "name": "fullscreen-exit",
+      "entity": "&#xe967;"
     },
     {
-      "name": "order-adjustment.column"
+      "name": "order-adjustment.column",
+      "entity": "&#xe99"
     },
     {
-      "name": "unfold-more"
+      "name": "unfold-more",
+      "entity": "&#xe9d2;"
     },
     {
-      "name": "unfold-less"
+      "name": "unfold-less",
+      "entity": "&#xe9d1;"
     },
     {
-      "name": "more"
+      "name": "more",
+      "entity": "&#xe99a;"
     },
     {
-      "name": "ellipsis"
+      "name": "ellipsis",
+      "entity": "&#xe949;"
     },
     {
-      "name": "move"
+      "name": "move",
+      "entity": "&#xe99b;"
     },
     {
-      "name": "login"
+      "name": "login",
+      "entity": "&#xe982;"
     },
     {
-      "name": "logout"
+      "name": "logout",
+      "entity": "&#xe98f;"
     },
     {
-      "name": "share"
+      "name": "share",
+      "entity": "&#xe9c0;"
     },
     {
-      "name": "print"
+      "name": "print",
+      "entity": "&#xe9b0;"
     }
   ],
   "arrow": [
     {
-      "name": "chevron-up"
+      "name": "chevron-up",
+      "entity": "&#xe934;"
     },
     {
-      "name": "chevron-down"
+      "name": "chevron-down",
+      "entity": "&#xe929;"
     },
     {
-      "name": "chevron-left"
+      "name": "chevron-left",
+      "entity": "&#xe92d;"
     },
     {
-      "name": "chevron-right"
+      "name": "chevron-right",
+      "entity": "&#xe931;"
     },
     {
-      "name": "caret-up"
+      "name": "caret-up",
+      "entity": "&#xe91b;"
     },
     {
-      "name": "caret-down"
+      "name": "caret-down",
+      "entity": "&#xe915;"
     },
     {
-      "name": "caret-left"
+      "name": "caret-left",
+      "entity": "&#xe917;"
     },
     {
-      "name": "caret-right"
+      "name": "caret-right",
+      "entity": "&#xe919;"
     },
     {
-      "name": "caret-up-small"
+      "name": "caret-up-small",
+      "entity": "&#xe91a;"
     },
     {
-      "name": "caret-down-small"
+      "name": "caret-down-small",
+      "entity": "&#xe914;"
     },
     {
-      "name": "caret-left-small"
+      "name": "caret-left-small",
+      "entity": "&#xe916;"
     },
     {
-      "name": "caret-right-small"
+      "name": "caret-right-small",
+      "entity": "&#xe918;"
     },
     {
-      "name": "chevron-up-circle"
+      "name": "chevron-up-circle",
+      "entity": "&#xe932;"
     },
     {
-      "name": "chevron-down-circle"
+      "name": "chevron-down-circle",
+      "entity": "&#xe927;"
     },
     {
-      "name": "chevron-left-circle"
+      "name": "chevron-left-circle",
+      "entity": "&#xe92a;"
     },
     {
-      "name": "chevron-right-circle"
+      "name": "chevron-right-circle",
+      "entity": "&#xe92e;"
     },
     {
-      "name": "chevron-up-rectangle"
+      "name": "chevron-up-rectangle",
+      "entity": "&#xe933;"
     },
     {
-      "name": "chevron-down-rectangle"
+      "name": "chevron-down-rectangle",
+      "entity": "&#xe928;"
     },
     {
-      "name": "chevron-left-rectangle"
+      "name": "chevron-left-rectangle",
+      "entity": "&#xe92b;"
     },
     {
-      "name": "chevron-right-rectangle"
+      "name": "chevron-right-rectangle",
+      "entity": "&#xe92f;"
     },
     {
-      "name": "arrow-up"
+      "name": "arrow-up",
+      "entity": "&#xe908;"
     },
     {
-      "name": "arrow-down"
+      "name": "arrow-down",
+      "entity": "&#xe905;"
     },
     {
-      "name": "arrow-left"
+      "name": "arrow-left",
+      "entity": "&#xe906;"
     },
     {
-      "name": "arrow-right"
+      "name": "arrow-right",
+      "entity": "&#xe907;"
     },
     {
-      "name": "arrow-down-rectangle"
+      "name": "arrow-down-rectangle",
+      "entity": "&#xe903;"
     },
     {
-      "name": "page-first"
+      "name": "page-first",
+      "entity": "&#xe9a2;"
     },
     {
-      "name": "page-last"
+      "name": "page-last",
+      "entity": "&#xe9a3;"
     },
     {
-      "name": "chevron-left.double"
+      "name": "chevron-left.double",
+      "entity": "&#xe92c;"
     },
     {
-      "name": "chevron-right.double"
+      "name": "chevron-right.double",
+      "entity": "&#xe930;"
     },
     {
-      "name": "previous"
+      "name": "previous",
+      "entity": "&#xe9af;"
     },
     {
-      "name": "next"
+      "name": "next",
+      "entity": "&#xe99c;"
     },
     {
-      "name": "backward"
+      "name": "backward",
+      "entity": "&#xe90c;"
     },
     {
-      "name": "forward"
+      "name": "forward",
+      "entity": "&#xe966;"
     },
     {
-      "name": "swap"
+      "name": "swap",
+      "entity": "&#xe9ca;"
     },
     {
-      "name": "swap-left"
+      "name": "swap-left",
+      "entity": "&#xe9c8;"
     },
     {
-      "name": "swap-right"
+      "name": "swap-right",
+      "entity": "&#xe9c9;"
     }
   ],
   "info": [
     {
-      "name": "close"
+      "name": "close",
+      "entity": "&#xe93a;"
     },
     {
-      "name": "check"
+      "name": "check",
+      "entity": "&#xe926;"
     },
     {
-      "name": "error"
+      "name": "error",
+      "entity": "&#xe94d;"
     },
     {
-      "name": "help"
+      "name": "help",
+      "entity": "&#xe970;"
     },
     {
-      "name": "close-circle"
+      "name": "close-circle",
+      "entity": "&#xe938;"
     },
     {
-      "name": "close-circle-filled"
+      "name": "close-circle-filled",
+      "entity": "&#xe937;"
     },
     {
-      "name": "check-circle"
+      "name": "check-circle",
+      "entity": "&#xe923;"
     },
     {
-      "name": "check-circle-filled"
+      "name": "check-circle-filled",
+      "entity": "&#xe922;"
     },
     {
-      "name": "info-circle"
+      "name": "info-circle",
+      "entity": "&#xe976;"
     },
     {
-      "name": "info-circle-filled"
+      "name": "info-circle-filled",
+      "entity": "&#xe975;"
     },
     {
-      "name": "error-circle"
+      "name": "error-circle",
+      "entity": "&#xe94c;"
     },
     {
-      "name": "error-circle-filled"
+      "name": "error-circle-filled",
+      "entity": "&#xe94b;"
     },
     {
-      "name": "help-circle"
+      "name": "help-circle",
+      "entity": "&#xe96f;"
     },
     {
-      "name": "help-circle-filled"
+      "name": "help-circle-filled",
+      "entity": "&#xe96e;"
     },
     {
-      "name": "close-rectangle"
+      "name": "close-rectangle",
+      "entity": "&#xe939;"
     },
     {
-      "name": "check-rectangle"
+      "name": "check-rectangle",
+      "entity": "&#xe925;"
     },
     {
-      "name": "check-rectangle-filled"
+      "name": "check-rectangle-filled",
+      "entity": "&#xe924;"
     }
   ],
   "platform": [
     {
-      "name": "mobile"
+      "name": "mobile",
+      "entity": "&#xe998;"
     },
     {
-      "name": "mobile-vibrate"
+      "name": "mobile-vibrate",
+      "entity": "&#xe997;"
     },
     {
-      "name": "desktop"
+      "name": "desktop",
+      "entity": "&#xe943;"
     },
     {
-      "name": "laptop"
+      "name": "laptop",
+      "entity": "&#xe979;"
     },
     {
-      "name": "server"
+      "name": "server",
+      "entity": "&#xe9bd;"
     },
     {
-      "name": "cloud"
+      "name": "cloud",
+      "entity": "&#xe93d;"
     },
     {
-      "name": "poweroff"
+      "name": "poweroff",
+      "entity": "&#xe9ad;"
     },
     {
-      "name": "usb"
+      "name": "usb",
+      "entity": "&#xe9d4;"
     },
     {
-      "name": "internet"
+      "name": "internet",
+      "entity": "&#xe977;"
     },
     {
-      "name": "fork"
+      "name": "fork",
+      "entity": "&#xe95f;"
     },
     {
-      "name": "logo-windows"
+      "name": "logo-windows",
+      "entity": "&#xe98e;"
     },
     {
-      "name": "logo-windows-filled"
+      "name": "logo-windows-filled",
+      "entity": "&#xe98d;"
     },
     {
-      "name": "logo-ie"
+      "name": "logo-ie",
+      "entity": "&#xe98c;"
     },
     {
-      "name": "logo-ie-filled"
+      "name": "logo-ie-filled",
+      "entity": "&#xe98b;"
     },
     {
-      "name": "logo-chrome"
+      "name": "logo-chrome",
+      "entity": "&#xe987;"
     },
     {
-      "name": "logo-chrome-filled"
+      "name": "logo-chrome-filled",
+      "entity": "&#xe986;"
     },
     {
-      "name": "logo-github"
+      "name": "logo-github",
+      "entity": "&#xe98a;"
     },
     {
-      "name": "logo-github-filled"
+      "name": "logo-github-filled",
+      "entity": "&#xe989;"
     },
     {
-      "name": "logo-codepen"
+      "name": "logo-codepen",
+      "entity": "&#xe988;"
     }
   ],
   "mobile": [
     {
-      "name": "call"
+      "name": "call",
+      "entity": "&#xe913;"
     },
     {
-      "name": "mail"
+      "name": "mail",
+      "entity": "&#xe990;"
     },
     {
-      "name": "sound"
+      "name": "sound",
+      "entity": "&#xe9c3;"
     },
     {
-      "name": "wifi"
+      "name": "wifi",
+      "entity": "&#xe9e3;"
     },
     {
-      "name": "location"
+      "name": "location",
+      "entity": "&#xe97f;"
     },
     {
-      "name": "link"
+      "name": "link",
+      "entity": "&#xe97c;"
     },
     {
-      "name": "link-unlink"
+      "name": "link-unlink",
+      "entity": "&#xe97b;"
     },
     {
-      "name": "lock-on"
+      "name": "lock-on",
+      "entity": "&#xe981;"
     },
     {
-      "name": "lock-off"
+      "name": "lock-off",
+      "entity": "&#xe980;"
     },
     {
-      "name": "photo"
+      "name": "photo",
+      "entity": "&#xe9a7;"
     },
     {
-      "name": "scan"
+      "name": "scan",
+      "entity": "&#xe9ba;"
     },
     {
-      "name": "logo-android"
+      "name": "logo-android",
+      "entity": "&#xe983;"
     },
     {
-      "name": "logo-apple"
+      "name": "logo-apple",
+      "entity": "&#xe985;"
     },
     {
-      "name": "logo-apple-filled"
+      "name": "logo-apple-filled",
+      "entity": "&#xe984;"
     }
   ],
   "user": [
     {
-      "name": "gender-male"
+      "name": "gender-male",
+      "entity": "&#xe96a;"
     },
     {
-      "name": "gender-female"
+      "name": "gender-female",
+      "entity": "&#xe969;"
     },
     {
-      "name": "user"
+      "name": "user",
+      "entity": "&#xe9da;"
     },
     {
-      "name": "user-add"
+      "name": "user-add",
+      "entity": "&#xe9d5;"
     },
     {
-      "name": "user-clear"
+      "name": "user-clear",
+      "entity": "&#xe9d8;"
     },
     {
-      "name": "usergroup"
+      "name": "usergroup",
+      "entity": "&#xe9dd;"
     },
     {
-      "name": "usergroup-add"
+      "name": "usergroup-add",
+      "entity": "&#xe9db;"
     },
     {
-      "name": "usergroup-clear"
+      "name": "usergroup-clear",
+      "entity": "&#xe9dc;"
     },
     {
-      "name": "user-avatar"
+      "name": "user-avatar",
+      "entity": "&#xe9d6;"
     },
     {
-      "name": "user-circle"
+      "name": "user-circle",
+      "entity": "&#xe9d7;"
     },
     {
-      "name": "user-talk"
+      "name": "user-talk",
+      "entity": "&#xe9d9;"
     }
   ],
   "file": [
     {
-      "name": "attach"
+      "name": "attach",
+      "entity": "&#xe909;"
     },
     {
-      "name": "upload"
+      "name": "upload",
+      "entity": "&#xe9d3;"
     },
     {
-      "name": "download"
+      "name": "download",
+      "entity": "&#xe946;"
     },
     {
-      "name": "cloud-download"
+      "name": "cloud-download",
+      "entity": "&#xe93b;"
     },
     {
-      "name": "cloud-upload"
+      "name": "cloud-upload",
+      "entity": "&#xe93c;"
     },
     {
-      "name": "image"
+      "name": "image",
+      "entity": "&#xe974;"
     },
     {
-      "name": "video"
+      "name": "video",
+      "entity": "&#xe9de;"
     },
     {
-      "name": "root-list"
+      "name": "root-list",
+      "entity": "&#xe9b7;"
     },
     {
-      "name": "file"
+      "name": "file",
+      "entity": "&#xe958;"
     },
     {
-      "name": "file-add"
+      "name": "file-add",
+      "entity": "&#xe94e;"
     },
     {
-      "name": "file-copy"
+      "name": "file-copy",
+      "entity": "&#xe94f;"
     },
     {
-      "name": "file-paste"
+      "name": "file-paste",
+      "entity": "&#xe953;"
     },
     {
-      "name": "folder"
+      "name": "folder",
+      "entity": "&#xe95e;"
     },
     {
-      "name": "folder-open"
+      "name": "folder-open",
+      "entity": "&#xe95d;"
     },
     {
-      "name": "folder-add"
+      "name": "folder-add",
+      "entity": "&#xe95c;"
     },
     {
-      "name": "file-image"
+      "name": "file-image",
+      "entity": "&#xe952;"
     },
     {
-      "name": "file-word"
+      "name": "file-icon",
+      "entity": "&#xe951;"
     },
     {
-      "name": "file-excel"
+      "name": "file-word",
+      "entity": "&#xe957;"
     },
     {
-      "name": "file-powerpoint"
+      "name": "file-excel",
+      "entity": "&#xe950;"
     },
     {
-      "name": "file-pdf"
+      "name": "file-powerpoint",
+      "entity": "&#xe955;"
     },
     {
-      "name": "file-unknown"
+      "name": "file-pdf",
+      "entity": "&#xe954;"
+    },
+    {
+      "name": "file-unknown",
+      "entity": "&#xe956;"
     }
   ],
   "layout": [
     {
-      "name": "view-module"
+      "name": "view-module",
+      "entity": "&#xe9e1;"
     },
     {
-      "name": "view-list"
+      "name": "view-list",
+      "entity": "&#xe9e0;"
     },
     {
-      "name": "view-column"
+      "name": "view-column",
+      "entity": "&#xe9df;"
     },
     {
-      "name": "format-vertical-align-left"
+      "name": "format-vertical-align-left",
+      "entity": "&#xe964;"
     },
     {
-      "name": "format-vertical-align-center"
+      "name": "format-vertical-align-center",
+      "entity": "&#xe963;"
     },
     {
-      "name": "format-vertical-align-right"
+      "name": "format-vertical-align-right",
+      "entity": "&#xe965;"
     },
     {
-      "name": "format-horizontal-align-top"
+      "name": "format-horizontal-align-top",
+      "entity": "&#xe962;"
     },
     {
-      "name": "format-horizontal-align-top"
+      "name": "format-horizontal-align-center",
+      "entity": "&#xe961;"
     },
     {
-      "name": "format-horizontal-align-center"
+      "name": "format-horizontal-align-bottom",
+      "entity": "&#xe960;"
     },
     {
-      "name": "format-horizontal-align-bottom"
+      "name": "order-descending",
+      "entity": "&#xe9a1;"
     },
     {
-      "name": "order-descending"
+      "name": "order-ascending",
+      "entity": "&#xe9a0;"
     },
     {
-      "name": "order-ascending"
+      "name": "menu-fold",
+      "entity": "&#xe992;"
     },
     {
-      "name": "menu-fold"
+      "name": "menu-unfold",
+      "entity": "&#xe993;"
     },
     {
-      "name": "menu-unfold"
-    },
-    {
-      "name": "bulletpoint"
+      "name": "bulletpoint",
+      "entity": "&#xe911;"
     }
   ],
   "chart": [
     {
-      "name": "chart"
+      "name": "chart",
+      "entity": "&#xe920;"
     },
     {
-      "name": "chart-bubble"
+      "name": "chart-bubble",
+      "entity": "&#xe91e;"
     },
     {
-      "name": "chart-pie"
+      "name": "chart-pie",
+      "entity": "&#xe91f;"
     },
     {
-      "name": "chart-bar"
+      "name": "chart-bar",
+      "entity": "&#xe91d;"
     },
     {
-      "name": "barcode"
+      "name": "barcode",
+      "entity": "&#xe90d;"
     },
     {
-      "name": "qrcode"
+      "name": "qrcode",
+      "entity": "&#xe9b1;"
     }
   ],
   "shape": [
     {
-      "name": "round"
+      "name": "round",
+      "entity": "&#xe9b8;"
     },
     {
-      "name": "circle"
+      "name": "circle",
+      "entity": "&#xe935;"
     },
     {
-      "name": "rectangle"
+      "name": "rectangle",
+      "entity": "&#xe9b3;"
     },
     {
-      "name": "heart"
+      "name": "heart",
+      "entity": "&#xe96d;"
     },
     {
-      "name": "heart-filled"
+      "name": "heart-filled",
+      "entity": "&#xe96c;"
     },
     {
-      "name": "star"
+      "name": "star",
+      "entity": "&#xe9c5;"
     },
     {
-      "name": "star-filled"
+      "name": "star-filled",
+      "entity": "&#xe9c4;"
     }
   ]
 }
