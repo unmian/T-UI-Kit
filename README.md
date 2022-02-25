@@ -6,7 +6,7 @@
 
 - [x] ~~Button 按钮 @v1.0.5~~
 - [x] ~~Divider 分割线 @v1.0.5~~
-- [x] ~~Icon 图标 @v1.0~~
+- [x] ~~Icon 图标 @v1.0.5~~
 - [ ] Grid 栅格
 - [ ] Layout 布局
 - [ ] Affix 固钉
@@ -45,7 +45,7 @@
 - [ ] Tooltip 文本提示
 - [ ] Tree 树
 - [x] ~~Alert 警告提醒 @v1.0.5~~
-- [ ] Dialog 对话框
+- [x] ~~Dialog 对话框 @v1.0.5~~
 - [x] ~~Drawer 抽屉 @v1.0.5~~
 - [x] ~~Message 全局提示 @v1.0.5~~
 - [x] ~~Notification 消息通知 @v1.0.5~~

@@ -1,192 +1,56 @@
 @font-face {
   font-family: "t-iconfont";
-  // src: url("./icons/t-iconfont.woff2?t=1640867202288") format("woff2"),
-  src: url("../icons/t-iconfont.woff?t=1640867202288") format("woff"),
-    url("../icons/t-iconfont.ttf?t=1640867202288") format("truetype");
+  src: url("../icons/t-iconfont.eot?v=v1.0.5");
+  src: url("../icons/t-iconfont.eot?v=v1.0.5") format("embedded-opentype"),
+    url("../icons/t-iconfont.ttf?v=v1.0.5") format("truetype"),
+    url("../icons/t-iconfont.woff?v=v1.0.5") format("woff"),
+    url("../icons/t-iconfont.svg?v=v1.0.5") format("svg");
   /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+}
+
+.t-icon {
+  color: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  font-variant: inherit;
+  font-family: "t-iconfont" !important;
+  line-height: inherit;
+  text-transform: none;
 }
 
 i.t-icon {
   color: inherit;
   font-size: inherit;
   font-style: inherit;
+  font-weight: inherit;
+  font-variant: inherit;
   font-family: "t-iconfont" !important;
   line-height: inherit;
+  text-transform: none;
 
-  &[icon=circle]::before {
-    content: "\e935";
+  &[icon=add]::before {
+    content: "\e902";
   }
 
   &[icon=add-circle]::before {
     content: "\e900";
   }
 
-  &[icon=minus-circle]::before {
-    content: "\e995";
+  &[icon=add-rectangle]::before {
+    content: "\e901";
   }
 
-  &[icon=minus-circle-filled]::before {
-    content: "\e994";
-  }
-
-  &[icon=chevron-up-circle]::before {
-    content: "\e932";
-  }
-
-  &[icon=chevron-down-circle]::before {
-    content: "\e927";
-  }
-
-  &[icon=chevron-left-circle]::before {
-    content: "\e92a";
-  }
-
-  &[icon=chevron-right-circle]::before {
-    content: "\e92e";
-  }
-
-  &[icon=info-circle]::before {
-    content: "\e975";
-  }
-
-  &[icon=error-circle]::before {
-    content: "\e94c";
-  }
-
-  &[icon=close-circle]::before {
-    content: "\e938";
-  }
-
-  &[icon=check-circle]::before {
-    content: "\e923";
-  }
-
-  &[icon=help-circle]::before {
-    content: "\e96e";
-  }
-
-  &[icon=play-circle-stroke]::before {
-    content: "\e9aa";
-  }
-
-  &[icon=pause-circle]::before {
-    content: "\e9a5";
-  }
-
-  &[icon=play-circle]::before {
-    content: "\e9ab";
-  }
-
-  &[icon=stop-circle]::before {
-    content: "\e9c7";
-  }
-
-  &[icon=play-circle-filled]::before {
-    content: "\e9a9";
-  }
-
-  &[icon=pause-circle-filled]::before {
-    content: "\e9a4";
-  }
-
-  &[icon=stop-circle-filled]::before {
-    content: "\e9c6";
-  }
-
-  &[icon=play]::before {
-    content: "\e9ac";
-  }
-
-  &[icon=pause]::before {
-    content: "\e9a6";
-  }
-
-  &[icon=previous]::before {
-    content: "\e9af";
-  }
-
-  &[icon=next]::before {
-    content: "\e99c";
-  }
-
-  &[icon=caret-up]::before {
-    content: "\e91b";
-  }
-
-  &[icon=caret-down]::before {
-    content: "\e915";
-  }
-
-  &[icon=caret-left]::before {
-    content: "\e917";
-  }
-
-  &[icon=caret-right]::before {
-    content: "\e919";
-  }
-
-  &[icon=forward]::before {
-    content: "\e965";
-  }
-
-  &[icon=backward]::before {
-    content: "\e90c";
-  }
-
-  &[icon=swap-left]::before {
-    content: "\e9c8";
-  }
-
-  &[icon=swap-right]::before {
-    content: "\e9c9";
-  }
-
-  &[icon=swap]::before {
-    content: "\e9ca";
-  }
-
-  &[icon=fullscreen-exit]::before {
-    content: "\e966";
-  }
-
-  &[icon=fullsreen]::before {
-    content: "\e967";
-  }
-
-  &[icon=rollback]::before {
-    content: "\e9b6";
-  }
-
-  &[icon=enter]::before {
-    content: "\e94a";
-  }
-
-  &[icon=refresh]::before {
-    content: "\e9b4";
-  }
-
-  &[icon=history]::before {
-    content: "\e970";
-  }
-
-  &[icon=unfold-more]::before {
-    content: "\e9d2";
-  }
-
-  &[icon=unfold-less]::before {
-    content: "\e9d1";
-  }
-
-  &[icon=help]::before {
-    content: "\e96f";
-  }
-
-  &[icon=arrow-up]::before {
-    content: "\e908";
+  &[icon=app]::before {
+    content: "\e903";
   }
 
   &[icon=arrow-down]::before {
     content: "\e905";
+  }
+
+  &[icon=arrow-down-rectangle]::before {
+    content: "\e904";
   }
 
   &[icon=arrow-left]::before {
@@ -197,36 +61,120 @@ i.t-icon {
     content: "\e907";
   }
 
-  &[icon=error]::before {
-    content: "\e94d";
+  &[icon=arrow-up]::before {
+    content: "\e908";
   }
 
-  &[icon=chevron-up-rectangle]::before {
-    content: "\e933";
+  &[icon=attach]::before {
+    content: "\e909";
   }
 
-  &[icon=chevron-down-rectangle]::before {
-    content: "\e928";
+  &[icon=backtop]::before {
+    content: "\e90b";
   }
 
-  &[icon=chevron-left-rectangle]::before {
-    content: "\e92b";
+  &[icon=backtop-rectangle]::before {
+    content: "\e90a";
   }
 
-  &[icon=chevron-right-rectangle]::before {
-    content: "\e92f";
+  &[icon=backward]::before {
+    content: "\e90c";
   }
 
-  &[icon=minus-rectangle]::before {
-    content: "\e996";
+  &[icon=barcode]::before {
+    content: "\e90d";
   }
 
-  &[icon=add-rectangle]::before {
-    content: "\e901";
+  &[icon=books]::before {
+    content: "\e90e";
   }
 
-  &[icon=close-rectangle]::before {
-    content: "\e939";
+  &[icon=browse]::before {
+    content: "\e910";
+  }
+
+  &[icon=browse-off]::before {
+    content: "\e90f";
+  }
+
+  &[icon=bulletpoint]::before {
+    content: "\e911";
+  }
+
+  &[icon=calendar]::before {
+    content: "\e912";
+  }
+
+  &[icon=call]::before {
+    content: "\e913";
+  }
+
+  &[icon=caret-down]::before {
+    content: "\e915";
+  }
+
+  &[icon=caret-down-small]::before {
+    content: "\e914";
+  }
+
+  &[icon=caret-left]::before {
+    content: "\e917";
+  }
+
+  &[icon=caret-left-small]::before {
+    content: "\e916";
+  }
+
+  &[icon=caret-right]::before {
+    content: "\e919";
+  }
+
+  &[icon=caret-right-small]::before {
+    content: "\e918";
+  }
+
+  &[icon=caret-up]::before {
+    content: "\e91b";
+  }
+
+  &[icon=caret-up-small]::before {
+    content: "\e91a";
+  }
+
+  &[icon=cart]::before {
+    content: "\e91c";
+  }
+
+  &[icon=chart]::before {
+    content: "\e920";
+  }
+
+  &[icon=chart-bar]::before {
+    content: "\e91d";
+  }
+
+  &[icon=chart-bubble]::before {
+    content: "\e91e";
+  }
+
+  &[icon=chart-pie]::before {
+    content: "\e91f";
+  }
+
+  &[icon=chat]::before {
+    content: "\e921";
+  }
+
+  &[icon=check]::before {
+    content: "\e926";
+  }
+
+  &[icon=check-circle]::before {
+    content: "\e923";
+  }
+
+  &[icon=check-circle-filled]::before {
+    content: "\e922";
   }
 
   &[icon=check-rectangle]::before {
@@ -237,16 +185,84 @@ i.t-icon {
     content: "\e924";
   }
 
-  &[icon=rectangle]::before {
-    content: "\e9b3";
+  &[icon=chevron-down]::before {
+    content: "\e929";
   }
 
-  &[icon=time]::before {
-    content: "\e9ce";
+  &[icon=chevron-down-circle]::before {
+    content: "\e927";
   }
 
-  &[icon=photo]::before {
-    content: "\e9a7";
+  &[icon=chevron-down-rectangle]::before {
+    content: "\e928";
+  }
+
+  &[icon=chevron-left]::before {
+    content: "\e92d";
+  }
+
+  &[icon=chevron-left-circle]::before {
+    content: "\e92a";
+  }
+
+  &[icon="chevron-left.double"]::before {
+    content: "\e92c";
+  }
+
+  &[icon=chevron-left-rectangle]::before {
+    content: "\e92b";
+  }
+
+  &[icon=chevron-right]::before {
+    content: "\e931";
+  }
+
+  &[icon=chevron-right-circle]::before {
+    content: "\e92e";
+  }
+
+  &[icon="chevron-right.double"]::before {
+    content: "\e930";
+  }
+
+  &[icon=chevron-right-rectangle]::before {
+    content: "\e92f";
+  }
+
+  &[icon=chevron-up]::before {
+    content: "\e934";
+  }
+
+  &[icon=chevron-up-circle]::before {
+    content: "\e932";
+  }
+
+  &[icon=chevron-up-rectangle]::before {
+    content: "\e933";
+  }
+
+  &[icon=circle]::before {
+    content: "\e935";
+  }
+
+  &[icon=clear]::before {
+    content: "\e936";
+  }
+
+  &[icon=close]::before {
+    content: "\e93a";
+  }
+
+  &[icon=close-circle]::before {
+    content: "\e938";
+  }
+
+  &[icon=close-circle-filled]::before {
+    content: "\e937";
+  }
+
+  &[icon=close-rectangle]::before {
+    content: "\e939";
   }
 
   &[icon=cloud]::before {
@@ -261,28 +277,28 @@ i.t-icon {
     content: "\e93c";
   }
 
-  &[icon=location]::before {
-    content: "\e97f";
+  &[icon=code]::before {
+    content: "\e93e";
   }
 
-  &[icon=browse-off]::before {
-    content: "\e90f";
+  &[icon="control.platform"]::before {
+    content: "\e93f";
   }
 
-  &[icon=browse]::before {
-    content: "\e910";
+  &[icon=creditcard]::before {
+    content: "\e940";
   }
 
-  &[icon=heart]::before {
-    content: "\e96c";
+  &[icon=dashboard]::before {
+    content: "\e941";
   }
 
-  &[icon=heart-filled]::before {
-    content: "\e96b";
+  &[icon=delete]::before {
+    content: "\e942";
   }
 
-  &[icon=pin]::before {
-    content: "\e9a8";
+  &[icon=desktop]::before {
+    content: "\e943";
   }
 
   &[icon=discount]::before {
@@ -293,300 +309,8 @@ i.t-icon {
     content: "\e944";
   }
 
-  &[icon=jump]::before {
-    content: "\e977";
-  }
-
-  &[icon=app]::before {
-    content: "\e903";
-  }
-
-  &[icon=thumb-up]::before {
-    content: "\e9cc";
-  }
-
-  &[icon=thumb-down]::before {
-    content: "\e9cb";
-  }
-
-  &[icon=money-circle]::before {
-    content: "\e999";
-  }
-
-  &[icon=star]::before {
-    content: "\e9c5";
-  }
-
-  &[icon=star-filled]::before {
-    content: "\e9c4";
-  }
-
-  &[icon=file-add]::before {
-    content: "\e94e";
-  }
-
-  &[icon=folder-add]::before {
-    content: "\e95b";
-  }
-
-  &[icon=file-copy]::before {
-    content: "\e94f";
-  }
-
-  &[icon=file]::before {
-    content: "\e957";
-  }
-
-  &[icon=file-paste]::before {
-    content: "\e952";
-  }
-
-  &[icon=folder]::before {
-    content: "\e95d";
-  }
-
-  &[icon=folder-open]::before {
-    content: "\e95c";
-  }
-
-  &[icon=file-image]::before {
-    content: "\e951";
-  }
-
-  &[icon=file-pdf]::before {
-    content: "\e953";
-  }
-
-  &[icon=file-excel]::before {
-    content: "\e950";
-  }
-
-  &[icon=file-powerpoint]::before {
-    content: "\e954";
-  }
-
-  &[icon=file-unknown]::before {
-    content: "\e955";
-  }
-
-  &[icon=file-word]::before {
-    content: "\e956";
-  }
-
-  &[icon=user]::before {
-    content: "\e9da";
-  }
-
-  &[icon=usergroup]::before {
-    content: "\e9dd";
-  }
-
-  &[icon=gender-male]::before {
-    content: "\e969";
-  }
-
-  &[icon=gender-female]::before {
-    content: "\e968";
-  }
-
-  &[icon=user-add]::before {
-    content: "\e9d5";
-  }
-
-  &[icon=usergroup-add]::before {
-    content: "\e9db";
-  }
-
-  &[icon=user-clear]::before {
-    content: "\e9d8";
-  }
-
-  &[icon=usergroup-clear]::before {
-    content: "\e9dc";
-  }
-
-  &[icon=user-avatar]::before {
-    content: "\e9d6";
-  }
-
-  &[icon=user-circle]::before {
-    content: "\e9d7";
-  }
-
-  &[icon=user-talk]::before {
-    content: "\e9d9";
-  }
-
-  &[icon=mobile]::before {
-    content: "\e998";
-  }
-
-  &[icon=mobile-vibrate]::before {
-    content: "\e997";
-  }
-
-  &[icon=desktop]::before {
-    content: "\e943";
-  }
-
-  &[icon=laptop]::before {
-    content: "\e978";
-  }
-
-  &[icon=qrcode]::before {
-    content: "\e9b1";
-  }
-
-  &[icon=fork]::before {
-    content: "\e95e";
-  }
-
-  &[icon=scan]::before {
-    content: "\e9ba";
-  }
-
-  &[icon=service]::before {
-    content: "\e9be";
-  }
-
-  &[icon=video]::before {
-    content: "\e9de";
-  }
-
-  &[icon=usb]::before {
-    content: "\e9d4";
-  }
-
-  &[icon=internet]::before {
-    content: "\e976";
-  }
-
-  &[icon=share]::before {
-    content: "\e9c0";
-  }
-
-  &[icon=logo-chrome-filled]::before {
-    content: "\e986";
-  }
-
-  &[icon=logo-ie-filled]::before {
-    content: "\e98b";
-  }
-
-  &[icon=logo-windows-filled]::before {
-    content: "\e98d";
-  }
-
-  &[icon=logo-github-filled]::before {
-    content: "\e989";
-  }
-
-  &[icon=logo-android]::before {
-    content: "\e983";
-  }
-
-  &[icon=logo-apple-filled]::before {
-    content: "\e984";
-  }
-
-  &[icon=logo-chrome]::before {
-    content: "\e987";
-  }
-
-  &[icon=logo-ie]::before {
-    content: "\e98c";
-  }
-
-  &[icon=logo-windows]::before {
-    content: "\e98e";
-  }
-
-  &[icon=logo-github]::before {
-    content: "\e98a";
-  }
-
-  &[icon=logo-codepen]::before {
-    content: "\e988";
-  }
-
-  &[icon=logo-apple]::before {
-    content: "\e985";
-  }
-
-  &[icon=home]::before {
-    content: "\e971";
-  }
-
-  &[icon=setting]::before {
-    content: "\e9bf";
-  }
-
-  &[icon=attach]::before {
-    content: "\e909";
-  }
-
-  &[icon=link]::before {
-    content: "\e97b";
-  }
-
-  &[icon=link-unlink]::before {
-    content: "\e97a";
-  }
-
-  &[icon=login]::before {
-    content: "\e982";
-  }
-
-  &[icon=logout]::before {
-    content: "\e98f";
-  }
-
-  &[icon=poweroff]::before {
-    content: "\e9ad";
-  }
-
-  &[icon=upload]::before {
-    content: "\e9d3";
-  }
-
   &[icon=download]::before {
     content: "\e946";
-  }
-
-  &[icon=chat]::before {
-    content: "\e921";
-  }
-
-  &[icon=lock-on]::before {
-    content: "\e981";
-  }
-
-  &[icon=lock-off]::before {
-    content: "\e980";
-  }
-
-  &[icon=delete]::before {
-    content: "\e942";
-  }
-
-  &[icon=save]::before {
-    content: "\e9b9";
-  }
-
-  &[icon=tools]::before {
-    content: "\e9d0";
-  }
-
-  &[icon=menu-fold]::before {
-    content: "\e992";
-  }
-
-  &[icon=menu-unfold]::before {
-    content: "\e993";
-  }
-
-  &[icon=bulletpoint]::before {
-    content: "\e911";
   }
 
   &[icon=edit]::before {
@@ -597,104 +321,336 @@ i.t-icon {
     content: "\e947";
   }
 
-  &[icon=calendar]::before {
-    content: "\e912";
+  &[icon=ellipsis]::before {
+    content: "\e949";
   }
 
-  &[icon=chart-bubble]::before {
-    content: "\e91e";
+  &[icon=enter]::before {
+    content: "\e94a";
   }
 
-  &[icon=barcode]::before {
-    content: "\e90d";
+  &[icon=error]::before {
+    content: "\e94d";
   }
 
-  &[icon=search]::before {
-    content: "\e9bb";
+  &[icon=error-circle]::before {
+    content: "\e94c";
   }
 
-  &[icon=zoom-in]::before {
-    content: "\e9e4";
+  &[icon=error-circle-filled]::before {
+    content: "\e94b";
   }
 
-  &[icon=zoom-out]::before {
-    content: "\e9e5";
-  }
-
-  &[icon=chart-pie]::before {
-    content: "\e91f";
-  }
-
-  &[icon=sound]::before {
-    content: "\e9c3";
-  }
-
-  &[icon=wifi]::before {
-    content: "\e9e3";
-  }
-
-  &[icon=arrow-down-rectangle]::before {
-    content: "\e904";
-  }
-
-  &[icon=image]::before {
-    content: "\e973";
-  }
-
-  &[icon=code]::before {
-    content: "\e93e";
-  }
-
-  &[icon=secured]::before {
-    content: "\e9bc";
-  }
-
-  &[icon=filter]::before {
-    content: "\e959";
-  }
-
-  &[icon=filter-clear]::before {
+  &[icon=file]::before {
     content: "\e958";
   }
 
-  &[icon=clear]::before {
-    content: "\e936";
+  &[icon=file-add]::before {
+    content: "\e94e";
   }
 
-  &[icon=queue]::before {
-    content: "\e9b2";
+  &[icon=file-copy]::before {
+    content: "\e94f";
   }
 
-  &[icon=shop]::before {
-    content: "\e9c1";
+  &[icon=file-excel]::before {
+    content: "\e950";
   }
 
-  &[icon=call]::before {
-    content: "\e913";
+  &[icon=file-icon]::before {
+    content: "\e951";
   }
 
-  &[icon=creditcard]::before {
-    content: "\e940";
+  &[icon=file-image]::before {
+    content: "\e952";
   }
 
-  &[icon=tips]::before {
-    content: "\e9cf";
+  &[icon=file-paste]::before {
+    content: "\e953";
   }
 
-  &[icon=gift]::before {
-    content: "\e96a";
+  &[icon=file-pdf]::before {
+    content: "\e954";
   }
 
-  &[icon=server]::before {
-    content: "\e9bd";
+  &[icon=file-powerpoint]::before {
+    content: "\e955";
   }
 
-  &[icon=flag]::before {
+  &[icon=file-unknown]::before {
+    content: "\e956";
+  }
+
+  &[icon=file-word]::before {
+    content: "\e957";
+  }
+
+  &[icon=filter]::before {
     content: "\e95a";
   }
 
-  &[icon=hourglass]::before {
+  &[icon=filter-clear]::before {
+    content: "\e959";
+  }
+
+  &[icon=flag]::before {
+    content: "\e9e6";
+  }
+
+  &[icon=folder]::before {
+    content: "\e95e";
+  }
+
+  &[icon=folder-add]::before {
+    content: "\e95c";
+  }
+
+  &[icon=folder-open]::before {
+    content: "\e95d";
+  }
+
+  &[icon=fork]::before {
+    content: "\e95f";
+  }
+
+  &[icon=format-horizontal-align-bottom]::before {
+    content: "\e960";
+  }
+
+  &[icon=format-horizontal-align-center]::before {
+    content: "\e961";
+  }
+
+  &[icon=format-horizontal-align-top]::before {
+    content: "\e962";
+  }
+
+  &[icon=format-vertical-align-center]::before {
+    content: "\e963";
+  }
+
+  &[icon=format-vertical-align-left]::before {
+    content: "\e964";
+  }
+
+  &[icon=format-vertical-align-right]::before {
+    content: "\e965";
+  }
+
+  &[icon=forward]::before {
+    content: "\e966";
+  }
+
+  &[icon=fullsreen]::before {
+    content: "\e968";
+  }
+
+  &[icon=fullscreen-exit]::before {
+    content: "\e967";
+  }
+
+  &[icon=gender-female]::before {
+    content: "\e969";
+  }
+
+  &[icon=gender-male]::before {
+    content: "\e96a";
+  }
+
+  &[icon=gift]::before {
+    content: "\e96b";
+  }
+
+  &[icon=heart]::before {
+    content: "\e96d";
+  }
+
+  &[icon=heart-filled]::before {
+    content: "\e96c";
+  }
+
+  &[icon=help]::before {
+    content: "\e970";
+  }
+
+  &[icon=help-circle]::before {
+    content: "\e96f";
+  }
+
+  &[icon=help-circle-filled]::before {
+    content: "\e96e";
+  }
+
+  &[icon=history]::before {
+    content: "\e971";
+  }
+
+  &[icon=home]::before {
     content: "\e972";
+  }
+
+  &[icon=hourglass]::before {
+    content: "\e973";
+  }
+
+  &[icon=info-circle]::before {
+    content: "\e976";
+  }
+
+  &[icon=info-circle-filled]::before {
+    content: "\e975";
+  }
+
+  &[icon=internet]::before {
+    content: "\e977";
+  }
+
+  &[icon=image]::before {
+    content: "\e974";
+  }
+
+  &[icon=jump]::before {
+    content: "\e978";
+  }
+
+  &[icon=laptop]::before {
+    content: "\e979";
+  }
+
+  &[icon=layers]::before {
+    content: "\e97a";
+  }
+
+  &[icon=link]::before {
+    content: "\e97c";
+  }
+
+  &[icon=link-unlink]::before {
+    content: "\e97b";
+  }
+
+  &[icon=location]::before {
+    content: "\e97f";
+  }
+
+  &[icon=lock-on]::before {
+    content: "\e981";
+  }
+
+  &[icon=lock-off]::before {
+    content: "\e980";
+  }
+
+  &[icon=loading]::before {
+    content: "\e97e";
+  }
+
+  &[icon=login]::before {
+    content: "\e982";
+  }
+
+  &[icon=logo-android]::before {
+    content: "\e983";
+  }
+
+  &[icon=logo-apple]::before {
+    content: "\e985";
+  }
+
+  &[icon=logo-apple-filled]::before {
+    content: "\e984";
+  }
+
+  &[icon=logo-chrome]::before {
+    content: "\e987";
+  }
+
+  &[icon=logo-chrome-filled]::before {
+    content: "\e986";
+  }
+
+  &[icon=logo-codepen]::before {
+    content: "\e988";
+  }
+
+  &[icon=logo-github]::before {
+    content: "\e98a";
+  }
+
+  &[icon=logo-github-filled]::before {
+    content: "\e989";
+  }
+
+  &[icon=logo-ie]::before {
+    content: "\e98c";
+  }
+
+  &[icon=logo-ie-filled]::before {
+    content: "\e98b";
+  }
+
+  &[icon=logo-windows]::before {
+    content: "\e98e";
+  }
+
+  &[icon=logo-windows-filled]::before {
+    content: "\e98d";
+  }
+
+  &[icon=logout]::before {
+    content: "\e98f";
+  }
+
+  &[icon=mail]::before {
+    content: "\e990";
+  }
+
+  &[icon=menu-application]::before {
+    content: "\e991";
+  }
+
+  &[icon=menu-fold]::before {
+    content: "\e992";
+  }
+
+  &[icon=menu-unfold]::before {
+    content: "\e993";
+  }
+
+  &[icon=minus-circle]::before {
+    content: "\e995";
+  }
+
+  &[icon=minus-circle-filled]::before {
+    content: "\e994";
+  }
+
+  &[icon=minus-rectangle]::before {
+    content: "\e996";
+  }
+
+  &[icon=mobile]::before {
+    content: "\e998";
+  }
+
+  &[icon=mobile-vibrate]::before {
+    content: "\e997";
+  }
+
+  &[icon=money-circle]::before {
+    content: "\e999";
+  }
+
+  &[icon=more]::before {
+    content: "\e99a";
+  }
+
+  &[icon=move]::before {
+    content: "\e99b";
+  }
+
+  &[icon=next]::before {
+    content: "\e99c";
   }
 
   &[icon=notification]::before {
@@ -705,176 +661,16 @@ i.t-icon {
     content: "\e99d";
   }
 
-  &[icon=wallet]::before {
-    content: "\e9e2";
-  }
-
-  &[icon=mail]::before {
-    content: "\e990";
-  }
-
-  &[icon=cart]::before {
-    content: "\e91c";
-  }
-
-  &[icon=books]::before {
-    content: "\e90e";
-  }
-
-  &[icon=layers]::before {
-    content: "\e979";
-  }
-
-  &[icon=backtop-rectangle]::before {
-    content: "\e90a";
-  }
-
-  &[icon=backtop]::before {
-    content: "\e90b";
-  }
-
-  &[icon=print]::before {
-    content: "\e9b0";
-  }
-
-  &[icon=dashboard]::before {
-    content: "\e941";
-  }
-
-  &[icon=root-list]::before {
-    content: "\e9b7";
-  }
-
-  &[icon="control.platform"]::before {
-    content: "\e93f";
-  }
-
-  &[icon="precise.monitor"]::before {
-    content: "\e9ae";
-  }
-
-  &[icon=view-module]::before {
-    content: "\e9e1";
-  }
-
-  &[icon=view-list]::before {
-    content: "\e9e0";
-  }
-
-  &[icon=view-column]::before {
-    content: "\e9df";
-  }
-
-  &[icon=format-vertical-align-left]::before {
-    content: "\e963";
-  }
-
-  &[icon=format-vertical-align-center]::before {
-    content: "\e962";
-  }
-
-  &[icon=format-vertical-align-right]::before {
-    content: "\e964";
-  }
-
-  &[icon=format-horizontal-align-top]::before {
-    content: "\e961";
-  }
-
-  &[icon=format-horizontal-align-center]::before {
-    content: "\e960";
-  }
-
-  &[icon=format-horizontal-align-bottom]::before {
-    content: "\e95f";
-  }
-
-  &[icon=order-descending]::before {
-    content: "\e9a1";
+  &[icon="order-adjustment.column"]::before {
+    content: "\e99f";
   }
 
   &[icon=order-ascending]::before {
     content: "\e9a0";
   }
 
-  &[icon=chart]::before {
-    content: "\e920";
-  }
-
-  &[icon=chart-bar]::before {
-    content: "\e91d";
-  }
-
-  &[icon=close-circle-filled]::before {
-    content: "\e937";
-  }
-
-  &[icon=error-circle-filled]::before {
-    content: "\e94b";
-  }
-
-  &[icon=check-circle-filled]::before {
-    content: "\e922";
-  }
-
-  &[icon=info-circle-filled]::before {
-    content: "\e974";
-  }
-
-  &[icon=help-circle-filled]::before {
-    content: "\e96d";
-  }
-
-  &[icon=time-filled]::before {
-    content: "\e9cd";
-  }
-
-  &[icon=slash]::before {
-    content: "\e9c2";
-  }
-
-  &[icon="order-adjustment.column"]::before {
-    content: "\e99f";
-  }
-
-  &[icon=more]::before {
-    content: "\e99a";
-  }
-
-  &[icon=ellipsis]::before {
-    content: "\e949";
-  }
-
-  &[icon=move]::before {
-    content: "\e99b";
-  }
-
-  &[icon=menu-application]::before {
-    content: "\e991";
-  }
-
-  &[icon=add]::before {
-    content: "\e902";
-  }
-
-  &[icon=remove]::before {
-    content: "\e9b5";
-  }
-
-  &[icon=chevron-up]::before {
-    content: "\e934";
-  }
-
-  &[icon=chevron-down]::before {
-    content: "\e929";
-  }
-
-  &[icon=chevron-left]::before {
-    content: "\e92d";
-  }
-
-  &[icon=chevron-right]::before {
-    content: "\e931";
+  &[icon=order-descending]::before {
+    content: "\e9a1";
   }
 
   &[icon=page-first]::before {
@@ -885,39 +681,267 @@ i.t-icon {
     content: "\e9a3";
   }
 
-  &[icon="chevron-left.double"]::before {
-    content: "\e92c";
+  &[icon=pause]::before {
+    content: "\e9a6";
   }
 
-  &[icon="chevron-right.double"]::before {
-    content: "\e930";
+  &[icon=pause-circle]::before {
+    content: "\e9a5";
   }
 
-  &[icon=close]::before {
-    content: "\e93a";
+  &[icon=pause-circle-filled]::before {
+    content: "\e9a4";
   }
 
-  &[icon=check]::before {
-    content: "\e926";
+  &[icon=photo]::before {
+    content: "\e9a7";
   }
 
-  &[icon=caret-right-small]::before {
-    content: "\e918";
+  &[icon=pin]::before {
+    content: "\e9a8";
   }
 
-  &[icon=caret-down-small]::before {
-    content: "\e914";
+  &[icon=play]::before {
+    content: "\e9ac";
   }
 
-  &[icon=caret-left-small]::before {
-    content: "\e916";
+  &[icon=play-circle]::before {
+    content: "\e9ab";
   }
 
-  &[icon=caret-up-small]::before {
-    content: "\e91a";
+  &[icon=play-circle-filled]::before {
+    content: "\e9a9";
+  }
+
+  &[icon=play-circle-stroke]::before {
+    content: "\e9aa";
+  }
+
+  &[icon=poweroff]::before {
+    content: "\e9ad";
+  }
+
+  &[icon="precise.monitor"]::before {
+    content: "\e9ae";
+  }
+
+  &[icon=previous]::before {
+    content: "\e9af";
+  }
+
+  &[icon=print]::before {
+    content: "\e9b0";
+  }
+
+  &[icon=qrcode]::before {
+    content: "\e9b1";
+  }
+
+  &[icon=queue]::before {
+    content: "\e9b2";
+  }
+
+  &[icon=rectangle]::before {
+    content: "\e9b3";
+  }
+
+  &[icon=refresh]::before {
+    content: "\e9b4";
+  }
+
+  &[icon=remove]::before {
+    content: "\e9b5";
+  }
+
+  &[icon=rollback]::before {
+    content: "\e9b6";
+  }
+
+  &[icon=root-list]::before {
+    content: "\e9b7";
   }
 
   &[icon=round]::before {
     content: "\e9b8";
+  }
+
+  &[icon=save]::before {
+    content: "\e9b9";
+  }
+
+  &[icon=scan]::before {
+    content: "\e9ba";
+  }
+
+  &[icon=search]::before {
+    content: "\e9bb";
+  }
+
+  &[icon=secured]::before {
+    content: "\e9bc";
+  }
+
+  &[icon=server]::before {
+    content: "\e9bd";
+  }
+
+  &[icon=service]::before {
+    content: "\e9be";
+  }
+
+  &[icon=setting]::before {
+    content: "\e9bf";
+  }
+
+  &[icon=share]::before {
+    content: "\e9c0";
+  }
+
+  &[icon=shop]::before {
+    content: "\e9c1";
+  }
+
+  &[icon=slash]::before {
+    content: "\e9c2";
+  }
+
+  &[icon=sound]::before {
+    content: "\e9c3";
+  }
+
+  &[icon=star]::before {
+    content: "\e9c5";
+  }
+
+  &[icon=star-filled]::before {
+    content: "\e9c4";
+  }
+
+  &[icon=stop-circle]::before {
+    content: "\e9c7";
+  }
+
+  &[icon=stop-circle-filled]::before {
+    content: "\e9c6";
+  }
+
+  &[icon=swap]::before {
+    content: "\e9ca";
+  }
+
+  &[icon=swap-left]::before {
+    content: "\e9c8";
+  }
+
+  &[icon=swap-right]::before {
+    content: "\e9c9";
+  }
+
+  &[icon=thumb-down]::before {
+    content: "\e9cb";
+  }
+
+  &[icon=thumb-up]::before {
+    content: "\e9cc";
+  }
+
+  &[icon=time]::before {
+    content: "\e9ce";
+  }
+
+  &[icon=time-filled]::before {
+    content: "\e9cd";
+  }
+
+  &[icon=tips]::before {
+    content: "\e9cf";
+  }
+
+  &[icon=tools]::before {
+    content: "\e9d0";
+  }
+
+  &[icon=unfold-less]::before {
+    content: "\e9d1";
+  }
+
+  &[icon=unfold-more]::before {
+    content: "\e9d2";
+  }
+
+  &[icon=usb]::before {
+    content: "\e9d4";
+  }
+
+  &[icon=user]::before {
+    content: "\e9da";
+  }
+
+  &[icon=user-add]::before {
+    content: "\e9d5";
+  }
+
+  &[icon=user-avatar]::before {
+    content: "\e9d6";
+  }
+
+  &[icon=user-clear]::before {
+    content: "\e9d8";
+  }
+
+  &[icon=user-circle]::before {
+    content: "\e9d7";
+  }
+
+  &[icon=user-talk]::before {
+    content: "\e9d9";
+  }
+
+  &[icon=usergroup]::before {
+    content: "\e9dd";
+  }
+
+  &[icon=usergroup-add]::before {
+    content: "\e9db";
+  }
+
+  &[icon=usergroup-clear]::before {
+    content: "\e9dc";
+  }
+
+  &[icon=upload]::before {
+    content: "\e9d3";
+  }
+
+  &[icon=video]::before {
+    content: "\e9de";
+  }
+
+  &[icon=view-column]::before {
+    content: "\e9df";
+  }
+
+  &[icon=view-list]::before {
+    content: "\e9e0";
+  }
+
+  &[icon=view-module]::before {
+    content: "\e9e1";
+  }
+
+  &[icon=wallet]::before {
+    content: "\e9e2";
+  }
+
+  &[icon=wifi]::before {
+    content: "\e9e3";
+  }
+
+  &[icon=zoom-in]::before {
+    content: "\e9e4";
+  }
+
+  &[icon=zoom-out]::before {
+    content: "\e9e5";
   }
 }
