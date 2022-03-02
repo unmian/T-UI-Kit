@@ -1,0 +1,98 @@
+@import "packages/Style/mixin.scss";
+
+label.t-radio {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+
+  input[type=radio] {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+
+  // 单选框
+  .t-radio__input {
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--t-neutral-1-gray-4);
+    border-radius: 50%;
+    box-sizing: border-box;
+    transition: border 0.24s linear;
+    display: block;
+    position: relative;
+    margin-right: 8px;
+
+    &::after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: var(--t-brand-normal);
+      opacity: 0;
+      display: block;
+      transform: scale(0.5);
+      transition: opacity 0.24s linear;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -8px 0 0 -8px;
+    }
+  }
+
+  //  文本
+  .t-radio__label {
+    @include t-text-4;
+
+    color: var(--t-text-gray-1);
+  }
+
+  // 选中状态
+  &.t-radio--checked {
+    .t-radio__input {
+      border-color: var(--t-brand-normal);
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  // 悬浮状态
+  &:not(.t-radio--disabled):hover {
+    .t-radio__input {
+      border-color: var(--t-brand-normal);
+    }
+  }
+
+  // 禁用状态
+  &.t-radio--disabled {
+    cursor: not-allowed;
+
+    .t-radio__input {
+      background-color: var(--t-neutral-1-gray-2);
+
+      &::after {
+        background-color: var(--t-text-gray-4);
+      }
+    }
+
+    .t-radio__label {
+      color: var(--t-text-gray-4);
+    }
+
+    // 选中状态
+    &.t-radio--checked {
+      .t-radio__input {
+        border-color: var(--t-neutral-1-gray-4);
+      }
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: var(--t-space-24);
+  }
+}

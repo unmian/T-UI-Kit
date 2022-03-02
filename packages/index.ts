@@ -1,7 +1,7 @@
 /*
  * @Author: Quarter
  * @Date: 2021-12-29 07:39:03
- * @LastEditTime: 2022-02-24 05:32:28
+ * @LastEditTime: 2022-03-01 08:11:17
  * @LastEditors: Quarter
  * @Description: UI 组件入口文件
  * @FilePath: /t-ui-kit/packages/index.ts
@@ -25,6 +25,7 @@ import { NotificationPlugin } from "./Notification";
 // import { PopconfirmPlugin } from "./Popconfirm";
 // import { PopupPlugin } from "./Popup";
 import { ProgressPlugin } from "./Progress";
+import { RadioPlugin } from "./Radio";
 import { SkeletonPlugin } from "./Skeleton";
 import { TagPlugin } from "./Tag";
 
@@ -43,6 +44,7 @@ export const TUIPlugin: PluginObject<any> = {
     MessagePlugin.install(vue);
     NotificationPlugin.install(vue);
     ProgressPlugin.install(vue);
+    RadioPlugin.install(vue);
     SkeletonPlugin.install(vue);
     TagPlugin.install(vue);
   },
@@ -65,5 +67,6 @@ export * from "./Notification";
 // export * from "./Popconfirm";
 // export * from "./Popup";
 export * from "./Progress";
+export * from "./Radio";
 export * from "./Skeleton";
 export * from "./Tag";
