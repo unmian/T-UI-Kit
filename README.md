@@ -23,7 +23,7 @@
 - [ ] Form 表单
 - [ ] Input 输入框
 - [ ] InputNumber 数字输入框
-- [ ] Radio 单选框
+- [x] ~~Radio 单选框 @v1.0.5~~
 - [ ] Select 选择器
 - [ ] Slider 滑块
 - [ ] Switch 开关

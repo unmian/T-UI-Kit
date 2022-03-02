@@ -155,8 +155,7 @@
         "compName": "radio",
         "compZhName": "单选框",
         "compDesc": "这是一个按钮",
-        "compClassName": "Radio",
-        "disabled": true
+        "compClassName": "Radio"
       },
       {
         "compName": "select",
