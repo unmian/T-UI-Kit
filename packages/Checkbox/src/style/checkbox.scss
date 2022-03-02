@@ -1,0 +1,121 @@
+@import "packages/Style/mixin.scss";
+
+label.t-checkbox {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+
+  input[type=checkbox] {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+
+  // 复选框
+  .t-checkbox__input {
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--t-neutral-1-gray-4);
+    border-radius: 2px;
+    transition: background-color 0.24s linear;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    margin-right: 8px;
+
+    &::after {
+      content: "";
+      width: 4px;
+      height: 8px;
+      border: 2px solid var(--t-text-white-1);
+      border-radius: 0 0 1px;
+      border-top-width: 0;
+      border-left-width: 0;
+      display: block;
+      transform: scale(0) rotate(45deg);
+      transition: transform 0.24s linear;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -6px 0 0 -3px;
+    }
+  }
+
+  //  文本
+  .t-checkbox__label {
+    @include t-text-4;
+
+    color: var(--t-text-gray-1);
+  }
+
+  // 选中状态
+  &.t-checkbox--checked {
+    .t-checkbox__input {
+      border-color: var(--t-brand-normal);
+      background-color: var(--t-brand-normal);
+
+      &::after {
+        transform: scale(1) rotate(45deg);
+      }
+    }
+  }
+
+  // 悬浮状态
+  &:not(.t-checkbox--disabled):hover {
+    .t-checkbox__input {
+      border-color: var(--t-brand-normal);
+    }
+  }
+
+  // 半选状态
+  &.t-checkbox--indeterminate {
+    .t-checkbox__input {
+      border-color: var(--t-brand-normal);
+      background-color: var(--t-brand-normal);
+
+      &::after {
+        border-radius: 0;
+        border-bottom-width: 0;
+        transform: scale(1) rotate(90deg);
+      }
+    }
+  }
+
+  // 禁用状态
+  &.t-checkbox--disabled {
+    cursor: not-allowed;
+
+    .t-checkbox__input {
+      background-color: var(--t-neutral-1-gray-2);
+
+      &::after {
+        border-color: var(--t-text-gray-4);
+      }
+    }
+
+    .t-checkbox__label {
+      color: var(--t-text-gray-4);
+    }
+
+    // 选中状态
+    &.t-checkbox--checked {
+      .t-checkbox__input {
+        border-color: var(--t-neutral-1-gray-4);
+      }
+    }
+
+    // 半选状态
+    &.t-checkbox--indeterminate {
+      .t-checkbox__input {
+        border-color: var(--t-neutral-1-gray-4);
+      }
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: var(--t-space-24);
+  }
+}

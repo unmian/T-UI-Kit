@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-02-25 05:47:10
- * @LastEditTime: 2022-03-02 05:51:34
+ * @LastEditTime: 2022-03-02 07:29:42
  * @LastEditors: Quarter
  * @Description: 单选框说明文档
  * @FilePath: /t-ui-kit/documents/docs/Radio/README.md
@@ -14,7 +14,7 @@ import { ComponentDemo } from "documents/components";
 
 ## 属性 Props
 
-### 值 - value <t-tag theme="primary" variant="light">String | Number | Boolean</t-tag>
+### 值 - value <t-tag theme="primary" variant="light">RadioValue</t-tag>
 
 <component-demo url="/documents/docs/Radio/RadioValueDemo.vue"></component-demo>
 
@@ -50,7 +50,7 @@ import { ComponentDemo } from "documents/components";
 
 ## 属性 Props
 
-### 值 - value <t-tag theme="primary" variant="light">String | Number | Boolean</t-tag>
+### 值 - value <t-tag theme="primary" variant="light">RadioValue</t-tag>
 
 <component-demo url="/documents/docs/Radio/RadioButtonValueDemo.vue"></component-demo>
 
@@ -66,11 +66,11 @@ import { ComponentDemo } from "documents/components";
 
 ## 属性 Props
 
-### 值 - model-value <t-tag theme="primary" variant="light">String | Number | Boolean</t-tag>
+### 值 - model-value <t-tag theme="primary" variant="light">RadioValue</t-tag>
 
 <component-demo url="/documents/docs/Radio/RadioGroupModelValueDemo.vue"></component-demo>
 
-### 默认值 - default-value <t-tag theme="primary" variant="light">String | Number | Boolean</t-tag>
+### 默认值 - default-value <t-tag theme="primary" variant="light">RadioValue</t-tag>
 
 <component-demo url="/documents/docs/Radio/RadioGroupDefaultValueDemo.vue"></component-demo>
 

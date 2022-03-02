@@ -18,7 +18,7 @@
 - [ ] Steps 步骤条
 - [ ] Tabs 选项卡
 - [ ] Cascader 级联组件
-- [ ] Checkbox 多选框
+- [x] ~~Checkbox 多选框 @1.0.5~~
 - [ ] DatePicker 日期选择器
 - [ ] Form 表单
 - [ ] Input 输入框

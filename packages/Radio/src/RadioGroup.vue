@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-02-25 05:31:14
- * @LastEditTime: 2022-03-02 05:49:06
+ * @LastEditTime: 2022-03-02 08:37:05
  * @LastEditors: Quarter
  * @Description: 单选按钮组
  * @FilePath: /t-ui-kit/packages/Radio/src/RadioGroup.vue
@@ -113,6 +113,8 @@ onBeforeMount((): void => {
   }
   if (validateValueType(modelValue.value)) {
     checkedValue.value = modelValue.value;
+  } else {
+    modelValue.value = checkedValue.value;
   }
 });
 
@@ -134,18 +136,10 @@ const validateValueType = (val: RadioValue | undefined): boolean => {
 const handleRadioChange = (val: RadioValue): void => {
   if (validateValueType(val)) {
     checkedValue.value = val;
+    modelValue.value = checkedValue.value;
     emits("change", checkedValue.value);
   }
 };
-
-/**
- * @description: 监听选中值的变化
- * @author: Quarter
- * @return
- */
-watch(checkedValue, (val: RadioValue | undefined) => {
-  modelValue.value = val;
-});
 
 /**
  * @description: 监听入参选中值的变化

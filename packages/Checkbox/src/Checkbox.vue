@@ -1,18 +1,18 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-02-25 05:30:54
- * @LastEditTime: 2022-03-02 08:50:33
+ * @LastEditTime: 2022-03-02 08:49:40
  * @LastEditors: Quarter
  * @Description: 单选框
- * @FilePath: /t-ui-kit/packages/Radio/src/Radio.vue
+ * @FilePath: /t-ui-kit/packages/Checkbox/src/Checkbox.vue
 -->
 <script lang="ts" setup>
 import "packages/Style";
-import "./style/radio.scss";
+import "./style/checkbox.scss";
 
 import { computed, inject, onBeforeMount, PropType, ref, watch } from "vue";
 
-import type { RadioGroupProvider, RadioValue } from "./type";
+import type { CheckboxGroupProvider, CheckboxValue } from "./type";
 
 const props = defineProps({
   checked: { // 是否选中
@@ -23,14 +23,21 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
-  disabled: Boolean, // 是否禁用
+  indeterminate: { // 是否半选
+    type: Boolean,
+    default: false,
+  },
   name: String, // 名称
-  value: [String, Number, Boolean] as PropType<RadioValue | undefined>, // 单选框的值
+  disabled: Boolean, // 是否禁用
+  value: { // 单选框的值
+    type: [String, Number, Boolean] as PropType<CheckboxValue | undefined>,
+    default: undefined,
+  },
 });
 const emits = defineEmits(["update:checked", "change"]);
 
 // 单选框组供应
-const radioGroup = inject<RadioGroupProvider | undefined>("tRadioGroup", undefined);
+const checkboxGroup = inject<CheckboxGroupProvider | undefined>("tCheckboxGroup", undefined);
 // 是否可以自我控制
 const selfControl = ref<boolean>(true);
 
@@ -40,9 +47,9 @@ const isChecked = ref<boolean>(false);
 /**
  * @description: 单选框值
  * @author: Quarter
- * @return {RadioValue}
+ * @return {CheckboxValue}
  */
-const value = computed<RadioValue | undefined>((): RadioValue | undefined => {
+const value = computed<CheckboxValue | undefined>((): CheckboxValue | undefined => {
   if (validateValueType(props.value)) {
     return props.value;
   }
@@ -54,8 +61,8 @@ const value = computed<RadioValue | undefined>((): RadioValue | undefined => {
  * @return {string}
  */
 const name = computed<string | undefined>((): string | undefined => {
-  if (typeof radioGroup?.props.name === "string") {
-    return radioGroup?.props.name;
+  if (typeof checkboxGroup?.props.name === "string") {
+    return checkboxGroup?.props.name;
   }
   if (typeof props.name === "string") {
     return props.name;
@@ -71,7 +78,7 @@ const disabled = computed<boolean>((): boolean => {
   if (props.disabled) {
     return true;
   } else {
-    if (radioGroup?.props.disabled) {
+    if (checkboxGroup?.props.disabled) {
       return true;
     }
   }
@@ -85,8 +92,8 @@ const disabled = computed<boolean>((): boolean => {
  */
 const checked = computed<boolean | undefined>({
   get: (): boolean | undefined => {
-    if (radioGroup && validateValueType(radioGroup.value.value) && undefined !== value.value) {
-      return radioGroup.value.value === value.value;
+    if (checkboxGroup && Array.isArray(checkboxGroup.value.value) && undefined !== value.value) {
+      return checkboxGroup.value.value.includes(value.value);
     }
     if (typeof props.checked === "boolean") {
       return props.checked;
@@ -107,10 +114,13 @@ const checked = computed<boolean | undefined>({
 const classNameList = computed<string[]>(() => {
   const classList: string[] = [];
   if (isChecked.value) {
-    classList.push("t-radio--checked");
+    classList.push("t-checkbox--checked");
+  }
+  if (props.indeterminate) {
+    classList.push("t-checkbox--indeterminate");
   }
   if (disabled.value) {
-    classList.push("t-radio--disabled");
+    classList.push("t-checkbox--disabled");
   }
   return classList;
 });
@@ -118,10 +128,10 @@ const classNameList = computed<string[]>(() => {
 /**
  * @description: 验证值类型
  * @author: Quarter
- * @param {string|number|boolean} val 值
+ * @param {CheckboxValue} val 值
  * @return {boolean}
  */
-const validateValueType = (val: RadioValue | undefined): boolean => {
+const validateValueType = (val: CheckboxValue | undefined): boolean => {
   return (typeof val === "string" || typeof val === "number" || typeof val === "boolean");
 }
 
@@ -135,7 +145,7 @@ const handleChange = (e: Event): void => {
     emits("change", isChecked.value, value.value);
   } else {
     if (undefined !== value.value) {
-      radioGroup?.handleRadioChange(value.value);
+      checkboxGroup?.handleCheckboxChange(value.value, !isChecked.value);
     }
   }
 };
@@ -159,7 +169,7 @@ const handleClick = (e: MouseEvent): void => {
  * @return
  */
 onBeforeMount((): void => {
-  selfControl.value = !(radioGroup && radioGroup.name === "TRadioGroup");
+  selfControl.value = !(checkboxGroup && checkboxGroup.name === "TCheckboxGroup");
   if (typeof props.defaultChecked === "boolean") {
     isChecked.value = props.defaultChecked;
   }
@@ -183,18 +193,19 @@ watch(checked, (val: boolean | undefined) => {
 </script>
 
 <template>
-  <label class="t-radio" :class="classNameList">
+  <label class="t-checkbox" :class="classNameList">
     <input
-      type="radio"
+      type="checkbox"
       :name="name"
       :checked="isChecked"
       :disabled="disabled"
+      :indeterminate="props.indeterminate"
       :value="value"
       @change="handleChange"
       @click="handleClick"
     />
-    <span class="t-radio__input"></span>
-    <span class="t-radio__label">
+    <span class="t-checkbox__input"></span>
+    <span class="t-checkbox__label">
       <slot></slot>
     </span>
   </label>
