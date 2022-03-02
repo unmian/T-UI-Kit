@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-02-25 05:31:14
- * @LastEditTime: 2022-03-02 05:45:04
+ * @LastEditTime: 2022-03-02 08:42:11
  * @LastEditors: Quarter
  * @Description: 单选按钮组
  * @FilePath: /t-ui-kit/packages/Radio/src/RadioGroup.vue
@@ -131,6 +131,8 @@ export default Vue.extend({
     }
     if (this.validateValueType(this.radioValue)) {
       this.checkedValue = this.radioValue;
+    } else {
+      this.radioValue = this.checkedValue;
     }
   },
   methods: {
@@ -159,20 +161,12 @@ export default Vue.extend({
     handleRadioChange(val: RadioValue): void {
       if (this.validateValueType(val)) {
         this.checkedValue = val;
+        this.radioValue = this.checkedValue;
         this.$emit("change", this.checkedValue);
       }
     },
   },
   watch: {
-    /**
-     * @description: 监听选中值的变化
-     * @param {RadioValue} val 变化的值
-     * @author: Quarter
-     * @return
-     */
-    checkedValue(val: RadioValue | undefined): void {
-      this.radioValue = val;
-    },
     /**
      * @description: 监听入参选中值的变化
      * @param {RadioValue} val 变化的值

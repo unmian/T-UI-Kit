@@ -120,8 +120,7 @@
         "compName": "checkbox",
         "compZhName": "多选框",
         "compDesc": "这是一个按钮",
-        "compClassName": "Checkbox",
-        "disabled": true
+        "compClassName": "Checkbox"
       },
       {
         "compName": "date-picker",

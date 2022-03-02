@@ -1,7 +1,7 @@
 /*
  * @Author: Quarter
  * @Date: 2021-12-29 07:39:03
- * @LastEditTime: 2022-03-01 08:11:17
+ * @LastEditTime: 2022-03-02 08:41:17
  * @LastEditors: Quarter
  * @Description: UI 组件入口文件
  * @FilePath: /t-ui-kit/packages/index.ts
@@ -14,6 +14,7 @@ import { AlertPlugin } from "./Alert";
 import { AvatarPlugin } from "./Avatar";
 import { BadgePlugin } from "./Badge";
 import { ButtonPlugin } from "./Button";
+import { CheckboxPlugin } from "./Checkbox";
 import { ClipboardPlugin } from "./Clipboard";
 import { DialogPlugin } from "./Dialog";
 import { DividerPlugin } from "./Divider";
@@ -35,6 +36,7 @@ export const TUIPlugin: PluginObject<any> = {
     AvatarPlugin.install(vue);
     BadgePlugin.install(vue);
     ButtonPlugin.install(vue);
+    CheckboxPlugin.install(vue);
     ClipboardPlugin.install(vue);
     DialogPlugin.install(vue);
     DividerPlugin.install(vue);
@@ -56,6 +58,7 @@ export * from "./Alert";
 export * from "./Avatar";
 export * from "./Badge";
 export * from "./Button";
+export * from "./Checkbox";
 export * from "./Clipboard";
 export * from "./Dialog";
 export * from "./Divider";
