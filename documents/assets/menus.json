@@ -174,8 +174,7 @@
         "compName": "switch",
         "compZhName": "开关",
         "compDesc": "这是一个按钮",
-        "compClassName": "Switch",
-        "disabled": true
+        "compClassName": "Switch"
       },
       {
         "compName": "textarea",

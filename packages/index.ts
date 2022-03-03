@@ -1,7 +1,7 @@
 /*
  * @Author: Quarter
  * @Date: 2021-12-29 07:39:03
- * @LastEditTime: 2022-03-02 08:41:17
+ * @LastEditTime: 2022-03-03 09:01:08
  * @LastEditors: Quarter
  * @Description: UI 组件入口文件
  * @FilePath: /t-ui-kit/packages/index.ts
@@ -28,6 +28,7 @@ import { NotificationPlugin } from "./Notification";
 import { ProgressPlugin } from "./Progress";
 import { RadioPlugin } from "./Radio";
 import { SkeletonPlugin } from "./Skeleton";
+import { SwitchPlugin } from "./Switch";
 import { TagPlugin } from "./Tag";
 
 export const TUIPlugin: PluginObject<any> = {
@@ -48,6 +49,7 @@ export const TUIPlugin: PluginObject<any> = {
     ProgressPlugin.install(vue);
     RadioPlugin.install(vue);
     SkeletonPlugin.install(vue);
+    SwitchPlugin.install(vue);
     TagPlugin.install(vue);
   },
 };
@@ -72,4 +74,5 @@ export * from "./Notification";
 export * from "./Progress";
 export * from "./Radio";
 export * from "./Skeleton";
+export * from "./Switch";
 export * from "./Tag";

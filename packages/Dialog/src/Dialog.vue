@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-11 03:23:23
- * @LastEditTime: 2022-02-24 06:09:50
+ * @LastEditTime: 2022-03-03 10:41:38
  * @LastEditors: Quarter
  * @Description: 
  * @FilePath: /t-ui-kit/packages/Dialog/src/Dialog.vue
@@ -28,8 +28,7 @@
             <div class="t-dialog__content">
               <!-- 头部 -->
               <div class="t-dialog__header">
-                <slot v-if="hasHeaderSlot" name="header"></slot>
-                <template v-else>{{ title }}</template>
+                <slot name="header">{{ title }}</slot>
               </div>
               <!-- 主体内容 -->
               <div class="t-dialog__body">
@@ -39,8 +38,7 @@
           </div>
           <!-- 底部 -->
           <div v-if="footer" class="t-dialog__footer">
-            <slot v-if="hasFooterSlot" name="footer"></slot>
-            <template v-else>
+            <slot name="footer">
               <t-button
                 :variant="cancelBtnConfig.variant"
                 :theme="cancelBtnConfig.theme"
@@ -53,7 +51,7 @@
                 :loading="comfirmBtnConfig.loading"
                 @click="handleConfirm"
               >{{ comfirmBtnConfig.content }}</t-button>
-            </template>
+            </slot>
           </div>
           <!-- 拖拽器 -->
           <span v-if="draggable" class="t-dialog__dragger" @mousedown="handleMouseDown"></span>
@@ -81,8 +79,7 @@
           <div class="t-dialog__content">
             <!-- 头部 -->
             <div class="t-dialog__header">
-              <slot v-if="hasHeaderSlot" name="header"></slot>
-              <template v-else>{{ title }}</template>
+              <slot name="header">{{ title }}</slot>
             </div>
             <!-- 主体内容 -->
             <div class="t-dialog__body">
@@ -92,8 +89,7 @@
         </div>
         <!-- 底部 -->
         <div v-if="footer" class="t-dialog__footer">
-          <slot v-if="hasFooterSlot" name="footer"></slot>
-          <template v-else>
+          <slot name="footer">
             <t-button
               :variant="cancelBtnConfig.variant"
               :theme="cancelBtnConfig.theme"
@@ -106,7 +102,7 @@
               :loading="comfirmBtnConfig.loading"
               @click="handleConfirm"
             >{{ comfirmBtnConfig.content }}</t-button>
-          </template>
+          </slot>
         </div>
         <!-- 拖拽器 -->
         <span v-if="draggable" class="t-dialog__dragger" @mousedown="handleMouseDown"></span>
@@ -366,30 +362,6 @@ export default Vue.extend({
         }
       }
       return classList;
-    },
-    /**
-     * @description: 是否存在头部插槽
-     * @author: Quarter
-     * @return {boolean}
-     */
-    hasHeaderSlot(): boolean {
-      if (Array.isArray(this.$slots.header)) {
-        return this.$slots.header.length > 0;
-      } else {
-        return !!this.$slots.header;
-      }
-    },
-    /**
-     * @description: 是否存在底部插槽
-     * @author: Quarter
-     * @return {boolean}
-     */
-    hasFooterSlot(): boolean {
-      if (Array.isArray(this.$slots.footer)) {
-        return this.$slots.footer.length > 0;
-      } else {
-        return !!this.$slots.footer;
-      }
     },
   },
   methods: {

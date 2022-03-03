@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-11 06:23:23
- * @LastEditTime: 2022-02-24 05:28:40
+ * @LastEditTime: 2022-03-03 10:42:34
  * @LastEditors: Quarter
  * @Description: 抽屉
  * @FilePath: /t-ui-kit/packages/Drawer/src/Drawer.vue
@@ -21,8 +21,7 @@
           <!-- 头部 -->
           <div class="t-drawer__header">
             <div class="t-drawer__title">
-              <slot v-if="hasHeaderSlot" name="header"></slot>
-              <template v-else>{{ title }}</template>
+              <slot name="header">{{ title }}</slot>
             </div>
             <div class="t-drawer__close-btn" @click="handleClose">
               <icon name="close"></icon>
@@ -34,8 +33,7 @@
           </div>
           <!-- 底部 -->
           <div v-if="footer" class="t-drawer__footer">
-            <slot v-if="hasFooterSlot" name="footer"></slot>
-            <template v-else>
+            <slot name="footer">
               <template v-if="drawerPlacement === 'right'">
                 <t-button theme="primary" @click="handleConfirm">{{ confirmBtn }}</t-button>
                 <t-button @click="handleCancel">{{ cancelBtn }}</t-button>
@@ -44,7 +42,7 @@
                 <t-button @click="handleCancel">{{ cancelBtn }}</t-button>
                 <t-button theme="primary" @click="handleConfirm">{{ confirmBtn }}</t-button>
               </template>
-            </template>
+            </slot>
           </div>
           <!-- 拖拽器 -->
           <span v-if="sizeDraggable" class="t-drawer__dragger" @mousedown="handleMouseDown"></span>
@@ -61,8 +59,7 @@
         <!-- 头部 -->
         <div class="t-drawer__header">
           <div class="t-drawer__title">
-            <slot v-if="hasHeaderSlot" name="header"></slot>
-            <template v-else>{{ title }}</template>
+            <slot name="header">{{ title }}</slot>
           </div>
           <div class="t-drawer__close-btn" @click="handleClose">
             <icon name="close"></icon>
@@ -74,8 +71,7 @@
         </div>
         <!-- 底部 -->
         <div v-if="footer" class="t-drawer__footer">
-          <slot v-if="hasFooterSlot" name="footer"></slot>
-          <template v-else>
+          <slot name="footer">
             <template v-if="drawerPlacement === 'right'">
               <t-button theme="primary" @click="handleConfirm">{{ confirmBtn }}</t-button>
               <t-button @click="handleCancel">{{ cancelBtn }}</t-button>
@@ -84,7 +80,7 @@
               <t-button @click="handleCancel">{{ cancelBtn }}</t-button>
               <t-button theme="primary" @click="handleConfirm">{{ confirmBtn }}</t-button>
             </template>
-          </template>
+          </slot>
         </div>
         <!-- 拖拽器 -->
         <span v-if="sizeDraggable" class="t-drawer__dragger" @mousedown="handleMouseDown"></span>
@@ -261,30 +257,6 @@ export default Vue.extend({
         classList.push("t-drawer--inside-element");
       }
       return classList;
-    },
-    /**
-     * @description: 是否存在头部插槽
-     * @author: Quarter
-     * @return {boolean}
-     */
-    hasHeaderSlot(): boolean {
-      if (Array.isArray(this.$slots.header)) {
-        return this.$slots.header.length > 0;
-      } else {
-        return !!this.$slots.header;
-      }
-    },
-    /**
-     * @description: 是否存在底部插槽
-     * @author: Quarter
-     * @return {boolean}
-     */
-    hasFooterSlot(): boolean {
-      if (Array.isArray(this.$slots.footer)) {
-        return this.$slots.footer.length > 0;
-      } else {
-        return !!this.$slots.footer;
-      }
     },
   },
   methods: {

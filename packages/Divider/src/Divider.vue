@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-11 05:47:23
- * @LastEditTime: 2022-02-22 11:54:41
+ * @LastEditTime: 2022-03-03 10:47:04
  * @LastEditors: Quarter
  * @Description: 分割线
  * @FilePath: /t-ui-kit/packages/Divider/src/Divider.vue
@@ -72,7 +72,14 @@ export default Vue.extend({
      * @return {boolean}
      */
     hasDefaultSlot(): boolean {
-      return !!this.$slots.default;
+      if (undefined !== this.$scopedSlots.default) {
+        return true;
+      }
+      if (Array.isArray(this.$slots.default)) {
+        return this.$slots.default.length > 0;
+      } else {
+        return !!this.$slots.default;
+      }
     },
     /**
      * @description: 类名列表
