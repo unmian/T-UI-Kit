@@ -1,7 +1,7 @@
 /*
  * @Author: Quarter
  * @Date: 2021-12-29 07:39:03
- * @LastEditTime: 2022-03-02 06:42:07
+ * @LastEditTime: 2022-03-03 02:46:45
  * @LastEditors: Quarter
  * @Description: UI 组件入口文件
  * @FilePath: /t-ui-kit/packages/index.ts
@@ -29,6 +29,7 @@ import { PopupPlugin } from "./Popup";
 import { ProgressPlugin } from "./Progress";
 import { RadioPlugin } from "./Radio";
 import { SkeletonPlugin } from "./Skeleton";
+import { SwitchPlugin } from "./Switch";
 import { TagPlugin } from "./Tag";
 
 const TUIKitPlugin: Plugin = {
@@ -51,6 +52,7 @@ const TUIKitPlugin: Plugin = {
     ProgressPlugin.install?.(app);
     RadioPlugin.install?.(app);
     SkeletonPlugin.install?.(app);
+    SwitchPlugin.install?.(app);
     TagPlugin.install?.(app);
   },
 };
@@ -75,4 +77,5 @@ export * from "./Popup";
 export * from "./Progress";
 export * from "./Radio";
 export * from "./Skeleton";
+export * from "./Switch";
 export * from "./Tag";

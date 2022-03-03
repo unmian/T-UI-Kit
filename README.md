@@ -26,7 +26,7 @@
 - [x] ~~Radio 单选框 @v1.0.5~~
 - [ ] Select 选择器
 - [ ] Slider 滑块
-- [ ] Switch 开关
+- [x] ~~Switch 开关 @1.0.5~~
 - [ ] Textarea 多行文本框
 - [ ] Transfer 穿梭框
 - [ ] TimePicker 时间选择器

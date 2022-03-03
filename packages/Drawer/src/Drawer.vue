@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-11 06:23:23
- * @LastEditTime: 2022-02-23 07:29:50
+ * @LastEditTime: 2022-03-03 10:38:57
  * @LastEditors: Quarter
  * @Description: 抽屉
  * @FilePath: /t-ui-kit/packages/Drawer/src/Drawer.vue
@@ -179,34 +179,6 @@ const classNameList = computed<string[]>(() => {
 });
 
 /**
- * @description: 是否存在头部插槽
- * @author: Quarter
- * @return {boolean}
- */
-const hasHeaderSlot = computed<boolean>(() => {
-  const slots = useSlots();
-  if (Array.isArray(slots.header)) {
-    return slots.header.length > 0;
-  } else {
-    return !!slots.header;
-  }
-});
-
-/**
- * @description: 是否存在底部插槽
- * @author: Quarter
- * @return {boolean}
- */
-const hasFooterSlot = computed<boolean>(() => {
-  const slots = useSlots();
-  if (Array.isArray(slots.footer)) {
-    return slots.footer.length > 0;
-  } else {
-    return !!slots.footer;
-  }
-});
-
-/**
  * @description: 处理蒙层点击
  * @author: Quarter
  * @return
@@ -337,8 +309,7 @@ watch(visible, (val: boolean, oldVal?: boolean) => {
           <!-- 头部 -->
           <div class="t-drawer__header">
             <div class="t-drawer__title">
-              <slot v-if="hasHeaderSlot" name="header"></slot>
-              <template v-else>{{ props.title }}</template>
+              <slot name="header">{{ props.title }}</slot>
             </div>
             <div class="t-drawer__close-btn" @click="handleClose">
               <icon name="close"></icon>
@@ -350,8 +321,7 @@ watch(visible, (val: boolean, oldVal?: boolean) => {
           </div>
           <!-- 底部 -->
           <div v-if="props.footer" class="t-drawer__footer">
-            <slot v-if="hasFooterSlot" name="footer"></slot>
-            <template v-else>
+            <slot name="footer">
               <template v-if="placement === 'right'">
                 <t-button theme="primary" @click="handleConfirm">{{ props.confirmBtn }}</t-button>
                 <t-button @click="handleCancel">{{ props.cancelBtn }}</t-button>
@@ -360,7 +330,7 @@ watch(visible, (val: boolean, oldVal?: boolean) => {
                 <t-button @click="handleCancel">{{ props.cancelBtn }}</t-button>
                 <t-button theme="primary" @click="handleConfirm">{{ props.confirmBtn }}</t-button>
               </template>
-            </template>
+            </slot>
           </div>
           <!-- 拖拽器 -->
           <span v-if="props.sizeDraggable" class="t-drawer__dragger" @mousedown="handleMouseDown"></span>
@@ -377,8 +347,7 @@ watch(visible, (val: boolean, oldVal?: boolean) => {
         <!-- 头部 -->
         <div class="t-drawer__header">
           <div class="t-drawer__title">
-            <slot v-if="hasHeaderSlot" name="header"></slot>
-            <template v-else>{{ props.title }}</template>
+            <slot name="header">{{ props.title }}</slot>
           </div>
           <div class="t-drawer__close-btn" @click="handleClose">
             <icon name="close"></icon>
@@ -390,8 +359,7 @@ watch(visible, (val: boolean, oldVal?: boolean) => {
         </div>
         <!-- 底部 -->
         <div v-if="props.footer" class="t-drawer__footer">
-          <slot v-if="hasFooterSlot" name="footer"></slot>
-          <template v-else>
+          <slot name="footer">
             <template v-if="placement === 'right'">
               <t-button theme="primary" @click="handleConfirm">{{ props.confirmBtn }}</t-button>
               <t-button @click="handleCancel">{{ props.cancelBtn }}</t-button>
@@ -400,7 +368,7 @@ watch(visible, (val: boolean, oldVal?: boolean) => {
               <t-button @click="handleCancel">{{ props.cancelBtn }}</t-button>
               <t-button theme="primary" @click="handleConfirm">{{ props.confirmBtn }}</t-button>
             </template>
-          </template>
+          </slot>
         </div>
         <!-- 拖拽器 -->
         <span v-if="props.sizeDraggable" class="t-drawer__dragger" @mousedown="handleMouseDown"></span>

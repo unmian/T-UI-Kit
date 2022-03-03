@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-11 03:23:23
- * @LastEditTime: 2022-02-24 05:40:46
+ * @LastEditTime: 2022-03-03 10:37:18
  * @LastEditors: Quarter
  * @Description: 
  * @FilePath: /t-ui-kit/packages/Dialog/src/Dialog.vue
@@ -264,34 +264,6 @@ const classNameList = computed<string[]>(() => {
 });
 
 /**
- * @description: 是否存在头部插槽
- * @author: Quarter
- * @return {boolean}
- */
-const hasHeaderSlot = computed<boolean>(() => {
-  const slots = useSlots();
-  if (Array.isArray(slots.header)) {
-    return slots.header.length > 0;
-  } else {
-    return !!slots.header;
-  }
-});
-
-/**
- * @description: 是否存在底部插槽
- * @author: Quarter
- * @return {boolean}
- */
-const hasFooterSlot = computed<boolean>(() => {
-  const slots = useSlots();
-  if (Array.isArray(slots.footer)) {
-    return slots.footer.length > 0;
-  } else {
-    return !!slots.footer;
-  }
-});
-
-/**
  * @description: 处理蒙层点击
  * @author: Quarter
  * @return
@@ -447,8 +419,7 @@ watch(visible, (val: boolean, oldVal?: boolean) => {
             <div class="t-dialog__content">
               <!-- 头部 -->
               <div class="t-dialog__header">
-                <slot v-if="hasHeaderSlot" name="header"></slot>
-                <template v-else>{{ props.title }}</template>
+                <slot name="header">{{ props.title }}</slot>
               </div>
               <!-- 主体内容 -->
               <div class="t-dialog__body">
@@ -458,8 +429,7 @@ watch(visible, (val: boolean, oldVal?: boolean) => {
           </div>
           <!-- 底部 -->
           <div v-if="props.footer" class="t-dialog__footer">
-            <slot v-if="hasFooterSlot" name="footer"></slot>
-            <template v-else>
+            <slot name="footer">
               <t-button
                 :variant="cancelBtnConfig.variant"
                 :theme="cancelBtnConfig.theme"
@@ -472,7 +442,7 @@ watch(visible, (val: boolean, oldVal?: boolean) => {
                 :loading="comfirmBtnConfig.loading"
                 @click="handleConfirm"
               >{{ comfirmBtnConfig.content }}</t-button>
-            </template>
+            </slot>
           </div>
           <!-- 拖拽器 -->
           <span v-if="props.draggable" class="t-dialog__dragger" @mousedown="handleMouseDown"></span>
@@ -500,8 +470,7 @@ watch(visible, (val: boolean, oldVal?: boolean) => {
           <div class="t-dialog__content">
             <!-- 头部 -->
             <div class="t-dialog__header">
-              <slot v-if="hasHeaderSlot" name="header"></slot>
-              <template v-else>{{ props.title }}</template>
+              <slot name="header">{{ props.title }}</slot>
             </div>
             <!-- 主体内容 -->
             <div class="t-dialog__body">
@@ -511,8 +480,7 @@ watch(visible, (val: boolean, oldVal?: boolean) => {
         </div>
         <!-- 底部 -->
         <div v-if="props.footer" class="t-dialog__footer">
-          <slot v-if="hasFooterSlot" name="footer"></slot>
-          <template v-else>
+          <slot name="footer">
             <t-button
               :variant="cancelBtnConfig.variant"
               :theme="cancelBtnConfig.theme"
@@ -525,7 +493,7 @@ watch(visible, (val: boolean, oldVal?: boolean) => {
               :loading="comfirmBtnConfig.loading"
               @click="handleConfirm"
             >{{ comfirmBtnConfig.content }}</t-button>
-          </template>
+          </slot>
         </div>
         <!-- 拖拽器 -->
         <span v-if="props.draggable" class="t-dialog__dragger" @mousedown="handleMouseDown"></span>

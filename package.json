@@ -33,7 +33,7 @@
   "bugs": "https://github.com/unmian/T-UI-Kit/issues",
   "scripts": {
     "dev": "vite --config ./build/base.config.ts",
-    "test": "vue-tsc --declaration --emitDeclarationOnly",
+    "test": "vue-tsc --emitDeclarationOnly",
     "build:lib": "vue-tsc --noEmit && vite build --config ./build/lib.config.ts",
     "build:doc": "vue-tsc --noEmit && vite build --config ./build/doc.config.ts",
     "preview": "vite preview",

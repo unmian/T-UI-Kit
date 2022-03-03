@@ -1,7 +1,7 @@
 <!--
  * @Author: Quarter
  * @Date: 2022-01-11 05:47:23
- * @LastEditTime: 2022-02-21 09:08:28
+ * @LastEditTime: 2022-03-03 10:38:24
  * @LastEditors: Quarter
  * @Description: 分割线
  * @FilePath: /t-ui-kit/packages/Divider/src/Divider.vue
@@ -89,10 +89,8 @@ const classNameList = computed<string[]>(() => {
 
 <template>
   <div class="t-divider" :class="classNameList">
-    <span
-      v-if="layout === 'horizontal' && hasDefaultSlot"
-      class="t-divider__inner-text"
-      ><slot></slot
-    ></span>
+    <span v-if="layout === 'horizontal' && hasDefaultSlot" class="t-divider__inner-text">
+      <slot></slot>
+    </span>
   </div>
 </template>

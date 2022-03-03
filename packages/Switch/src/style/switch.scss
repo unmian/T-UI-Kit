@@ -1,0 +1,179 @@
+@import "packages/Style/mixin.scss";
+
+div.t-switch {
+  cursor: pointer;
+  background-color: var(--t-neutral-1-gray-5);
+  transition: background-color 0.24s linear;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+
+  // 文本信息
+  .t-switch__label {
+    width: 100%;
+    color: var(--t-text-white-1);
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: clip;
+    user-select: none;
+    transition: opacity 0.24s linear;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  // 控制器
+  .t-switch__handle {
+    background-color: var(--t-neutral-2-white-1);
+    transition: all 0.24s linear;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    &::after {
+      content: "";
+      width: 70%;
+      height: 70%;
+      position: absolute;
+      top: 15%;
+      left: 15%;
+    }
+  }
+
+  // 小尺寸
+  &.t-switch--small {
+    width: 28px;
+    height: 16px;
+    border-radius: 8px;
+
+    .t-switch__label {
+      padding: 2px 2px 2px 16px;
+
+      span {
+        transform: scale(0.8);
+      }
+    }
+
+    .t-switch__handle {
+      width: 12px;
+      height: 12px;
+      border-radius: 6px;
+    }
+
+    // 激活状态
+    &.t-switch--active .t-switch__label {
+      padding: 2px 16px 2px 2px;
+    }
+
+    // 按下状态
+    &:not(.t-switch--disabled):active .t-switch__handle {
+      width: 16px;
+    }
+  }
+
+  // 中尺寸
+  &.t-switch--medium {
+    width: 36px;
+    height: 20px;
+    border-radius: 10px;
+
+    .t-switch__label {
+      padding: 2px 2px 2px 20px;
+
+      span {
+        transform: scale(0.9);
+      }
+    }
+
+    .t-switch__handle {
+      width: 16px;
+      height: 16px;
+      border-radius: 8px;
+    }
+
+    // 激活状态
+    &.t-switch--active .t-switch__label {
+      padding: 2px 20px 2px 2px;
+    }
+
+    // 按下状态
+    &:not(.t-switch--disabled):active .t-switch__handle {
+      width: 20px;
+    }
+  }
+
+  // 大尺寸
+  &.t-switch--large {
+    width: 44px;
+    height: 24px;
+    border-radius: 12px;
+
+    .t-switch__label {
+      padding: 2px 2px 2px 24px;
+
+      span {
+        transform: scale(1);
+      }
+    }
+
+    .t-switch__handle {
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+    }
+
+    // 激活状态
+    &.t-switch--active .t-switch__label {
+      padding: 2px 24px 2px 2px;
+    }
+
+    // 按下状态
+    &:not(.t-switch--disabled):active .t-switch__handle {
+      width: 26px;
+    }
+  }
+
+  // 开启状态
+  &.t-switch--active {
+    background-color: var(--t-brand-normal);
+
+    // 控制器
+    .t-switch__handle {
+      transform: translateX(-100%);
+      left: calc(100% - 2px);
+    }
+  }
+
+  // 按下状态
+  &:not(.t-switch--disabled):active .t-switch__label {
+    opacity: 0;
+  }
+
+  // 加载状态
+  &.t-switch--loading {
+    .t-switch__handle::after {
+      animation: t-rotate 1.2s linear infinite;
+      border-radius: 50%;
+      mask: radial-gradient(transparent calc(50% - 0.5px), #ffffff 50%);
+      background-image: conic-gradient(from 90deg at 50% 50%, rgba(255, 255, 255, 0) 0deg, var(--t-brand-8) 360deg);
+    }
+  }
+
+  // 禁用状态
+  &.t-switch--disabled {
+    cursor: not-allowed;
+    background-color: var(--t-neutral-1-gray-2);
+
+    &.t-switch--active {
+      background-color: var(--t-brand-disabled);
+    }
+  }
+}
